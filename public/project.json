@@ -1,0 +1,76 @@
+[
+  {
+    "title": "Emi Mitra",
+    "image": "https://res.cloudinary.com/duvavjepw/image/upload/v1753026917/emi_hkmtrc.png",
+    "description": "Responsive public-facing EMI and salary calculator with fast loading, SEO optimization, and user-friendly design.",
+    "liveUrl": "https://www.emimitra.online/",
+    "codeUrl": "https://github.com/iamfaizandev",
+    "techStack": ["React", "TypeScript", "CSS"]
+  },
+  {
+    "title": "School Website",
+    "image": "https://res.cloudinary.com/duvavjepw/image/upload/v1754839130/Schools_eesuul.png",
+    "description": "Responsive school website with navigation, admission form, PDF generation, email notifications, and downloadable forms.",
+    "liveUrl": "https://abingtonfriendschoolindia.vercel.app/",
+    "codeUrl": "https://github.com/iamfaizandev/ecom",
+    "techStack": ["Next.js", "TypeScript", "Tailwind", "Framer Motion"]
+  },
+  {
+    "title": "MV Hotel",
+    "image": "https://res.cloudinary.com/duvavjepw/image/upload/v1740425168/mvhotel_gmlxvm.png",
+    "description": "Hotel booking site with room selection, email confirmations, receipt downloads, fast loading, and theme options.",
+    "liveUrl": "https://mvhotell.web.app/",
+    "codeUrl": "https://github.com/iamfaizandev",
+    "techStack": ["React", "Firebase", "Bootstrap", "CSS"]
+  },
+  {
+    "title": "Nerd Nest",
+    "image": "https://res.cloudinary.com/duvavjepw/image/upload/v1740425162/Nerdnest_czsfhr.png",
+    "description": "Tech blog displaying latest news with API integration, responsive UI, and dynamic content fetching.",
+    "liveUrl": "https://nerdnestt.web.app/",
+    "codeUrl": "https://github.com/iamfaizandev/nerdnest",
+    "techStack": ["React", "Bootstrap", "API", "JavaScript"]
+  },
+  {
+    "title": "AB Dental",
+    "image": "https://res.cloudinary.com/duvavjepw/image/upload/v1740425165/dental_juwtil.png",
+    "description": "Responsive dental clinic site with booking form, email notifications, and clean user interface using HTML, CSS, and Bootstrap.",
+    "liveUrl": "https://iamfaizandev.github.io/abdental/",
+    "codeUrl": "https://github.com/iamfaizandev/abdental",
+    "techStack": ["HTML", "CSS", "Bootstrap", "EmailJS"]
+  },
+  {
+    "title": "Rent Ride",
+    "image": "https://res.cloudinary.com/duvavjepw/image/upload/v1753026934/rentride_eb2in3.png",
+    "description": "Responsive car rental platform with dynamic bookings, user authentication, and mobile-friendly design.",
+    "liveUrl": "https://rentrideapp.vercel.app/",
+    "codeUrl": "https://github.com/iamfaizandev",
+    "techStack": ["Next.js", "TypeScript", "Tailwind"]
+  },
+  {
+    "title": "MsShop",
+    "image": "https://res.cloudinary.com/duvavjepw/image/upload/v1753026923/mshop_yiw93l.png",
+    "description": "Dynamic e-commerce site with product listing, cart management, orders, payments, and responsive design.",
+    "liveUrl": "https://mshop-iota.vercel.app/",
+    "codeUrl": "https://github.com/iamfaizandev",
+    "techStack": ["Next.js", "TypeScript", "Tailwind", "Lucide Icons"]
+  },
+
+  {
+    "title": "OnE.com",
+    "image": "https://res.cloudinary.com/duvavjepw/image/upload/v1740425166/One-com_od3fwr.png",
+    "description": "Full-featured e-commerce site using FakeStore API with dynamic CRUD, user authentication, cart, orders, payments, and responsive UI.",
+    "liveUrl": "https://one-ecom-388ea.web.app/",
+    "codeUrl": "https://github.com/iamfaizandev/ecom",
+    "techStack": ["React", "Firebase", "Bootstrap", "API", "CSS"]
+  },
+
+  {
+    "title": "ShowTime",
+    "image": "https://res.cloudinary.com/daqb5wglu/image/upload/v1760206569/filmsite-search_oungci.jpg",
+    "description": "Movie listing platform with search, filter, API-based dynamic data, and responsive design for smooth user experience.",
+    "liveUrl": "https://showtime-dun.vercel.app/",
+    "codeUrl": "https://github.com/iamfaizandev/ecom",
+    "techStack": ["React", "Firebase", "Bootstrap", "API", "CSS"]
+  }
+]
