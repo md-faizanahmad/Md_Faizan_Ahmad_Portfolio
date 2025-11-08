@@ -21,7 +21,7 @@ const HeroSectionClient = () => {
   };
 
   return (
-    <section className="min-h-screen flex  items-center justify-center  text-white">
+    <section className="min-h-screen flex  items-center justify-center  ">
       <motion.div
         className="w-full"
         variants={containerVariants}

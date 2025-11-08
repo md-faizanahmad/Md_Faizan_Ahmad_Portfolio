@@ -3,7 +3,7 @@ import React from "react";
 
 function ProjectPage() {
   return (
-    <div className="bg-gradient-to-bl pt-30 from-sky-950 via-50%  to-black backdrop-blur-lg">
+    <div className=" pt-30   ">
       <Projects />
     </div>
   );

@@ -27,39 +27,49 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 
   return (
     <div
-      className="relative cursor-pointer bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 group w-80 max-w-sm"
+      className="
+        relative w-80 max-w-sm cursor-pointer overflow-hidden rounded-xl
+        border border-[color:var(--border)]
+        bg-[color:var(--card)] shadow-sm
+        transition-all duration-300 hover:shadow-lg
+      "
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >
       {/* Image */}
-      <div className="relative w-full h-55">
+      <div className="relative h-56 w-full">
         <Image
           src={image}
           alt={title}
           fill
           priority
-          className="object-cover transform group-hover:scale-110 transition-transform duration-500"
           sizes="(max-width: 768px) 100vw, 300px"
+          className="object-cover transition-transform duration-500 group-hover:scale-110"
         />
-        {/* Overlay gradient */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-
-        {/* Title overlay */}
-        <h2 className="absolute bottom-3 left-4 text-white text-lg font-bold drop-shadow-lg">
+        {/* Overlay gradient (top-to-bottom) */}
+        <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/55 to-transparent" />
+        {/* Title */}
+        <h2 className="absolute bottom-3 left-4 text-base font-bold text-white drop-shadow">
           {title}
         </h2>
       </div>
 
-      {/* Hover content */}
+      {/* Hover panel */}
       <div
-        className={`absolute inset-0 bg-white/55 backdrop-blur-lg p-5 flex flex-col justify-between transition-all duration-300 ${
-          hovered ? "opacity-100 translate-y-0" : "opacity-0 translate-y-full"
-        }`}
+        className={`
+          absolute inset-0 flex flex-col justify-between p-5
+          backdrop-blur-lg transition-all duration-300
+          ${
+            hovered ? "opacity-100 translate-y-0" : "opacity-0 translate-y-full"
+          }
+          bg-[color:var(--background)]/65
+          text-[color:var(--foreground)]
+        `}
       >
         <div>
-          {/* Description with toggle */}
+          {/* Description */}
           <p
-            className={`text-gray-600 text-sm mb-2 transition-all duration-200 ${
+            className={`mb-2 text-sm text-[color:var(--muted-foreground)] transition-all duration-200 ${
               showMore ? "" : "line-clamp-3"
             }`}
           >
@@ -69,19 +79,23 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           {/* Toggle link */}
           {description.length > 100 && (
             <button
-              onClick={() => setShowMore(!showMore)}
-              className="text-blue-600 text-xs hover:underline mb-2"
+              onClick={() => setShowMore((s) => !s)}
+              className="mb-2 text-xs text-[color:var(--foreground)]/80 underline-offset-2 hover:underline"
             >
               {showMore ? "Show Less" : "Show More"}
             </button>
           )}
 
           {/* Tech stack */}
-          <div className="flex flex-wrap gap-1 mb-2">
+          <div className="mb-2 flex flex-wrap gap-1">
             {techStack.map((tech) => (
               <span
                 key={tech}
-                className="bg-gray-200 text-gray-700 px-3 py-1 text-xs rounded-full"
+                className="
+                  rounded-full px-3 py-1 text-xs
+                  bg-[color:var(--secondary)] text-[color:var(--secondary-foreground)]
+                  border border-[color:var(--border)]
+                "
               >
                 {tech}
               </span>
@@ -90,18 +104,25 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         </div>
 
         {/* Buttons */}
-        <div className="flex gap-3 ">
+        <div className="flex gap-3">
           <Link
             href={codeUrl}
             target="_blank"
-            className="flex items-center gap-2 bg-gray-800 text-white px-3 py-2 rounded-md text-xs hover:bg-black transition"
+            className="
+              inline-flex items-center gap-2 rounded-md px-3 py-2 text-xs
+              bg-[color:var(--foreground)] text-[color:var(--primary-foreground)]
+              hover:opacity-90 transition
+            "
           >
             <Github size={14} /> Code
           </Link>
           <Link
             href={liveUrl}
             target="_blank"
-            className="flex items-center gap-2 bg-blue-600 text-white px-3 py-2 rounded-md text-xs hover:bg-blue-700 transition"
+            className="
+              inline-flex items-center gap-2 rounded-md px-3 py-2 text-xs
+              bg-indigo-600 text-white hover:bg-indigo-700 transition
+            "
           >
             <ExternalLink size={14} /> Live
           </Link>

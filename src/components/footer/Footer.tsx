@@ -16,17 +16,21 @@ const Footer = () => {
   return (
     <footer
       ref={footerRef}
-      className="relative bg-gradient-to-bl from-gray-900 to-black backdrop-blur-md py-12 px-4 sm:px-6 lg:px-8 border-t border-white/10"
+      className="
+        relative border-t border-[color:var(--border)]
+        bg-[color:var(--background)] text-[color:var(--foreground)]
+        px-4 py-12 sm:px-6 lg:px-8
+      "
     >
       <motion.div
         style={{ opacity }}
-        className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-gray-200"
+        className="mx-auto grid max-w-6xl grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4"
       >
-        {/* About Section */}
+        {/* About */}
         <div>
-          <h3 className="text-lg font-semibold text-white mb-4">About Me</h3>
-          <p className="text-sm">
-            Full-Stack Web Developer actively seeking opportunities to create
+          <h3 className="mb-4 text-lg font-semibold">About Me</h3>
+          <p className="text-sm text-[color:var(--muted-foreground)]">
+            Frontend Developer actively seeking opportunities to create
             responsive, high-performance web applications and enhance user
             experiences using modern technologies.
           </p>
@@ -34,12 +38,12 @@ const Footer = () => {
 
         {/* Quick Links */}
         <div>
-          <h3 className="text-lg font-semibold text-white mb-4">Quick Links</h3>
+          <h3 className="mb-4 text-lg font-semibold">Quick Links</h3>
           <ul className="space-y-2 text-sm">
             <li>
               <Link
                 href="/projects"
-                className="hover:text-indigo-400 transition-colors"
+                className="transition-colors hover:text-[color:var(--foreground)]/80"
               >
                 Projects
               </Link>
@@ -47,7 +51,7 @@ const Footer = () => {
             <li>
               <Link
                 href="/about"
-                className="hover:text-indigo-400 transition-colors"
+                className="transition-colors hover:text-[color:var(--foreground)]/80"
               >
                 About
               </Link>
@@ -55,7 +59,7 @@ const Footer = () => {
             <li>
               <Link
                 href="/contact"
-                className="hover:text-indigo-400 transition-colors"
+                className="transition-colors hover:text-[color:var(--foreground)]/80"
               >
                 Contact
               </Link>
@@ -63,16 +67,16 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Social Links */}
+        {/* Social */}
         <div>
-          <h3 className="text-lg font-semibold text-white mb-4">Connect</h3>
+          <h3 className="mb-4 text-lg font-semibold">Connect</h3>
           <ul className="space-y-2 text-sm">
             <li>
               <Link
                 href="https://github.com/iamfaizandev"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-indigo-400 transition-colors"
+                className="transition-colors hover:text-[color:var(--foreground)]/80"
               >
                 GitHub
               </Link>
@@ -82,38 +86,38 @@ const Footer = () => {
                 href="https://www.linkedin.com/in/mdfaizandahmad/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-indigo-400 transition-colors"
+                className="transition-colors hover:text-[color:var(--foreground)]/80"
               >
                 LinkedIn
               </Link>
             </li>
             <li>
               <Link
-                href="https://www.instagram.com/ahmad_faizan.dev/"
+                href="https://wa.me/+917563092029"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-indigo-400 transition-colors"
+                className="transition-colors hover:text-[color:var(--foreground)]/80"
               >
-                Instagram
+                WhatsApp
               </Link>
             </li>
           </ul>
         </div>
 
-        {/* Contact Info */}
+        {/* Contact */}
         <div>
-          <h3 className="text-lg font-semibold text-white mb-4">Contact</h3>
+          <h3 className="mb-4 text-lg font-semibold">Contact</h3>
           <p className="text-sm">
             Email:{" "}
             <Link
               href="mailto:md.faizan.ahmad.web@gmail.com"
-              className="hover:text-indigo-400 transition-colors"
+              className="underline underline-offset-4 hover:opacity-80"
             >
               md.faizan.ahmad.web@gmail.com
             </Link>
           </p>
-          <p className="text-sm mt-2 flex items-center gap-2">
-            Based in: India{" "}
+          <p className="mt-2 flex items-center gap-2 text-sm text-[color:var(--muted-foreground)]">
+            Based in: India
             <Image
               src="/indiaflag.png"
               alt="India Flag"
@@ -124,7 +128,7 @@ const Footer = () => {
         </div>
       </motion.div>
 
-      <div className="mt-8 text-center text-sm text-gray-400">
+      <div className="mt-8 text-center text-sm text-[color:var(--muted-foreground)]">
         &copy; {new Date().getFullYear()} Md Faizan Ahmad. All rights reserved.
       </div>
     </footer>

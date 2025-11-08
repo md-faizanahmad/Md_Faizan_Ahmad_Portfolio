@@ -4,7 +4,6 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import Link from "next/link";
 import { useRef } from "react";
 
-// CTA Component
 const CTA = () => {
   const ctaRef = useRef(null);
   const { scrollYProgress } = useScroll({
@@ -12,33 +11,49 @@ const CTA = () => {
     offset: ["start end", "end start"],
   });
   const opacity = useTransform(scrollYProgress, [0, 0.5], [0, 1]);
-  const scale = useTransform(scrollYProgress, [0, 0.5], [0.8, 1]);
+  const scale = useTransform(scrollYProgress, [0, 0.5], [0.98, 1]);
 
   return (
-    <section ref={ctaRef} className="relative py-20 px-4 sm:px-6 lg:px-8 ">
+    <section
+      ref={ctaRef}
+      className="
+        relative py-20 px-4 sm:px-6 lg:px-8
+        bg-[color:var(--background)] text-[color:var(--foreground)]
+      "
+    >
+      {/* soft radial glow */}
+      <div
+        className="pointer-events-none absolute inset-0 -z-10"
+        style={{
+          background:
+            "radial-gradient(60% 60% at 50% 0%, color-mix(in oklab, var(--foreground), transparent 90%) 0%, transparent 70%)",
+        }}
+      />
       <motion.div
         style={{ opacity, scale }}
-        className="max-w-4xl mx-auto text-center  "
+        className="mx-auto max-w-3xl text-center"
       >
-        <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4 tracking-tight">
-          Ready to Build Something Amazing?
+        <h2 className="mb-4 text-3xl font-bold tracking-tight sm:text-4xl">
+          Interested in Collaborating?
         </h2>
-        <p className="text-lg text-gray-200 mb-8 max-w-2xl mx-auto">
-          Let’s collaborate to create cutting-edge, scalable web solutions that
-          stand out. From concept to deployment, I’ve got you covered.
+        <p className="mx-auto mb-8 max-w-2xl text-lg text-[color:var(--muted-foreground)]">
+          I’m actively looking for opportunities as a Frontend Developer. Let’s
+          connect to discuss how I can contribute to your team.
         </p>
-        <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+        <motion.div whileHover={{ scale: 1.04 }} whileTap={{ scale: 0.97 }}>
           <Link
-            href="/contact"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block bg-gradient-to-r from-indigo-500 to-purple-600 text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:from-indigo-600 hover:to-purple-700 transition-all duration-300"
+            href="mailto:md.faizan.ahmad.web@gmail.com"
+            className="
+              inline-block rounded-full px-8 py-3 font-semibold shadow-md transition-all
+              bg-indigo-600 text-white hover:bg-indigo-500
+            "
           >
-            Get in Touch
+            Email Me
           </Link>
         </motion.div>
       </motion.div>
     </section>
   );
 };
+
 export default CTA;
