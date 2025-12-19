@@ -12,7 +12,7 @@
 // const socialLinks = [
 //   {
 //     name: "GitHub",
-//     url: "https://github.com/iamfaizandev",
+//     url: "hhttps://github.com/md-faizanahmad",
 //     icon: <Github size={24} className="text-gray-900 hover:text-gray-700" />,
 //     color: "text-gray-900", // GitHub dark gray
 //     animation: {

@@ -73,7 +73,7 @@ const Footer = () => {
           <ul className="space-y-2 text-sm">
             <li>
               <Link
-                href="https://github.com/iamfaizandev"
+                href="hhttps://github.com/md-faizanahmad"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="transition-colors hover:text-[color:var(--foreground)]/80"

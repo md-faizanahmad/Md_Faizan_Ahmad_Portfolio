@@ -5,9 +5,9 @@ import Box from "@mui/material/Box";
 import SpeedDial from "@mui/material/SpeedDial";
 import SpeedDialAction from "@mui/material/SpeedDialAction";
 import {
-  Call,
   ConnectWithoutContact,
   Email,
+  GitHub,
   LinkedIn,
   WhatsApp,
 } from "@mui/icons-material";
@@ -16,7 +16,7 @@ const actions = [
   {
     icon: <AttachmentIcon />,
     name: "Resume",
-    url: "https://drive.google.com/file/d/1eknKR-kucvkrW7UvOObYMts695yrpZx0/view?usp=sharing",
+    url: "https://drive.google.com/file/d/1MVr89YQRWcHZCbKt8mmaq6Tn_3XTcIfm/view?usp=sharing",
     bgcolorG: "linear-gradient(45deg, #0077B5, #004471)",
     color: "#fff",
   },
@@ -37,26 +37,24 @@ const actions = [
   {
     icon: <LinkedIn />,
     name: "Lets Connect",
-    url: "https://www.linkedin.com/in/mdfaizandahmad/",
+    url: "https://www.linkedin.com/in/mdfaizandahmad",
     bgcolorG: "linear-gradient(45deg, #0077B5, #004471)",
     color: "#fff",
   },
-  // {
-  //   icon: <Instagram />,
-  //   name: "DM Us",
-  //   url: "https://www.instagram.com/devlensx/",
-  //   bgcolorG:
-  //     "linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5)",
-  //   color: "#fff",
-  // },
-
   {
-    icon: <Call />,
-    name: "Call Us",
-    url: "tel:+917563092029",
-    bgcolorG: "linear-gradient(45deg, #25D366, #4285F4)",
+    icon: <GitHub />,
+    name: "Github",
+    url: "https://github.com/md-faizanahmad",
+    bgcolorG: "linear-gradient(45deg, #1a1919, #000000)",
     color: "#fff",
   },
+  // {
+  //   icon: <Call />,
+  //   name: "Call Us",
+  //   url: "tel:+917563092029",
+  //   bgcolorG: "linear-gradient(45deg, #25D366, #4285F4)",
+  //   color: "#fff",
+  // },
 ];
 
 const SocialLink = () => {
