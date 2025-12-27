@@ -40,7 +40,22 @@
     "codeUrl": "https://github.com/md-faizanahmad",
     "techStack": ["React", "TypeScript", "CSS"]
   },
-
+  {
+    "title": "Quick Invoice",
+    "image": "https://res.cloudinary.com/daqb5wglu/image/upload/v1766866026/QuickInvoice_mipg1i.png",
+    "description": "Create, manage and download professional invoices completely offline.No account. No tracking. Your data stays with you.",
+    "liveUrl": "https://quickinvoices.vercel.app",
+    "codeUrl": "https://github.com/md-faizanahmad/offline-invoice-generator",
+    "techStack": ["React.js", "TypeScript", "Tailwind", "IndexedDB"]
+  },
+  {
+    "title": "Quick Track",
+    "image": "https://res.cloudinary.com/daqb5wglu/image/upload/v1766866217/QuickTrack_cndyxv.png",
+    "description": "Track daily spending offline with zero tracking. completely offline.No account. No tracking. Your data stays with you.",
+    "liveUrl": "https://quicktrack-navy.vercel.app",
+    "codeUrl": "https://github.com/md-faizanahmad/offline-expense-tracker/tree/master/frontend",
+    "techStack": ["React.js", "TypeScript", "Tailwind", "IndexedDB"]
+  },
   {
     "title": "School Website",
     "image": "https://res.cloudinary.com/duvavjepw/image/upload/v1754839130/Schools_eesuul.png",
