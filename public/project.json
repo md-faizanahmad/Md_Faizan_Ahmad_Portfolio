@@ -33,6 +33,14 @@
     ]
   },
   {
+    "title": "QuickSuite",
+    "image": "https://res.cloudinary.com/daqb5wglu/image/upload/v1767721909/quicksuite.vercel.app__zluudy.png",
+    "description": "QuickSuite is a performance-focused, responsive web application offering a suite of public utility tools built with a strong emphasis on usability, privacy, and reliability. The application operates entirely on the client side, requiring no authentication, displaying no advertisements, and avoiding any form of user data storage or sharing. Designed for fast load times and a clean user experience, it demonstrates practical frontend architecture, state handling, and scalable UI design.",
+    "liveUrl": "https://www.emimitra.online/",
+    "codeUrl": "https://github.com/md-faizanahmad",
+    "techStack": ["React", "TypeScript", "Tailwind CSS", "pdf-lib"]
+  },
+  {
     "title": "Emi Mitra",
     "image": "https://res.cloudinary.com/duvavjepw/image/upload/v1753026917/emi_hkmtrc.png",
     "description": "Responsive public-facing EMI and salary calculator with fast loading, SEO optimization, and user-friendly design.",

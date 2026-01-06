@@ -69,9 +69,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         <div>
           {/* Description */}
           <p
-            className={`mb-2 text-sm text-[color:var(--muted-foreground)] transition-all duration-200 ${
-              showMore ? "" : "line-clamp-3"
-            }`}
+            className={`
+    mb-2 text-sm text-[color:var(--muted-foreground)]
+    transition-all duration-300
+    ${showMore ? "max-h-32 overflow-y-auto pr-2" : "line-clamp-3"}
+  `}
           >
             {description}
           </p>
@@ -80,7 +82,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           {description.length > 100 && (
             <button
               onClick={() => setShowMore((s) => !s)}
-              className="mb-2 text-xs text-[color:var(--foreground)]/80 underline-offset-2 hover:underline"
+              className="mb-2 cursor-pointer text-xs text-[color:var(--foreground)]/80 underline-offset-2 hover:underline"
             >
               {showMore ? "Show Less" : "Show More"}
             </button>

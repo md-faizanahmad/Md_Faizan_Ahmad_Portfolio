@@ -50,7 +50,7 @@ export default function Contact() {
           </motion.a>
 
           <motion.a
-            href="https://www.linkedin.com/in/mdfaizandahmad/"
+            href="https://www.linkedin.com/in/mdfaizandahmad"
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ scale: 1.1 }}

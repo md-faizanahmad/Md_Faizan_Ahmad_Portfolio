@@ -11,15 +11,15 @@ import {
   LinkedIn,
   WhatsApp,
 } from "@mui/icons-material";
-import AttachmentIcon from "@mui/icons-material/Attachment";
+// import AttachmentIcon from "@mui/icons-material/Attachment";
 const actions = [
-  {
-    icon: <AttachmentIcon />,
-    name: "Resume",
-    url: "https://drive.google.com/file/d/1MVr89YQRWcHZCbKt8mmaq6Tn_3XTcIfm/view?usp=sharing",
-    bgcolorG: "linear-gradient(45deg, #0077B5, #004471)",
-    color: "#fff",
-  },
+  // {
+  //   icon: <AttachmentIcon />,
+  //   name: "Resume",
+  //   url: "https://drive.google.com/file/d/1MVr89YQRWcHZCbKt8mmaq6Tn_3XTcIfm/view?usp=sharing",
+  //   bgcolorG: "linear-gradient(45deg, #0077B5, #004471)",
+  //   color: "#fff",
+  // },
   {
     icon: <Email />,
     name: "Mail Us",

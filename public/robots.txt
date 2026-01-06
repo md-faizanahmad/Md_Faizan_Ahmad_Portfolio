@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://mdfaizanahmad.vercel.app/
+Sitemap: https://mdfaizanahmad.vercel.app
