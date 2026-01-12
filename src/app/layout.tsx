@@ -76,6 +76,10 @@ export const metadata: Metadata = {
     "React Developer",
     "Web Developer Hyderabad",
   ],
+  icons: {
+    icon: "/favicon.ico", // Points to public/favicon.ico
+    apple: "/apple-icon.png", // Points to public/apple-icon.png
+  },
   openGraph: {
     title: "Md Faizan Ahmad",
     description:
