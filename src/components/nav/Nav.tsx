@@ -189,7 +189,7 @@ export default function Navbar() {
               whileHover={{ scale: 1.1, rotate: -3 }}
               onClick={toggleMenu}
               className="
-                inline-flex items-center justify-center p-2 rounded-full
+                inline-flex cursor-pointer items-center justify-center p-2 rounded-full
                 border border-[color:var(--border)]
                 bg-[color:var(--card)] text-[color:var(--foreground)]
                 shadow-sm
@@ -201,7 +201,7 @@ export default function Navbar() {
         </div>
 
         {/* Mobile Menu */}
-        <AnimatePresence>
+        {/* <AnimatePresence>
           {isOpen && (
             <motion.div
               ref={mobileMenuRef}
@@ -212,7 +212,7 @@ export default function Navbar() {
               className="
                 absolute left-0 top-16 h-[calc(100vh-4rem)] w-full md:hidden
                 backdrop-blur-lg
-                bg-[color:var(--background)]/90
+                bg-[color:var(--background)]/95
                 text-[color:var(--foreground)]
                 border-t border-[color:var(--border)]
               "
@@ -237,6 +237,103 @@ export default function Navbar() {
                     </motion.span>
                   </Link>
                 ))}
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence> */}
+        <AnimatePresence>
+          {isOpen && (
+            <motion.div
+              ref={mobileMenuRef}
+              initial={{ height: 0, opacity: 0 }}
+              animate={{ height: "100vh", opacity: 1 }}
+              exit={{ height: 0, opacity: 0 }}
+              transition={{ duration: 0.4, ease: [0.4, 0, 0.2, 1] }}
+              className="
+        absolute left-0 top-16 h-[calc(100vh-4rem)] w-full md:hidden
+        backdrop-blur-2xl bg-[color:var(--background)]/100
+        text-[color:var(--foreground)] border-t border-[color:var(--border)]
+        overflow-hidden
+      "
+            >
+              <div className="flex flex-col gap-3 px-6 py-12">
+                {navLinks.map((link) => {
+                  const isActive = pathname === link.href;
+
+                  return (
+                    <Link
+                      key={link.name}
+                      href={link.href}
+                      onClick={toggleMenu}
+                      className="mobile-menu-item relative block w-full outline-none"
+                    >
+                      <motion.div
+                        whileTap={{ scale: 0.98 }}
+                        className={`
+                  flex items-center justify-between px-6 py-5 rounded-2xl
+                  border transition-all duration-300
+                  ${
+                    isActive
+                      ? "bg-indigo-600/10 border-sky-500/50 shadow-[0_0_20px_rgba(79,70,229,0.1)]"
+                      : "bg-[color:var(--card)]/40 border-[color:var(--border)]/50 hover:border-[color:var(--border)]"
+                  }
+                `}
+                      >
+                        <div className="flex flex-col">
+                          <span
+                            className={`text-2xl font-bold tracking-tight ${
+                              isActive
+                                ? "text-sky-500"
+                                : "text-[color:var(--foreground)]"
+                            }`}
+                          >
+                            {link.name}
+                          </span>
+                          <span className="text-xs uppercase tracking-[0.2em] opacity-40 font-medium">
+                            {link.name === "Home"
+                              ? "Start Here"
+                              : `Go to ${link.name}`}
+                          </span>
+                        </div>
+
+                        {/* Arrow indicator that only glows when active */}
+                        <div
+                          className={`
+                  flex h-10 w-10 items-center justify-center rounded-full border transition-all
+                  ${
+                    isActive
+                      ? "bg-sky-600 border-sky-400 text-white rotate-[-45deg]"
+                      : "bg-[color:var(--background)] border-[color:var(--border)] opacity-50"
+                  }
+                `}
+                        >
+                          <svg
+                            width="20"
+                            height="20"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            strokeWidth="2.5"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          >
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                          </svg>
+                        </div>
+                      </motion.div>
+                    </Link>
+                  );
+                })}
+
+                {/* Added a small contact footer inside the menu for better UX */}
+                <div className="mt-8 flex items-center justify-between px-4 opacity-50">
+                  <div className="h-px flex-1 bg-[color:var(--border)]"></div>
+                  <span className="px-4 text-[10px] font-black uppercase tracking-[0.3em]">
+                    MFA Portfolio
+                  </span>
+                  <div className="h-px flex-1 bg-[color:var(--border)]"></div>
+                </div>
               </div>
             </motion.div>
           )}

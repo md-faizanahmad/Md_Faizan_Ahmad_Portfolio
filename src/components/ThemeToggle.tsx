@@ -32,7 +32,7 @@ export default function ThemeToggle({
       onClick={() => setTheme(isDark ? "light" : "dark")}
       whileTap={{ scale: 0.92, rotate: 3 }}
       whileHover={{ scale: 1.06 }}
-      className={`inline-flex items-center justify-center p-2 rounded-full border border-[var(--border)] bg-[var(--card)] shadow-sm ${className}`}
+      className={`inline-flex cursor-pointer items-center justify-center p-2 rounded-full border border-[var(--border)] bg-[var(--card)] shadow-sm ${className}`}
     >
       <span className="sr-only">Toggle theme</span>
       {isDark ? <Sun size={18} /> : <Moon size={18} />}

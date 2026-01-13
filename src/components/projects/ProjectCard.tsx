@@ -38,14 +38,14 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       onMouseLeave={() => setHovered(false)}
     >
       {/* Image */}
-      <div className="relative h-66 w-full">
+      <div className="relative h-66 lg:w-full  sm:w-80">
         <Image
           src={image}
           alt={title}
           fill
           priority
           sizes="(max-width: 768px) 100vw, 300px"
-          className="object-cover transition-transform duration-500 group-hover:scale-110"
+          className="object-fill transition-transform duration-500 group-hover:scale-110"
         />
         {/* Overlay gradient (top-to-bottom) */}
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/55 to-transparent" />
