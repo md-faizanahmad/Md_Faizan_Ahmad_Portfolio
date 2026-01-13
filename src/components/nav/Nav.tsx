@@ -102,18 +102,19 @@ export default function Navbar() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           {/* Logo (text mark MFA. + profession badge) */}
-          <Link
-            href="/"
-            className="font-extrabold tracking-tight"
-            aria-label="MFA — Frontend Developer"
-          >
-            <motion.span
-              ref={logoRef}
-              whileHover={{ scale: 1.06 }}
-              className="group relative inline-flex items-center"
+          <div className="flex flex-1 justify-start">
+            <Link
+              href="/"
+              className="font-extrabold tracking-tight"
+              aria-label="MFA — Frontend Developer"
             >
-              <span
-                className="
+              <motion.span
+                ref={logoRef}
+                whileHover={{ scale: 1.06 }}
+                className="group relative inline-flex items-center"
+              >
+                <span
+                  className="
                   bg-clip-text text-transparent
                   bg-[linear-gradient(90deg,rgba(0,0,0,0.95),rgba(0,0,0,0.65))]
                   dark:bg-[linear-gradient(90deg,rgba(255,255,255,1),rgba(255,255,255,0.7))]
@@ -121,11 +122,11 @@ export default function Navbar() {
                   group-hover:[animation:shimmer_2s_linear_infinite]
                   text-2xl sm:text-3xl
                 "
-              >
-                MFA<span className="opacity-70">.</span>
-              </span>
-              <span
-                className="
+                >
+                  MFA<span className="opacity-70">.</span>
+                </span>
+                <span
+                  className="
                   ml-2 hidden rounded-full border px-2 py-0.5 text-xs
                   border-[color:var(--border)]
                   bg-[color:var(--card)] text-[color:var(--muted-foreground)]
@@ -133,12 +134,12 @@ export default function Navbar() {
                   translate-y-2 opacity-0 transition
                   group-hover:translate-y-0 group-hover:opacity-100
                 "
-              >
-                Frontend Developer
-              </span>
-            </motion.span>
-          </Link>
-
+                >
+                  Frontend Developer
+                </span>
+              </motion.span>
+            </Link>
+          </div>
           {/* Desktop Menu */}
           <div className="hidden items-center space-x-6 md:flex">
             {navLinks.map((link, index) => {
