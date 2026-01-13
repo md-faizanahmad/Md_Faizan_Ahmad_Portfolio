@@ -29,7 +29,7 @@ const HeroSectionClient = () => {
         animate="visible"
       >
         <motion.div variants={itemVariants}>
-          <HeroSectionServer />
+          <HeroSectionServer />{" "}
         </motion.div>
       </motion.div>
     </section>

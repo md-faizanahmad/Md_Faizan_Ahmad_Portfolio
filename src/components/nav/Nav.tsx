@@ -7,6 +7,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import gsap from "gsap";
 import ThemeToggle from "@/components/ThemeToggle";
+import SocialLinksNav from "@/shared/SocialLinksNav";
 // import logo from "@/assets/logo (2).png"; // if you want image logo, keep this and swap below
 
 const navLinks = [
@@ -327,11 +328,14 @@ export default function Navbar() {
                   );
                 })}
 
+                <div>
+                  <SocialLinksNav />
+                </div>
                 {/* Added a small contact footer inside the menu for better UX */}
-                <div className="mt-8 flex items-center justify-between px-4 opacity-50">
+                <div className="mt-4 flex items-center justify-between px-4 opacity-50">
                   <div className="h-px flex-1 bg-[color:var(--border)]"></div>
                   <span className="px-4 text-[10px] font-black uppercase tracking-[0.3em]">
-                    MFA Portfolio
+                    Md Faizan Ahmad Portfolio
                   </span>
                   <div className="h-px flex-1 bg-[color:var(--border)]"></div>
                 </div>

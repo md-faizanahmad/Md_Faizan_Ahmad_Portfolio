@@ -7,7 +7,15 @@ import { Project, ProjectsProps } from "@/@types/project";
 import ProjectSkeleton from "@/shared/ProjectSkeleton";
 import ProjectFilter from "./ProjectFilter";
 
-const Projects: React.FC<ProjectsProps> = ({ limit }) => {
+// Added showFilter to the interface locally if not already in @types
+interface ExtendedProjectsProps extends ProjectsProps {
+  showFilter?: boolean;
+}
+
+const Projects: React.FC<ExtendedProjectsProps> = ({
+  limit,
+  showFilter = true,
+}) => {
   const [projects, setProjects] = useState<Project[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [activeFilter, setActiveFilter] = useState("All");
@@ -22,7 +30,6 @@ const Projects: React.FC<ProjectsProps> = ({ limit }) => {
       } catch (error) {
         console.error("Failed to fetch projects:", error);
       } finally {
-        // Reduced timeout slightly for a snappier feel
         setTimeout(() => setIsLoading(false), 600);
       }
     };
@@ -31,7 +38,6 @@ const Projects: React.FC<ProjectsProps> = ({ limit }) => {
 
   const categories = useMemo(() => {
     if (projects.length === 0) return ["All"];
-    // Spreading the Set directly into an array
     return ["All", ...new Set(projects.flatMap((p) => p.techStack))].slice(
       0,
       8
@@ -39,14 +45,15 @@ const Projects: React.FC<ProjectsProps> = ({ limit }) => {
   }, [projects]);
 
   const filteredProjects = useMemo(() => {
-    if (activeFilter === "All") return projects;
+    // If showFilter is false, we don't want to filter by activeFilter state
+    if (!showFilter || activeFilter === "All") return projects;
     return projects.filter((p) => p.techStack.includes(activeFilter));
-  }, [activeFilter, projects]);
+  }, [activeFilter, projects, showFilter]);
 
   return (
-    <div className="projects relative w-full space-y-10 min-h-[600px]">
-      {/* Filter Bar Section */}
-      {!isLoading && (
+    <div className="projects relative w-full space-y-10 min-h-fit">
+      {/* Filter Bar Section: Conditional based on showFilter prop */}
+      {!isLoading && showFilter && (
         <ProjectFilter
           categories={categories}
           activeFilter={activeFilter}
@@ -81,7 +88,6 @@ const Projects: React.FC<ProjectsProps> = ({ limit }) => {
                   animate={{ opacity: 1, scale: 1 }}
                   exit={{ opacity: 0, scale: 0.9 }}
                   transition={{ duration: 0.3 }}
-                  /* Added fixed mobile width to prevent layout jump glitches */
                   className="w-[85vw] sm:w-auto flex-shrink-0 mt-4 snap-center m-auto"
                 >
                   <ProjectCard {...project} />
@@ -99,7 +105,7 @@ const Projects: React.FC<ProjectsProps> = ({ limit }) => {
         </div>
       )}
 
-      {/* Empty State Feedback */}
+      {/* Empty State */}
       <AnimatePresence>
         {!isLoading && filteredProjects.length === 0 && (
           <motion.div
