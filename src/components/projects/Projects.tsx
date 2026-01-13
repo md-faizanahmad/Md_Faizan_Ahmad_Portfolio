@@ -26,9 +26,15 @@ const Projects: React.FC<ProjectsProps> = ({ limit }) => {
   }, [limit]);
 
   return (
-    <div className="grid grid-cols-1 justify-items-center gap-6 pb-10 sm:grid-cols-2 lg:grid-cols-3">
+    <div
+      className="flex  overflow-x-auto snap-x snap-mandatory gap-6 pb-10 no-scrollbar
+      sm:grid sm:grid-cols-2 sm:overflow-visible lg:grid-cols-3 
+      px-4 sm:px-0"
+    >
       {projects.map((project, index) => (
-        <ProjectCard key={index} {...project} />
+        <div key={index} className="flex-shrink-0 snap-center m-auto">
+          <ProjectCard {...project} />
+        </div>
       ))}
     </div>
   );

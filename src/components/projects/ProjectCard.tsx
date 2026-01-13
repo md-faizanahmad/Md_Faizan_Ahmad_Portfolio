@@ -28,16 +28,17 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   return (
     <div
       className="
-        relative w-80 max-w-sm cursor-pointer overflow-hidden rounded-xl
+        relative w-md max-w-sm cursor-pointer overflow-hidden rounded-xl
         border border-[color:var(--border)]
         bg-[color:var(--card)] shadow-sm
         transition-all duration-300 hover:shadow-lg
       "
+      onClick={() => setHovered(!hovered)}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >
       {/* Image */}
-      <div className="relative h-56 w-full">
+      <div className="relative h-66 w-full">
         <Image
           src={image}
           alt={title}
