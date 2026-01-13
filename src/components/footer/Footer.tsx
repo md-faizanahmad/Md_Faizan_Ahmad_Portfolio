@@ -109,6 +109,7 @@ const Footer = () => {
                   src="/indiaflag.png"
                   alt="India Flag"
                   fill
+                  sizes="(max-width: 768px) 100vw, 300px"
                   className="object-cover"
                 />
               </div>

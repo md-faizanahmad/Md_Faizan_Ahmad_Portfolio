@@ -28,7 +28,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   return (
     <div
       className="
-        relative w-md max-w-sm cursor-pointer overflow-hidden rounded-xl
+        relative w-80 max-w-sm cursor-pointer overflow-hidden rounded-xl
         border border-[color:var(--border)]
         bg-[color:var(--card)] shadow-sm
         transition-all duration-300 hover:shadow-lg
@@ -38,7 +38,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       onMouseLeave={() => setHovered(false)}
     >
       {/* Image */}
-      <div className="relative h-66 lg:w-full  sm:w-80">
+      <div className="relative h-66 w-80  sm:w-80">
         <Image
           src={image}
           alt={title}
