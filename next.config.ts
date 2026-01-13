@@ -5,7 +5,8 @@ const nextConfig = {
   // },
   remotePatterns: [
     {
-      protocol: "https",
+      domain: "res.cloudinary.com",
+      // protocol: "https",
       hostname: "res.cloudinary.com",
       port: "",
       // This allows all images from this host
