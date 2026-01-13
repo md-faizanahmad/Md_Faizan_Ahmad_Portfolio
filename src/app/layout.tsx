@@ -91,6 +91,7 @@ export const metadata: Metadata = {
         url: "https://mdfaizanahmad.in/profile-pic.jpg", // Make sure this path is correct
         width: 1200,
         height: 630,
+        alt: "Md Faizan Ahmad - Frontend Developer Portfolio",
       },
     ],
     locale: "en_US",

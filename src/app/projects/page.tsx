@@ -1,6 +1,9 @@
 import Projects from "@/components/projects/Projects";
-import React from "react";
-
+export const metadata = {
+  title: "Projects | Md Faizan Ahmad",
+  description:
+    "Learn more about Md Faizan Ahmad, a Frontend Developer specialized in React.js and modern web technologies.",
+};
 function ProjectPage() {
   return (
     <div className=" pt-30   ">
