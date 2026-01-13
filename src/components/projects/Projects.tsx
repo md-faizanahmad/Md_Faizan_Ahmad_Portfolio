@@ -2,33 +2,10 @@
 
 import React, { useEffect, useState, useMemo } from "react";
 import ProjectCard from "./ProjectCard";
-import { motion, AnimatePresence } from "framer-motion"; // Added for visual feedback
-
-interface Project {
-  title: string;
-  image: string;
-  liveUrl: string;
-  codeUrl: string;
-  techStack: string[];
-  description: string;
-}
-
-interface ProjectsProps {
-  limit?: number;
-}
-
-const ProjectSkeleton = () => (
-  <div className="w-80 h-[400px] rounded-xl border border-[color:var(--border)] bg-[color:var(--card)] overflow-hidden">
-    <div className="relative h-56 w-full bg-[color:var(--border)]/40 animate-pulse" />
-    <div className="p-5 space-y-4">
-      <div className="h-6 w-3/4 bg-[color:var(--border)]/40 animate-pulse rounded" />
-      <div className="space-y-2">
-        <div className="h-4 w-full bg-[color:var(--border)]/40 animate-pulse rounded" />
-        <div className="h-4 w-5/6 bg-[color:var(--border)]/40 animate-pulse rounded" />
-      </div>
-    </div>
-  </div>
-);
+import { motion, AnimatePresence } from "framer-motion";
+import { Project, ProjectsProps } from "@/@types/project";
+import ProjectSkeleton from "@/shared/ProjectSkeleton";
+import ProjectFilter from "./ProjectFilter";
 
 const Projects: React.FC<ProjectsProps> = ({ limit }) => {
   const [projects, setProjects] = useState<Project[]>([]);
@@ -45,19 +22,20 @@ const Projects: React.FC<ProjectsProps> = ({ limit }) => {
       } catch (error) {
         console.error("Failed to fetch projects:", error);
       } finally {
-        setTimeout(() => setIsLoading(false), 800);
+        // Reduced timeout slightly for a snappier feel
+        setTimeout(() => setIsLoading(false), 600);
       }
     };
     loadData();
   }, [limit]);
 
-  // Cleaned up the 'allTech' warning by directly spreading the Set
   const categories = useMemo(() => {
     if (projects.length === 0) return ["All"];
+    // Spreading the Set directly into an array
     return ["All", ...new Set(projects.flatMap((p) => p.techStack))].slice(
       0,
-      6
-    ); // Limiting to top 6 for UI
+      8
+    );
   }, [projects]);
 
   const filteredProjects = useMemo(() => {
@@ -66,31 +44,17 @@ const Projects: React.FC<ProjectsProps> = ({ limit }) => {
   }, [activeFilter, projects]);
 
   return (
-    <div className="projects relative w-full space-y-10">
-      {/* Filter Bar with Visual Scale Feedback */}
+    <div className="projects relative w-full space-y-10 min-h-[600px]">
+      {/* Filter Bar Section */}
       {!isLoading && (
-        <div className="flex flex-wrap items-center justify-center gap-3 px-4">
-          {categories.map((cat) => (
-            <motion.button
-              key={cat}
-              whileTap={{ scale: 0.95 }}
-              onClick={() => setActiveFilter(cat)}
-              className={`
-                px-5 py-2 cursor-pointer rounded-full text-xs font-bold transition-all duration-300 border
-                ${
-                  activeFilter === cat
-                    ? "bg-sky-600 border-sky-500 text-white shadow-lg shadow-sky-500/40"
-                    : "bg-[color:var(--card)] border-[color:var(--border)] text-[color:var(--muted-foreground)] hover:border-sky-500/50"
-                }
-              `}
-            >
-              {cat}
-            </motion.button>
-          ))}
-        </div>
+        <ProjectFilter
+          categories={categories}
+          activeFilter={activeFilter}
+          onFilterChange={setActiveFilter}
+        />
       )}
 
-      {/* Grid Container */}
+      {/* Grid / Swipe Container */}
       <motion.div
         layout
         className="
@@ -99,7 +63,7 @@ const Projects: React.FC<ProjectsProps> = ({ limit }) => {
           px-4 sm:px-0
         "
       >
-        <AnimatePresence mode="popLayout">
+        <AnimatePresence mode="popLayout" initial={false}>
           {isLoading
             ? [...Array(limit || 3)].map((_, i) => (
                 <div
@@ -117,7 +81,8 @@ const Projects: React.FC<ProjectsProps> = ({ limit }) => {
                   animate={{ opacity: 1, scale: 1 }}
                   exit={{ opacity: 0, scale: 0.9 }}
                   transition={{ duration: 0.3 }}
-                  className="flex-shrink-0 mt-4 snap-center m-auto"
+                  /* Added fixed mobile width to prevent layout jump glitches */
+                  className="w-[85vw] sm:w-auto flex-shrink-0 mt-4 snap-center m-auto"
                 >
                   <ProjectCard {...project} />
                 </motion.div>
@@ -140,17 +105,18 @@ const Projects: React.FC<ProjectsProps> = ({ limit }) => {
           <motion.div
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0 }}
             className="text-center py-20"
           >
             <p className="text-[color:var(--muted-foreground)] text-lg">
               No projects matching{" "}
               <span className="text-sky-500 font-bold">
-                &qout;{activeFilter}&qout;
+                &quot;{activeFilter}&quot;
               </span>
             </p>
             <button
               onClick={() => setActiveFilter("All")}
-              className="mt-4 text-sm text-sky-500 underline"
+              className="mt-4 text-sm text-sky-500 underline cursor-pointer hover:text-sky-400"
             >
               Clear filters
             </button>
