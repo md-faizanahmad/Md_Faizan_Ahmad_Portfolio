@@ -45,7 +45,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           fill
           priority
           sizes="(max-width: 768px) 100vw, 300px"
-          className="object-fill transition-transform duration-500 group-hover:scale-110"
+          className="object-fit transition-transform duration-500 group-hover:scale-110"
         />
         {/* Overlay gradient (top-to-bottom) */}
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/55 to-transparent" />

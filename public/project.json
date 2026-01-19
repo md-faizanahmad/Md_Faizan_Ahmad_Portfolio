@@ -33,6 +33,37 @@
     ]
   },
   {
+    "title": "Luman Studio – Interactive Storytelling Website",
+    "image": "https://res.cloudinary.com/daqb5wglu/image/upload/v1768824853/luman-stdio-2_h1llq5.png",
+    "description": "Luman Studio is a high-end, animation-driven frontend experience built to showcase acoustic design solutions through immersive storytelling and smooth interactions.",
+    "liveUrl": "https://luman-studio.vercel.app",
+    "codeUrl": "https://github.com/md-faizanahmad/furniture-shop",
+    "techStack": [
+      "Next.js",
+      "TypeScript",
+      "React.js",
+      "Tailwind CSS",
+      "Framer Motion",
+      "Next.js Image Optimization",
+      "Vercel"
+    ]
+  },
+  {
+    "title": "Luman Hotel – Luxury Hotel Frontend Experience",
+    "image": "https://res.cloudinary.com/daqb5wglu/image/upload/v1768824858/luman-hotel1_v5vv6v.png",
+    "description": "Luman Hotel is a modern hotel website focused on premium UI, smooth animations, and user-friendly room exploration to simulate a real hospitality booking experience.",
+    "liveUrl": "https://luman-hotel.vercel.app",
+    "codeUrl": "https://github.com/md-faizanahmad/luman-hotel",
+    "techStack": [
+      "React.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Framer Motion",
+      "Responsive Design",
+      "Vercel"
+    ]
+  },
+  {
     "title": "QuickSuite",
     "image": "https://res.cloudinary.com/daqb5wglu/image/upload/v1767721909/quicksuite.vercel.app__zluudy.png",
     "description": "QuickSuite is a performance-focused, responsive web application offering a suite of public utility tools built with a strong emphasis on usability, privacy, and reliability. The application operates entirely on the client side, requiring no authentication, displaying no advertisements, and avoiding any form of user data storage or sharing. Designed for fast load times and a clean user experience, it demonstrates practical frontend architecture, state handling, and scalable UI design.",
