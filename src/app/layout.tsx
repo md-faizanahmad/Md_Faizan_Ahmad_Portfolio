@@ -70,15 +70,15 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://mdfaizanahmad.in"),
+
   title: {
     default: "Md Faizan Ahmad – Frontend & Full Stack Web Developer",
     template: "%s | Md Faizan Ahmad",
   },
+
   description:
     "Frontend & Full Stack Web Developer building fast, SEO-friendly web applications using React, Next.js, and modern JavaScript.",
-  alternates: {
-    canonical: "/",
-  },
+
   openGraph: {
     siteName: "Md Faizan Ahmad Portfolio",
     locale: "en_IN",
