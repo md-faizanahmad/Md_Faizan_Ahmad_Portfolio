@@ -66,35 +66,22 @@ const geistMono = Geist_Mono({
 });
 
 // 1. Enhanced Metadata for better SEO and Social Sharing
+// app/layout.tsx
+
 export const metadata: Metadata = {
-  title: "Md Faizan Ahmad | Frontend & Full Stack Developer",
+  metadataBase: new URL("https://mdfaizanahmad.in"),
+  title: {
+    default: "Md Faizan Ahmad – Frontend & Full Stack Web Developer",
+    template: "%s | Md Faizan Ahmad",
+  },
   description:
-    "Frontend Developer specializing in React.js, Tailwind CSS, and Node.js. Trained at Naresh IT, Hyderabad.",
-  keywords: [
-    "Md Faizan Ahmad",
-    "Frontend Developer",
-    "React Developer",
-    "Web Developer Hyderabad",
-  ],
-  icons: {
-    icon: "/favicon.ico", // Points to public/favicon.ico
-    apple: "/apple-icon.png", // Points to public/apple-icon.png
+    "Frontend & Full Stack Web Developer building fast, SEO-friendly web applications using React, Next.js, and modern JavaScript.",
+  alternates: {
+    canonical: "/",
   },
   openGraph: {
-    title: "Md Faizan Ahmad",
-    description:
-      "Frontend Developer passionate about building modern web applications.",
-    url: "https://mdfaizanahmad.in",
     siteName: "Md Faizan Ahmad Portfolio",
-    images: [
-      {
-        url: "https://mdfaizanahmad.in/profile-pic.jpg", // Make sure this path is correct
-        width: 1200,
-        height: 630,
-        alt: "Md Faizan Ahmad - Frontend Developer Portfolio",
-      },
-    ],
-    locale: "en_US",
+    locale: "en_IN",
     type: "website",
   },
 };

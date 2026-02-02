@@ -3,6 +3,50 @@ import HeroSection from "@/components/hero/HeroClient";
 import Projects from "@/components/projects/Projects";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react"; // Import an icon for the button
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Md Faizan Ahmad – Frontend & Full Stack Web Developer",
+  description:
+    "Portfolio of Md Faizan Ahmad, a Frontend & Full Stack Web Developer specializing in React, Next.js, Tailwind CSS, and modern web applications. View real projects, UI work, and production-ready apps.",
+  keywords: [
+    "Frontend Developer",
+    "React Developer",
+    "Next.js Developer",
+    "Full Stack Web Developer",
+    "JavaScript Developer",
+    "Web Developer Portfolio",
+    "Faizan Ahmad",
+  ],
+  metadataBase: new URL("https://mdfaizanahmad.in"), // CHANGE if different
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    title: "Md Faizan Ahmad – Frontend & Full Stack Web Developer",
+    description:
+      "Real-world React & Next.js projects, clean UI, scalable code. Explore my web development portfolio.",
+    url: "https://mdfaizanahmad.in",
+    siteName: "Md Faizan Ahmad Portfolio",
+    images: [
+      {
+        url: "/og-image.png", // ADD THIS IMAGE
+        width: 1200,
+        height: 630,
+        alt: "Md Faizan Ahmad – Web Developer Portfolio",
+      },
+    ],
+    locale: "en_IN",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Md Faizan Ahmad – Frontend & Full Stack Web Developer",
+    description:
+      "Explore React, Next.js, and full-stack web projects built for real use cases.",
+    images: ["/og-image.png"],
+  },
+};
 
 export default function Home() {
   return (
