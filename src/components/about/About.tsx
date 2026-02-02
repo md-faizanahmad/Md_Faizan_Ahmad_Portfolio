@@ -212,7 +212,7 @@ const About = () => {
 
           <div className="relative h-32 w-32 sm:h-40 sm:w-40 shrink-0">
             <Image
-              src="/profile-pic.jpg"
+              src="/profile-pic.png"
               alt="Md Faizan Ahmad"
               fill
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"

@@ -47,59 +47,103 @@ export const metadata: Metadata = {
     images: ["/og-image.png"],
   },
 };
+const personSchema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "https://mdfaizanahmad.in/#person",
+  name: "Md Faizan Ahmad",
+  url: "https://mdfaizanahmad.in",
+  image: "https://mdfaizanahmad.in/profile-pic.jpg",
+  jobTitle: "Frontend & Full Stack Web Developer",
+  description:
+    "Frontend and Full Stack Web Developer with hands-on experience building real-world web applications using React, Next.js, Tailwind CSS, and Node.js. Trained in full stack development at Naresh IT, Hyderabad.",
+  alumniOf: {
+    "@type": "EducationalOrganization",
+    name: "Naresh IT",
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Hyderabad",
+      addressCountry: "IN",
+    },
+  },
+  knowsAbout: [
+    "HTML",
+    "CSS",
+    "Boostrap",
+    "React.js",
+    "Next.js",
+    "JavaScript",
+    "TypeScript",
+    "Tailwind CSS",
+    "Node.js",
+    "MongoDB",
+    "REST APIs",
+    "Web Application Development",
+  ],
+  sameAs: [
+    "https://github.com/md-faizanahmad",
+    "https://www.linkedin.com/in/mdfaizandahmad",
+  ],
+};
 
 export default function Home() {
   return (
-    <div className="relative font-sans min-h-screen selection:bg-indigo-500/30">
-      {/* Content wrapper with better vertical spacing */}
-      <div className="relative z-10 flex flex-col gap-20 pb-20">
-        <HeroSection />
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
+      />
+      <div className="relative font-sans min-h-screen selection:bg-indigo-500/30">
+        {/* Content wrapper with better vertical spacing */}
+        <div className="relative z-10 flex flex-col gap-20 pb-20">
+          <HeroSection />
 
-        {/* Featured Projects Section */}
-        <section className="max-w-7xl mx-auto px-4 w-full">
-          <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
-            <div>
-              <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
-                Featured Work
-              </h2>
-              <p className="text-[color:var(--muted-foreground)] mt-2">
-                A selection of my recent web development projects.
-              </p>
+          {/* Featured Projects Section */}
+          <section className="max-w-7xl mx-auto px-4 w-full">
+            <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
+              <div>
+                <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
+                  Featured Work
+                </h2>
+                <p className="text-[color:var(--muted-foreground)] mt-2">
+                  A selection of my recent web development projects.
+                </p>
+              </div>
+
+              {/* Desktop "More" Link */}
+              <Link
+                href="/projects"
+                className="hidden md:flex items-center gap-2 text-indigo-500 font-semibold hover:gap-3 transition-all"
+              >
+                View all projects <ArrowRight size={18} />
+              </Link>
             </div>
 
-            {/* Desktop "More" Link */}
-            <Link
-              href="/projects"
-              className="hidden md:flex items-center gap-2 text-indigo-500 font-semibold hover:gap-3 transition-all"
-            >
-              View all projects <ArrowRight size={18} />
-            </Link>
-          </div>
+            <Projects limit={3} showFilter={false} />
 
-          <Projects limit={3} showFilter={false} />
-
-          {/* Mobile/Centered "More" Button */}
-          <div className="flex justify-center mt-12 md:hidden">
-            <Link
-              href="/projects"
-              className="
+            {/* Mobile/Centered "More" Button */}
+            <div className="flex justify-center mt-12 md:hidden">
+              <Link
+                href="/projects"
+                className="
                 group inline-flex items-center gap-2 px-8 py-4 rounded-full
                 bg-gradient-to-r from-indigo-600 to-purple-600 
                 text-white font-bold shadow-lg shadow-indigo-500/25
                 hover:shadow-indigo-500/40 transition-all active:scale-95
               "
-            >
-              See More Projects
-              <ArrowRight
-                size={18}
-                className="group-hover:translate-x-1 transition-transform"
-              />
-            </Link>
-          </div>
-        </section>
+              >
+                See More Projects
+                <ArrowRight
+                  size={18}
+                  className="group-hover:translate-x-1 transition-transform"
+                />
+              </Link>
+            </div>
+          </section>
 
-        <CTA />
+          <CTA />
+        </div>
       </div>
-    </div>
+    </>
   );
 }

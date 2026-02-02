@@ -87,32 +87,6 @@ export const metadata: Metadata = {
 };
 
 // 2. Person Schema Object
-const personSchema = {
-  "@context": "https://schema.org",
-  "@type": "Person",
-  name: "Md Faizan Ahmad",
-  url: "https://mdfaizanahmad.in",
-  image: "https://mdfaizanahmad.in/profile-pic.jpg",
-  jobTitle: ["Frontend Developer", "Full Stack Web Developer"],
-  description:
-    "Frontend Developer specializing in React.js, Tailwind CSS, and Node.js. Trained at Naresh IT, Hyderabad.",
-  alumniOf: {
-    "@type": "EducationalOrganization",
-    name: "Naresh IT, Hyderabad",
-  },
-  knowsAbout: [
-    "React.js",
-    "Tailwind CSS",
-    "JavaScript",
-    "Node.js",
-    "MongoDB",
-    "RESTful APIs",
-  ],
-  sameAs: [
-    "https://github.com/md-faizanahmad",
-    "https://linkedin.com/in/mdfaizanahmad",
-  ],
-};
 
 export default function RootLayout({
   children,
@@ -127,10 +101,6 @@ export default function RootLayout({
           href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
         />
         {/* 3. Injecting the Schema */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
-        />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
