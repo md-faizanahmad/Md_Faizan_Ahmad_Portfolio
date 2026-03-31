@@ -93,55 +93,57 @@ export default function Home() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
       />
-
-      {/* GRID CONTAINER 
-          - md:grid-cols-4: Creates a 4-column layout on desktop
-          - auto-rows: Controls the height of each 'row unit'
-      */}
-      <main className="max-w-7xl mx-auto p-4 md:p-10 grid grid-cols-1 md:grid-cols-4 gap-4 auto-rows-min">
-        {/* BENTO ITEM: HERO (About) - Spans 3 columns & 2 rows */}
-        <section className="md:col-span-3 md:row-span-2 bg-neutral-100 dark:bg-neutral-900 rounded-3xl overflow-hidden border border-neutral-200 dark:border-neutral-800">
+      <div className="relative font-sans min-h-screen selection:bg-indigo-500/30">
+        {/* Content wrapper with better vertical spacing */}
+        <div className="relative z-10 flex flex-col gap-20 pb-20">
           <HeroSection />
-        </section>
 
-        {/* BENTO ITEM: SOCIALS - Spans 1 column */}
-        <div className="md:col-span-1 bg-indigo-600 rounded-3xl p-6 text-white flex flex-col justify-between">
-          <h3 className="font-bold text-xl">Connect</h3>
-          <div className="flex flex-col gap-3">
-            <Link href="https://linkedin.com/..." className="hover:underline">
-              LinkedIn
-            </Link>
-            <Link href="https://github.com/..." className="hover:underline">
-              GitHub
-            </Link>
-          </div>
-        </div>
+          {/* Featured Projects Section */}
+          <section className="max-w-7xl mx-auto px-4 w-full">
+            <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
+              <div>
+                <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
+                  Featured Work
+                </h2>
+                <p className="text-[color:var(--muted-foreground)] mt-2">
+                  A selection of my recent web development projects.
+                </p>
+              </div>
 
-        {/* BENTO ITEM: PROJECTS - Spans 2 columns */}
-        <section className="md:col-span-2 md:row-span-2 bg-white dark:bg-neutral-900 rounded-3xl p-8 border border-neutral-200 dark:border-neutral-800">
-          <div className="flex justify-between items-center mb-6">
-            <h2 className="text-2xl font-bold">Featured</h2>
-            <Link
-              href="/projects"
-              className="text-indigo-500 hover:scale-105 transition-transform"
-            >
-              <ArrowRight />
-            </Link>
-          </div>
-          <Projects limit={2} showFilter={false} />
-        </section>
+              {/* Desktop "More" Link */}
+              <Link
+                href="/projects"
+                className="hidden md:flex items-center gap-2 text-indigo-500 font-semibold hover:gap-3 transition-all"
+              >
+                View all projects <ArrowRight size={18} />
+              </Link>
+            </div>
 
-        {/* BENTO ITEM: CTA (Contact) - Spans 2 columns */}
-        <section className="md:col-span-2 bg-gradient-to-r from-purple-600 to-indigo-600 rounded-3xl overflow-hidden">
+            <Projects limit={3} showFilter={false} />
+
+            {/* Mobile/Centered "More" Button */}
+            <div className="flex justify-center mt-12 md:hidden">
+              <Link
+                href="/projects"
+                className="
+                group inline-flex items-center gap-2 px-8 py-4 rounded-full
+                bg-gradient-to-r from-indigo-600 to-purple-600 
+                text-white font-bold shadow-lg shadow-indigo-500/25
+                hover:shadow-indigo-500/40 transition-all active:scale-95
+              "
+              >
+                See More Projects
+                <ArrowRight
+                  size={18}
+                  className="group-hover:translate-x-1 transition-transform"
+                />
+              </Link>
+            </div>
+          </section>
+
           <CTA />
-        </section>
-
-        {/* SMALL STATS OR TECH STACK BLOCK */}
-        <div className="md:col-span-1 bg-neutral-100 dark:bg-neutral-800 rounded-3xl p-6 flex flex-col justify-center items-center text-center">
-          <span className="text-4xl font-bold text-indigo-500">20+</span>
-          <p className="text-sm text-neutral-500">Projects Completed</p>
         </div>
-      </main>
+      </div>
     </>
   );
 }
