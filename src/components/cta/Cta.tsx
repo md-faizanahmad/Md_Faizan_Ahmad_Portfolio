@@ -37,7 +37,7 @@ const CTA = () => {
           Interested in Collaborating?
         </h2> */}
         <h2 className="mb-4 text-2xl font-bold tracking-tight sm:text-3xl">
-          Let’s build something that actually works in production
+          Let’s build fast, scalable web applications{" "}
         </h2>
         <p className="mx-auto mb-8 max-w-2xl text-lg text-[color:var(--muted-foreground)]">
           I work with React, Next.js, and TypeScript to build fast, scalable,
