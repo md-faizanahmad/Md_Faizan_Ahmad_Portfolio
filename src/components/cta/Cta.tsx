@@ -33,12 +33,16 @@ const CTA = () => {
         style={{ opacity, scale }}
         className="mx-auto max-w-3xl text-center"
       >
-        <h2 className="mb-4 text-3xl font-bold tracking-tight sm:text-4xl">
+        {/* <h2 className="mb-4 text-3xl font-bold tracking-tight sm:text-4xl">
           Interested in Collaborating?
+        </h2> */}
+        <h2 className="mb-4 text-2xl font-bold tracking-tight sm:text-3xl">
+          Let’s build something that actually works in production
         </h2>
         <p className="mx-auto mb-8 max-w-2xl text-lg text-[color:var(--muted-foreground)]">
-          I’m actively looking for opportunities as a Frontend Developer. Let’s
-          connect to discuss how I can contribute to your team.
+          I work with React, Next.js, and TypeScript to build fast, scalable,
+          and maintainable web applications. If you&apos;re looking for someone
+          who focuses on performance and clean architecture, let&apos;s connect.
         </p>
         <motion.div whileHover={{ scale: 1.04 }} whileTap={{ scale: 0.97 }}>
           <Link
@@ -48,7 +52,7 @@ const CTA = () => {
               bg-indigo-600 text-white hover:bg-indigo-500
             "
           >
-            Email Me
+            Get in Touch
           </Link>
         </motion.div>
       </motion.div>
