@@ -108,7 +108,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 
         {/* Buttons */}
         <div className="flex gap-3">
-          <Link
+          {/* <Link
             href={codeUrl}
             target="_blank"
             className="
@@ -118,7 +118,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             "
           >
             <Github size={14} /> Code
-          </Link>
+          </Link> */}
           <Link
             href={liveUrl}
             target="_blank"
