@@ -9,57 +9,58 @@ const Footer = () => {
     <footer className="relative border-t border-[color:var(--border)] bg-[color:var(--background)] text-[color:var(--foreground)] px-4 py-12 sm:px-6 lg:px-8">
       <FooterAnimation>
         <div className="mx-auto grid max-w-6xl grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
-          {/* About Section - SEO Rich Text */}
+          {/* What I Do */}
           <div>
-            <h3 className="mb-4 text-lg font-semibold">About Me</h3>
+            <h3 className="mb-4 text-lg font-semibold">What I Do</h3>
             <p className="text-sm text-[color:var(--muted-foreground)] leading-relaxed">
-              Frontend Developer based in Hyderabad, India. Specializing in
-              React.js and modern web technologies to build high-performance
-              applications.
+              I build fast, scalable web applications using React, Next.js, and
+              TypeScript — focused on performance, clean architecture, and
+              real-world usability.
+            </p>
+
+            <p className="mt-3 text-xs text-[color:var(--muted-foreground)]">
+              2+ years experience • Production-ready projects •
+              Performance-focused
             </p>
           </div>
 
-          {/* Quick Links */}
+          {/* Key Work */}
           <div>
-            <h3 className="mb-4 text-lg font-semibold">Explore</h3>
+            <h3 className="mb-4 text-lg font-semibold">Key Work</h3>
             <ul className="space-y-2 text-sm">
               <li>
                 <Link
                   href="/projects"
-                  className="transition-colors hover:text-indigo-500"
+                  className="hover:text-indigo-500 transition-colors"
                 >
-                  Projects
+                  Luman Hotel Booking System
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/about"
-                  className="transition-colors hover:text-indigo-500"
+                  href="/projects"
+                  className="hover:text-indigo-500 transition-colors"
                 >
-                  About
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/contact"
-                  className="transition-colors hover:text-indigo-500"
-                >
-                  Contact
+                  MyAZStore E-commerce Platform
                 </Link>
               </li>
             </ul>
           </div>
 
-          {/* Social Links */}
+          {/* Connect */}
           <div>
             <h3 className="mb-4 text-lg font-semibold">Connect</h3>
+            <p className="text-xs text-[color:var(--muted-foreground)] mb-2">
+              Check my work & reach out
+            </p>
+
             <ul className="space-y-2 text-sm">
               <li>
                 <a
                   href="https://github.com/md-faizanahmad"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="transition-colors hover:text-indigo-500"
+                  className="hover:text-indigo-500 transition-colors"
                 >
                   GitHub
                 </a>
@@ -69,57 +70,57 @@ const Footer = () => {
                   href="https://www.linkedin.com/in/mdfaizandahmad/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="transition-colors hover:text-indigo-500"
+                  className="hover:text-indigo-500 transition-colors"
                 >
                   LinkedIn
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://wa.me/917563092029"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="transition-colors hover:text-indigo-500"
-                >
-                  WhatsApp
                 </a>
               </li>
             </ul>
           </div>
 
-          {/* Contact & Location */}
+          {/* Contact */}
           <div>
-            <h3 className="mb-4 text-lg font-semibold">Get in Touch</h3>
-            <p className="text-sm">
-              Email:{" "}
+            <h3 className="mb-4 text-lg font-semibold">Start a Conversation</h3>
+
+            <p className="text-sm mb-2">
               <a
                 href="mailto:md.faizan.ahmad.web@gmail.com"
-                className="underline underline-offset-4 hover:text-indigo-500"
-                rel="noopener noreferrer"
+                className="hover:text-indigo-500 transition-colors"
               >
                 md.faizan.ahmad.web@gmail.com
               </a>
             </p>
 
-            {/* Flag implementation: Fixed size icon */}
-            <div className="mt-4 flex items-center gap-2 text-sm text-[color:var(--muted-foreground)]">
-              <span>Based in: India</span>
+            <p className="text-sm">
+              <a
+                href="https://wa.me/917563092029"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-green-500 transition-colors"
+              >
+                WhatsApp (Fastest)
+              </a>
+            </p>
+
+            <div className="mt-4 text-xs text-[color:var(--muted-foreground)]">
+              Based in India
               <div className="relative h-4 w-6 overflow-hidden rounded-sm border border-gray-200 shadow-sm">
+                {" "}
                 <Image
                   src="/indiaflag.png"
                   alt="India Flag"
                   fill
                   sizes="(max-width: 768px) 100vw, 300px"
                   className="object-cover"
-                />
+                />{" "}
               </div>
             </div>
           </div>
         </div>
 
-        {/* Copyright */}
+        {/* Bottom */}
         <div className="mt-12 border-t border-[color:var(--border)] pt-8 text-center text-sm text-[color:var(--muted-foreground)]">
-          &copy; {currentYear} Md Faizan Ahmad. Built with Next.js & Tailwind.
+          © {currentYear} Md Faizan Ahmad. Built with Next.js & Tailwind.
         </div>
       </FooterAnimation>
     </footer>
