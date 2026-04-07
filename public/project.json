@@ -34,7 +34,7 @@
   },
   {
     "title": "Luman Studio – Interactive Storytelling Website",
-    "image": "https://res.cloudinary.com/daqb5wglu/image/upload/v1768824853/luman-stdio-2_h1llq5.png",
+    "image": "https://res.cloudinary.com/dyefyrszz/image/upload/v1775584530/luman-studio_km5g0t.png",
     "description": "Luman Studio is a high-end, animation-driven frontend experience built to showcase acoustic design solutions through immersive storytelling and smooth interactions.",
     "liveUrl": "https://luman-studio.vercel.app",
     "codeUrl": "https://github.com/md-faizanahmad/furniture-shop",
@@ -50,7 +50,7 @@
   },
   {
     "title": "Luman Hotel – Luxury Hotel Frontend Experience",
-    "image": "https://res.cloudinary.com/daqb5wglu/image/upload/v1768824858/luman-hotel1_v5vv6v.png",
+    "image": "https://res.cloudinary.com/dyefyrszz/image/upload/v1775583960/Luman_Hotel_zd8avm.png",
     "description": "Luman Hotel is a modern hotel website focused on premium UI, smooth animations, and user-friendly room exploration to simulate a real hospitality booking experience.",
     "liveUrl": "https://luman-hotel.vercel.app",
     "codeUrl": "https://github.com/md-faizanahmad/luman-hotel",
@@ -64,53 +64,23 @@
     ]
   },
   {
-    "title": "QuickSuite",
-    "image": "https://res.cloudinary.com/daqb5wglu/image/upload/v1767721909/quicksuite.vercel.app__zluudy.png",
-    "description": "QuickSuite is a performance-focused, responsive web application offering a suite of public utility tools built with a strong emphasis on usability, privacy, and reliability. The application operates entirely on the client side, requiring no authentication, displaying no advertisements, and avoiding any form of user data storage or sharing. Designed for fast load times and a clean user experience, it demonstrates practical frontend architecture, state handling, and scalable UI design.",
-    "liveUrl": "https://www.emimitra.online/",
+    "title": "Clinic Website with Appointment Request Flow",
+    "image": "https://res.cloudinary.com/dyefyrszz/image/upload/v1775585097/clinic-website_mkuhub.png",
+    "description": "Built a clinic website with an appointment request flow using email integration instead of a backend system. Focused on performance, SEO, and conversion-driven UI, enabling patients to easily connect with the clinic without complex infrastructure.",
+    "liveUrl": "https://clinic-web-app-nine.vercel.app",
     "codeUrl": "https://github.com/md-faizanahmad",
-    "techStack": ["React", "TypeScript", "Tailwind CSS", "pdf-lib"]
+    "techStack": ["Next.js", "TypeScript", "Tailwind CSS", "EmailJS"]
   },
-  {
-    "title": "Emi Mitra",
-    "image": "https://res.cloudinary.com/duvavjepw/image/upload/v1753026917/emi_hkmtrc.png",
-    "description": "Responsive public-facing EMI and salary calculator with fast loading, SEO optimization, and user-friendly design.",
-    "liveUrl": "https://www.emimitra.online/",
-    "codeUrl": "https://github.com/md-faizanahmad",
-    "techStack": ["React", "TypeScript", "CSS"]
-  },
-  {
-    "title": "Quick Invoice",
-    "image": "https://res.cloudinary.com/daqb5wglu/image/upload/v1766866026/QuickInvoice_mipg1i.png",
-    "description": "Create, manage and download professional invoices completely offline.No account. No tracking. Your data stays with you.",
-    "liveUrl": "https://quickinvoices.vercel.app",
-    "codeUrl": "https://github.com/md-faizanahmad/offline-invoice-generator",
-    "techStack": ["React.js", "TypeScript", "Tailwind", "IndexedDB"]
-  },
-  {
-    "title": "Quick Track",
-    "image": "https://res.cloudinary.com/daqb5wglu/image/upload/v1766866217/QuickTrack_cndyxv.png",
-    "description": "Track daily spending offline with zero tracking. completely offline.No account. No tracking. Your data stays with you.",
-    "liveUrl": "https://quicktrack-navy.vercel.app",
-    "codeUrl": "https://github.com/md-faizanahmad/offline-expense-tracker/tree/master/frontend",
-    "techStack": ["React.js", "TypeScript", "Tailwind", "IndexedDB"]
-  },
+
   {
     "title": "School Website",
-    "image": "https://res.cloudinary.com/duvavjepw/image/upload/v1754839130/Schools_eesuul.png",
+    "image": "https://res.cloudinary.com/dyefyrszz/image/upload/v1770280034/Header_yt9bly.png",
     "description": "Responsive school website with navigation, admission form, PDF generation, email notifications, and downloadable forms.",
-    "liveUrl": "https://abingtonfriendschoolindia.vercel.app/",
+    "liveUrl": "https://school-demo-sepia.vercel.app",
     "codeUrl": "https://github.com/md-faizanahmad/ecom",
     "techStack": ["Next.js", "TypeScript", "Tailwind", "Framer Motion"]
   },
-  {
-    "title": "MV Hotel",
-    "image": "https://res.cloudinary.com/duvavjepw/image/upload/v1740425168/mvhotel_gmlxvm.png",
-    "description": "Hotel booking site with room selection, email confirmations, receipt downloads, fast loading, and theme options.",
-    "liveUrl": "https://mvhotell.web.app/",
-    "codeUrl": "https://github.com/md-faizanahmad",
-    "techStack": ["React", "Firebase", "Bootstrap", "CSS"]
-  },
+
   {
     "title": "Nerd Nest",
     "image": "https://res.cloudinary.com/duvavjepw/image/upload/v1740425162/Nerdnest_czsfhr.png",
@@ -119,46 +89,13 @@
     "codeUrl": "https://github.com/md-faizanahmad/nerdnest",
     "techStack": ["React", "Bootstrap", "API", "JavaScript"]
   },
-  {
-    "title": "AB Dental",
-    "image": "https://res.cloudinary.com/duvavjepw/image/upload/v1740425165/dental_juwtil.png",
-    "description": "Responsive dental clinic site with booking form, email notifications, and clean user interface using HTML, CSS, and Bootstrap.",
-    "liveUrl": "https://iamfaizandev.github.io/abdental/",
-    "codeUrl": "https://github.com/md-faizanahmad/abdental",
-    "techStack": ["HTML", "CSS", "Bootstrap", "EmailJS"]
-  },
+
   {
     "title": "Rent Ride",
-    "image": "https://res.cloudinary.com/duvavjepw/image/upload/v1753026934/rentride_eb2in3.png",
+    "image": "https://res.cloudinary.com/dyefyrszz/image/upload/v1775584898/rent-ride_mkmxlj.png",
     "description": "Responsive car rental platform with dynamic bookings, user authentication, and mobile-friendly design.",
-    "liveUrl": "https://rentrideapp.vercel.app/",
+    "liveUrl": "https://rentrideapp.vercel.app",
     "codeUrl": "https://github.com/md-faizanahmad",
     "techStack": ["Next.js", "TypeScript", "Tailwind"]
-  },
-  {
-    "title": "MsShop",
-    "image": "https://res.cloudinary.com/duvavjepw/image/upload/v1753026923/mshop_yiw93l.png",
-    "description": "Dynamic e-commerce site with product listing, cart management, orders, payments, and responsive design.",
-    "liveUrl": "https://mshop-iota.vercel.app/",
-    "codeUrl": "https://github.com/md-faizanahmad",
-    "techStack": ["Next.js", "TypeScript", "Tailwind", "Lucide Icons"]
-  },
-
-  {
-    "title": "OnE.com",
-    "image": "https://res.cloudinary.com/duvavjepw/image/upload/v1740425166/One-com_od3fwr.png",
-    "description": "Full-featured e-commerce site using FakeStore API with dynamic CRUD, user authentication, cart, orders, payments, and responsive UI.",
-    "liveUrl": "https://one-ecom-388ea.web.app/",
-    "codeUrl": "https://github.com/md-faizanahmad/ecom",
-    "techStack": ["React", "Firebase", "Bootstrap", "API", "CSS"]
-  },
-
-  {
-    "title": "ShowTime",
-    "image": "https://res.cloudinary.com/daqb5wglu/image/upload/v1760206569/filmsite-search_oungci.jpg",
-    "description": "Movie listing platform with search, filter, API-based dynamic data, and responsive design for smooth user experience.",
-    "liveUrl": "https://showtime-dun.vercel.app/",
-    "codeUrl": "https://github.com/md-faizanahmad/ecom",
-    "techStack": ["React", "Firebase", "Bootstrap", "API", "CSS"]
   }
 ]

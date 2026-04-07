@@ -120,7 +120,7 @@ const Footer = () => {
 
         {/* Bottom */}
         <div className="mt-12 border-t border-[color:var(--border)] pt-8 text-center text-sm text-[color:var(--muted-foreground)]">
-          © {currentYear} Md Faizan Ahmad. Built with Next.js & Tailwind.
+          © {currentYear} Md Faizan Ahmad.
         </div>
       </FooterAnimation>
     </footer>
