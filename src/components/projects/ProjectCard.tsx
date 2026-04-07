@@ -28,7 +28,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   return (
     <div
       className="
-        relative w-80 max-w-sm cursor-pointer overflow-hidden rounded-xl
+        relative w-100 max-w-sm cursor-pointer overflow-hidden rounded-xl
         border border-[color:var(--border)]
         bg-[color:var(--card)] shadow-sm
         transition-all duration-300 hover:shadow-lg
@@ -38,14 +38,14 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       onMouseLeave={() => setHovered(false)}
     >
       {/* Image */}
-      <div className="relative h-66 w-80  sm:w-80">
+      <div className="relative h-66 w-100  sm:w-100">
         <Image
           src={image}
           alt={title}
           fill
           priority
           sizes="(max-width: 768px) 100vw, 300px"
-          className="object-fit transition-transform duration-500 group-hover:scale-110"
+          className="object-fit transition-transform duration-500  group-hover:scale-110"
         />
         {/* Overlay gradient (top-to-bottom) */}
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/55 to-transparent" />
