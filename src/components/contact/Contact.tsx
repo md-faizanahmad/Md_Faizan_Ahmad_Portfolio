@@ -23,8 +23,9 @@ export default function Contact() {
         <h1 className="mb-4 text-4xl font-bold">Get in Touch</h1>
 
         <p className="mb-8 text-[color:var(--muted-foreground)]">
-          I&apos;m actively looking for opportunities as a Frontend Developer &
-          More. Connect with me via email or my professional profiles.
+          I&apos;m actively looking for opportunities as a Frontend Developer or
+          Full Stack Developer & More. Connect with me via email or my
+          professional profiles.
         </p>
 
         <a

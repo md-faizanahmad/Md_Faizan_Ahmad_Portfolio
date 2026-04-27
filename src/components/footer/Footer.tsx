@@ -30,7 +30,7 @@ const Footer = () => {
             <ul className="space-y-2 text-sm">
               <li>
                 <Link
-                  href="/projects"
+                  href="https://luman-hotel.vercel.app"
                   className="hover:text-indigo-500 transition-colors"
                 >
                   Luman Hotel Booking System
@@ -38,11 +38,17 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  href="/projects"
+                  href="https://myazstore.shop"
                   className="hover:text-indigo-500 transition-colors"
                 >
                   MyAZStore E-commerce Platform
                 </Link>
+              </li>
+              <li>
+                <Link href="https://luman-studio.vercel.app">Luman Studio</Link>
+              </li>
+              <li>
+                <Link href="/projects">More</Link>
               </li>
             </ul>
           </div>
