@@ -33,7 +33,7 @@ export default function Navbar() {
     gsap.fromTo(
       navRef.current,
       { y: -100, opacity: 0 },
-      { y: 0, opacity: 1, duration: 1, ease: "power3.out" }
+      { y: 0, opacity: 1, duration: 1, ease: "power3.out" },
     );
 
     gsap.fromTo(
@@ -45,7 +45,7 @@ export default function Navbar() {
         duration: 0.8,
         delay: 0.2,
         ease: "elastic.out(1, 0.5)",
-      }
+      },
     );
 
     menuItemsRef.current.forEach((item, index) => {
@@ -59,14 +59,20 @@ export default function Navbar() {
           duration: 0.6,
           delay: 0.3 + index * 0.1,
           ease: "power2.out",
-        }
+        },
       );
     });
 
     gsap.fromTo(
       mobileButtonRef.current,
       { scale: 0.8, opacity: 0 },
-      { scale: 1, opacity: 1, duration: 0.5, delay: 0.4, ease: "back.out(1.7)" }
+      {
+        scale: 1,
+        opacity: 1,
+        duration: 0.5,
+        delay: 0.4,
+        ease: "back.out(1.7)",
+      },
     );
   }, []);
 
@@ -81,12 +87,12 @@ export default function Navbar() {
         duration: 0.5,
         ease: "power3.out",
         transformOrigin: "top",
-      }
+      },
     );
     gsap.fromTo(
       ".mobile-menu-item",
       { x: -50, opacity: 0 },
-      { x: 0, opacity: 1, duration: 0.45, stagger: 0.12, ease: "power3.out" }
+      { x: 0, opacity: 1, duration: 0.45, stagger: 0.12, ease: "power3.out" },
     );
   }, [isOpen]);
 
@@ -136,7 +142,7 @@ export default function Navbar() {
                   group-hover:translate-y-0 group-hover:opacity-100
                 "
                 >
-                  Frontend Developer
+                  Full Stack Developer
                 </span>
               </motion.span>
             </Link>
