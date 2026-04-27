@@ -4,6 +4,7 @@ import Projects from "@/components/projects/Projects";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react"; // Import an icon for the button
 import type { Metadata } from "next";
+import About from "@/components/about/About";
 
 export const metadata: Metadata = {
   title: "Md Faizan Ahmad – Frontend & Full Stack Web Developer",
@@ -79,6 +80,9 @@ const personSchema = {
     "MongoDB",
     "REST APIs",
     "Web Application Development",
+    "Frontend Development",
+    "UI Developer",
+    "Frontend Developer",
   ],
   sameAs: [
     "https://github.com/md-faizanahmad",
@@ -140,7 +144,9 @@ export default function Home() {
               </Link>
             </div>
           </section>
-
+          <section>
+            <About />
+          </section>
           <CTA />
         </div>
       </div>
