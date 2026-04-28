@@ -9,6 +9,7 @@ type Skill =
 const skills: Skill[] = [
   // Core
   { name: "React", icon: "devicon-react-original", type: "devicon" },
+  { name: "Next", icon: "devicon-nextjs-original-wordmark", type: "devicon" },
   { name: "JavaScript", icon: "devicon-javascript-plain", type: "devicon" },
   { name: "HTML5", icon: "devicon-html5-plain", type: "devicon" },
   { name: "CSS3", icon: "devicon-css3-plain", type: "devicon" },
