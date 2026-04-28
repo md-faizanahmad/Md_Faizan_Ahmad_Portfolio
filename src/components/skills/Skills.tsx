@@ -16,6 +16,11 @@ const skills: Skill[] = [
   { name: "CSS3", icon: "devicon-css3-plain", type: "devicon" },
   { name: "Tailwind CSS", icon: "devicon-tailwindcss-plain", type: "devicon" },
   { name: "Bootstrap", icon: "devicon-bootstrap-plain", type: "devicon" },
+  {
+    name: "FramerMotion",
+    icon: "devicon-framermotion-original",
+    type: "devicon",
+  },
   // { name: "React Router", labelOnly: true },
   // { name: "React Hooks", labelOnly: true },
 
