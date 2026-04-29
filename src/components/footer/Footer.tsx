@@ -1,124 +1,113 @@
 import Image from "next/image";
 import Link from "next/link";
 import FooterAnimation from "./FooterAnimation";
+import { footerConfig } from "./footer.config";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="relative border-t border-[color:var(--border)] bg-[color:var(--background)] text-[color:var(--foreground)] px-4 py-12 sm:px-6 lg:px-8">
+    <footer className="relative border-t border-[color:var(--border)] bg-[color:var(--background)] px-4 py-12 text-[color:var(--foreground)] sm:px-6 lg:px-8">
       <FooterAnimation>
-        <div className="mx-auto grid max-w-6xl grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
-          {/* What I Do */}
+        <div className="mx-auto grid max-w-6xl grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
+          {/* Brand */}
           <div>
-            <h3 className="mb-4 text-lg font-semibold">What I Do</h3>
-            <p className="text-sm text-[color:var(--muted-foreground)] leading-relaxed">
-              I build fast, scalable web applications using React, Next.js, and
-              TypeScript — focused on performance, clean architecture, and
-              real-world usability.
+            <h3 className="mb-3 text-lg font-semibold">
+              {footerConfig.brand.name}
+            </h3>
+
+            <p className="mb-3 text-sm text-[color:var(--muted-foreground)]">
+              {footerConfig.brand.title}
             </p>
 
-            <p className="mt-3 text-xs text-[color:var(--muted-foreground)]">
-              2+ years experience • Production-ready projects •
-              Performance-focused
+            <p className="text-sm leading-relaxed text-[color:var(--muted-foreground)]">
+              {footerConfig.brand.description}
+            </p>
+
+            <p className="mt-4 text-xs text-[color:var(--muted-foreground)]">
+              {footerConfig.brand.stats}
             </p>
           </div>
 
-          {/* Key Work */}
+          {/* Work */}
           <div>
             <h3 className="mb-4 text-lg font-semibold">Key Work</h3>
+
             <ul className="space-y-2 text-sm">
-              <li>
-                <Link
-                  href="https://luman-hotel.vercel.app"
-                  className="hover:text-indigo-500 transition-colors"
-                >
-                  Luman Hotel Booking System
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="https://myazstore.shop"
-                  className="hover:text-indigo-500 transition-colors"
-                >
-                  MyAZStore E-commerce Platform
-                </Link>
-              </li>
-              <li>
-                <Link href="https://luman-studio.vercel.app">Luman Studio</Link>
-              </li>
-              <li>
-                <Link href="/projects">More</Link>
-              </li>
+              {footerConfig.featuredWork.map((item) => (
+                <li key={item.name}>
+                  <Link
+                    href={item.href}
+                    className="transition-colors hover:text-indigo-500"
+                  >
+                    {item.name}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
-          {/* Connect */}
+          {/* Navigation */}
           <div>
-            <h3 className="mb-4 text-lg font-semibold">Connect</h3>
-            <p className="text-xs text-[color:var(--muted-foreground)] mb-2">
-              Check my work & reach out
-            </p>
+            <h3 className="mb-4 text-lg font-semibold">Explore</h3>
 
             <ul className="space-y-2 text-sm">
-              <li>
-                <a
-                  href="https://github.com/md-faizanahmad"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-indigo-500 transition-colors"
-                >
-                  GitHub
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.linkedin.com/in/mdfaizandahmad/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-indigo-500 transition-colors"
-                >
-                  LinkedIn
-                </a>
-              </li>
+              {footerConfig.navigation.map((item) => (
+                <li key={item.name}>
+                  <Link
+                    href={item.href}
+                    className="transition-colors hover:text-indigo-500"
+                  >
+                    {item.name}
+                  </Link>
+                </li>
+              ))}
+
+              {footerConfig.socials.map((item) => (
+                <li key={item.name}>
+                  <a
+                    href={item.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="transition-colors hover:text-indigo-500"
+                  >
+                    {item.name}
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
 
           {/* Contact */}
           <div>
-            <h3 className="mb-4 text-lg font-semibold">Start a Conversation</h3>
+            <h3 className="mb-4 text-lg font-semibold">Let’s Connect</h3>
 
-            <p className="text-sm mb-2">
-              <a
-                href="mailto:md.faizan.ahmad.web@gmail.com"
-                className="hover:text-indigo-500 transition-colors"
-              >
-                md.faizan.ahmad.web@gmail.com
-              </a>
-            </p>
+            <a
+              href={`mailto:${footerConfig.contact.email}`}
+              className="block text-sm transition-colors hover:text-indigo-500"
+            >
+              {footerConfig.contact.email}
+            </a>
 
-            <p className="text-sm">
-              <a
-                href="https://wa.me/917563092029"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-green-500 transition-colors"
-              >
-                WhatsApp (Fastest)
-              </a>
-            </p>
+            <a
+              href={footerConfig.contact.whatsapp}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-3 block text-sm transition-colors hover:text-green-500"
+            >
+              WhatsApp
+            </a>
 
-            <div className="mt-4 text-xs text-[color:var(--muted-foreground)]">
-              Based in India
-              <div className="relative h-4 w-6 overflow-hidden rounded-sm border border-gray-200 shadow-sm">
-                {" "}
+            <div className="mt-5 flex items-center gap-2 text-xs text-[color:var(--muted-foreground)]">
+              <span>{footerConfig.contact.location}</span>
+
+              <div className="relative h-4 w-6 overflow-hidden rounded-sm border border-gray-300">
                 <Image
                   src="/indiaflag.png"
                   alt="India Flag"
                   fill
-                  sizes="(max-width: 768px) 100vw, 300px"
                   className="object-cover"
-                />{" "}
+                />
               </div>
             </div>
           </div>
@@ -126,7 +115,7 @@ const Footer = () => {
 
         {/* Bottom */}
         <div className="mt-12 border-t border-[color:var(--border)] pt-8 text-center text-sm text-[color:var(--muted-foreground)]">
-          © {currentYear} Md Faizan Ahmad.
+          © {currentYear} {footerConfig.brand.name}. {footerConfig.bottomText}
         </div>
       </FooterAnimation>
     </footer>
