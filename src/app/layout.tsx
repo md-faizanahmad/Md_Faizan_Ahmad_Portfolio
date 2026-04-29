@@ -52,12 +52,12 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Footer from "@/components/footer/Footer";
 import Navbar from "@/components/nav/Nav";
 import SocialLink from "@/shared/SocialLinks";
 import { Analytics } from "@vercel/analytics/next";
 import ThemeProvider from "./providers";
 import CursorSpotlight from "@/components/visual/CursorSpotlight";
+import Footer from "../components/footer/Footer";
 
 const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 const geistMono = Geist_Mono({
