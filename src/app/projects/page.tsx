@@ -34,6 +34,10 @@ export default function ProjectPage() {
         image: project.image,
 
         keywords: project.techStack?.join(", "),
+        isPartOf: {
+          "@type": "WebSite",
+          url: "https://mdfaizanahmad.in",
+        },
       },
     })),
   };
