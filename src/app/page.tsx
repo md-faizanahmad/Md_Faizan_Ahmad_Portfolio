@@ -59,11 +59,11 @@ const personSchema = {
   description:
     "Frontend and Full Stack Web Developer with hands-on experience building real-world web applications using React, Next.js, Tailwind CSS, and Node.js. Trained in full stack development at Naresh IT, Hyderabad.",
   alumniOf: {
-    "@type": "EducationalOrganization",
-    name: "Naresh IT",
+    "@type": "Organization",
+    name: "Freelance",
     address: {
       "@type": "PostalAddress",
-      addressLocality: "Hyderabad",
+      addressLocality: "Bihar,India",
       addressCountry: "IN",
     },
   },
