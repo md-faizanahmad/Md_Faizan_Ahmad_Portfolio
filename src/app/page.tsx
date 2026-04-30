@@ -52,44 +52,59 @@ const personSchema = {
   "@context": "https://schema.org",
   "@type": "Person",
   "@id": "https://mdfaizanahmad.in/#person",
+
   name: "Md Faizan Ahmad",
   url: "https://mdfaizanahmad.in",
-  image: "https://mdfaizanahmad.in/profile-pic.jpg",
+  image: "https://mdfaizanahmad.in/profile-pic.jpeg",
+
   jobTitle: "Frontend & Full Stack Web Developer",
+
   description:
-    "Frontend and Full Stack Web Developer with hands-on experience building real-world web applications using React, Next.js, Tailwind CSS, and Node.js. Trained in full stack development at Naresh IT, Hyderabad.",
-  alumniOf: {
-    "@type": "Organization",
-    name: "Freelance",
-    address: {
-      "@type": "PostalAddress",
-      addressLocality: "Bihar,India",
-      addressCountry: "IN",
-    },
-  },
-  knowsAbout: [
-    "HTML",
-    "CSS",
-    "Boostrap",
-    "React.js",
-    "Next.js",
-    "JavaScript",
-    "TypeScript",
-    "Tailwind CSS",
-    "Node.js",
-    "MongoDB",
-    "REST APIs",
-    "Web Application Development",
-    "Frontend Development",
-    "UI Developer",
-    "Frontend Developer",
-  ],
+    "Frontend and Full Stack Web Developer specializing in React, Next.js, TypeScript, and Node.js. Builds scalable, production-ready web applications with focus on performance, SEO, and clean architecture.",
+
   sameAs: [
     "https://github.com/md-faizanahmad",
     "https://www.linkedin.com/in/mdfaizandahmad",
   ],
-};
 
+  alumniOf: {
+    "@type": "Organization",
+    name: "Naresh IT, Hyderabad",
+  },
+
+  worksFor: {
+    "@type": "Organization",
+    name: "Freelance",
+  },
+
+  knowsAbout: [
+    "HTML5",
+    "CSS3",
+    "JavaScript (ES6+)",
+    "TypeScript",
+    "React.js",
+    "Next.js",
+    "Tailwind CSS",
+    "Node.js",
+    "Express.js",
+    "MongoDB",
+    "REST API Development",
+    "Frontend Architecture",
+    "Full Stack Development",
+    "Performance Optimization",
+    "SEO Optimization",
+  ],
+
+  hasOccupation: {
+    "@type": "Occupation",
+    name: "Full Stack Web Developer",
+    occupationLocation: {
+      "@type": "Country",
+      name: "India",
+    },
+    skills: ["React.js", "Next.js", "TypeScript", "Node.js", "MongoDB"],
+  },
+};
 export default function Home() {
   return (
     <>
