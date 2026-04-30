@@ -1,34 +1,56 @@
+import Script from "next/script";
+import projects from "@/public/project.json";
 import Projects from "@/components/projects/Projects";
-import type { Metadata } from "next";
 
-export const metadata: Metadata = {
-  title: "Projects – Md Faizan Ahmad | Frontend & Full Stack Web Developer",
-  description:
-    "Explore real-world web development projects by Md Faizan Ahmad, including React, Next.js, and full stack applications built with modern technologies.",
-  alternates: {
-    canonical: "/projects",
-  },
-  openGraph: {
-    title: "Projects by Md Faizan Ahmad – Web Development Portfolio",
-    description:
-      "A showcase of production-ready React and Next.js projects, dashboards, and full stack web applications.",
+export default function ProjectPage() {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: "Web Development Projects",
     url: "https://mdfaizanahmad.in/projects",
-    type: "website",
-  },
-  twitter: {
-    card: "summary",
-    title: "Projects – Md Faizan Ahmad",
-    description:
-      "View web development projects built using React, Next.js, and modern JavaScript.",
-  },
-};
 
-function ProjectPage() {
+    itemListElement: projects.map((project, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+
+      item: {
+        "@type": "SoftwareApplication",
+        "@id": `https://mdfaizanahmad.in/#project-${index + 1}`,
+
+        name: project.title,
+        description: project.description,
+
+        applicationCategory: "WebApplication",
+        operatingSystem: "Web",
+
+        url: project.liveUrl,
+
+        creator: {
+          "@id": "https://mdfaizanahmad.in/#person",
+        },
+
+        codeRepository: project.codeUrl || undefined,
+
+        image: project.image,
+
+        keywords: project.techStack?.join(", "),
+      },
+    })),
+  };
+
   return (
-    <div className=" pt-30   ">
-      <Projects />
-    </div>
+    <>
+      <Script
+        id="projects-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(structuredData),
+        }}
+      />
+
+      <div className="pt-30">
+        <Projects />
+      </div>
+    </>
   );
 }
-
-export default ProjectPage;
