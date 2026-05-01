@@ -52,16 +52,6 @@ const About = () => {
 
         {/* Skills */}
         <TechnicalSkills />
-
-        {/* CTA */}
-        <div className="mt-12">
-          <Link
-            href={links.email}
-            className="inline-flex items-center rounded-full bg-indigo-600 px-8 py-3 text-white transition hover:bg-indigo-700"
-          >
-            Let’s Connect
-          </Link>
-        </div>
       </div>
     </section>
   );

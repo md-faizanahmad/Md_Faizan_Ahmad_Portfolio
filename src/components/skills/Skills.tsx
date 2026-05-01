@@ -149,7 +149,7 @@
 /////////// Draggable with changing Place
 "use client";
 
-import { Reorder, motion } from "framer-motion";
+import { Reorder } from "framer-motion";
 import { useEffect, useState } from "react";
 
 type Skill =
@@ -190,6 +190,7 @@ export default function TechnicalSkills() {
   const [skills, setSkills] = useState(initialSkills);
   const [isDraggable, setIsDraggable] = useState(false);
 
+  // Enable drag only for tablet and above
   useEffect(() => {
     const check = () => setIsDraggable(window.innerWidth >= 768);
     check();
@@ -198,47 +199,88 @@ export default function TechnicalSkills() {
   }, []);
 
   return (
-    <section className="px-4 py-16">
-      <h2 className="mb-10 text-center text-3xl font-bold">Technical Skills</h2>
+    <section className="relative bg-[color:var(--background)] px-4 py-16 text-[color:var(--foreground)] sm:px-6 lg:px-8">
+      {/* subtle ambient background */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 -z-10"
+        style={{
+          background:
+            "radial-gradient(60% 50% at 50% -10%, color-mix(in oklab, var(--foreground), transparent 92%) 0%, transparent 70%)",
+        }}
+      />
 
-      <Reorder.Group
-        axis="y"
-        values={skills}
-        onReorder={setSkills}
-        className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6"
-      >
-        {skills.map((s) => (
-          <Reorder.Item
-            key={s.name}
-            value={s}
-            drag={isDraggable}
-            whileDrag={{ scale: 1.1, zIndex: 10 }}
-            className="cursor-grab active:cursor-grabbing rounded-xl border p-4 bg-[color:var(--card)]"
-          >
-            <div className="flex flex-col items-center gap-2 text-center group">
-              {"icon" in s ? (
-                <span className="relative block h-10 w-10">
-                  {/* default mono */}
-                  <i
-                    className={`${s.icon} absolute inset-0 text-[length:2.5rem] leading-none text-[color:var(--foreground)] opacity-90 group-hover:opacity-0 transition`}
-                  />
+      <div className="mx-auto max-w-6xl">
+        <h2 className="mb-10 text-center text-3xl font-bold sm:text-4xl">
+          Technical Skills
+        </h2>
 
-                  {/* colored on hover */}
-                  <i
-                    className={`${s.icon} colored absolute inset-0 text-[length:2.5rem] leading-none opacity-0 group-hover:opacity-100 transition`}
-                  />
+        <Reorder.Group
+          axis="y"
+          values={skills}
+          onReorder={setSkills}
+          className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6"
+        >
+          {skills.map((s) => (
+            <Reorder.Item
+              key={s.name}
+              value={s}
+              drag={isDraggable}
+              whileHover={{ scale: 1.04, y: -3 }}
+              whileDrag={{ scale: 1.08, zIndex: 20 }}
+              className="
+                group relative cursor-grab active:cursor-grabbing
+                overflow-hidden rounded-xl p-4
+                border border-[color:var(--border)]
+                bg-[color:var(--card)]
+                shadow-sm hover:shadow-md
+                transition-all duration-200
+              "
+            >
+              {/* hover overlay */}
+              <div
+                className="pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-300"
+                style={{
+                  background:
+                    "linear-gradient(120deg, transparent 40%, color-mix(in oklab, var(--foreground), transparent 92%) 100%)",
+                }}
+              />
+
+              <div className="flex flex-col items-center gap-2 text-center">
+                {"icon" in s ? (
+                  <span className="relative block h-10 w-10">
+                    {/* mono */}
+                    <i
+                      className={`${s.icon} absolute inset-0 text-[length:2.4rem] leading-none text-[color:var(--foreground)] opacity-80 group-hover:opacity-0 transition duration-200`}
+                    />
+
+                    {/* colored */}
+                    <i
+                      className={`${s.icon} colored absolute inset-0 text-[length:2.4rem] leading-none opacity-0 group-hover:opacity-100 transition duration-200`}
+                    />
+                  </span>
+                ) : (
+                  <span
+                    className="
+                      inline-flex h-9 items-center justify-center rounded-md px-3
+                      text-xs font-medium
+                      bg-[color:var(--secondary)]
+                      text-[color:var(--secondary-foreground)]
+                      border border-[color:var(--border)]
+                    "
+                  >
+                    {s.name}
+                  </span>
+                )}
+
+                <span className="text-xs text-[color:var(--muted-foreground)] group-hover:text-[color:var(--foreground)] transition">
+                  {s.name}
                 </span>
-              ) : (
-                <span className="text-sm font-medium">{s.name}</span>
-              )}
-
-              <span className="text-xs text-[color:var(--muted-foreground)] group-hover:text-[color:var(--foreground)] transition">
-                {s.name}
-              </span>
-            </div>
-          </Reorder.Item>
-        ))}
-      </Reorder.Group>
+              </div>
+            </Reorder.Item>
+          ))}
+        </Reorder.Group>
+      </div>
     </section>
   );
 }
