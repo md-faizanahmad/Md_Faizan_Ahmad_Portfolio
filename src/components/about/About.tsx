@@ -1,13 +1,12 @@
 // components/about/About.tsx
 
-import Link from "next/link";
 import Image from "next/image";
 import TechnicalSkills from "../skills/Skills";
 import AboutAnimations from "./AboutAnimations";
 import { aboutConfig } from "./about.config";
 
 const About = () => {
-  const { hero, paragraphs, section, links } = aboutConfig;
+  const { hero, paragraphs, section } = aboutConfig;
 
   return (
     <section
