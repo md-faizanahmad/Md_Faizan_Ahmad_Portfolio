@@ -215,13 +215,26 @@ export default function TechnicalSkills() {
             whileDrag={{ scale: 1.1, zIndex: 10 }}
             className="cursor-grab active:cursor-grabbing rounded-xl border p-4 bg-[color:var(--card)]"
           >
-            <div className="flex flex-col items-center gap-2 text-center">
+            <div className="flex flex-col items-center gap-2 text-center group">
               {"icon" in s ? (
-                <i className={`${s.icon} text-3xl`} />
+                <span className="relative block h-10 w-10">
+                  {/* default mono */}
+                  <i
+                    className={`${s.icon} absolute inset-0 text-[length:2.5rem] leading-none text-[color:var(--foreground)] opacity-90 group-hover:opacity-0 transition`}
+                  />
+
+                  {/* colored on hover */}
+                  <i
+                    className={`${s.icon} colored absolute inset-0 text-[length:2.5rem] leading-none opacity-0 group-hover:opacity-100 transition`}
+                  />
+                </span>
               ) : (
                 <span className="text-sm font-medium">{s.name}</span>
               )}
-              <span className="text-xs opacity-70">{s.name}</span>
+
+              <span className="text-xs text-[color:var(--muted-foreground)] group-hover:text-[color:var(--foreground)] transition">
+                {s.name}
+              </span>
             </div>
           </Reorder.Item>
         ))}
