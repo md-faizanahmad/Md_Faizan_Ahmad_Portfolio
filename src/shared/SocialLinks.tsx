@@ -60,12 +60,23 @@ export default function SocialLink() {
       {/* Main Button */}
       <button
         onClick={() => setOpen(!open)}
-        className="flex h-14 w-14 items-center cursor-pointer ms-1 lg:ms-11 justify-center rounded-full bg-gradient-to-r from-black to-purple-600 text-white shadow-xl hover:scale-105 transition"
+        className="
+    flex h-14 w-14 items-center justify-center
+    rounded-full cursor-pointer
+    border border-[color:var(--border)]
+    bg-[color:var(--card)]
+    text-[color:var(--foreground)]
+    shadow-md hover:shadow-lg
+    hover:scale-105 transition-all duration-200
+    ms-1 lg:ms-11
+  "
         aria-label="Open social links"
       >
         <Share2
           size={22}
-          className={`transition-transform ${open ? "rotate-45" : ""}`}
+          className={`transition-transform duration-200 ${
+            open ? "rotate-45" : ""
+          }`}
         />
       </button>
     </div>
