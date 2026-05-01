@@ -53,7 +53,18 @@ const CTA = () => {
       </div>
 
       {/* Overlay */}
-      <div className="absolute inset-0 z-10 bg-[color:var(--background)]/82 backdrop-blur-sm" />
+      {/* <div className="absolute inset-0 z-10 bg-[color:var(--background)]/82 backdrop-blur-sm" /> */}
+      <div
+        className="
+    absolute inset-0 z-10 backdrop-blur-sm
+
+    /* LIGHT MODE */
+    bg-white/80
+
+    /* DARK MODE */
+    dark:bg-black/60
+  "
+      />
 
       {/* Content */}
       <motion.div
