@@ -38,7 +38,7 @@ const CTA = () => {
           {[...projectImages, ...projectImages].map((image, index) => (
             <div
               key={index}
-              className="relative h-[320px] w-[520px] shrink-0 rounded-2xl bg-black/20 p-3"
+              className="relative h-[320px] w-[520px] shrink-0 rounded-2xl bg-black/20 p-2"
             >
               <Image
                 src={image}
@@ -58,7 +58,7 @@ const CTA = () => {
       {/* Content */}
       <motion.div
         style={{ opacity, scale }}
-        className="relative z-20 mx-auto max-w-3xl text-center"
+        className="relative z-40 mx-auto max-w-3xl text-center"
       >
         <h2 className="mb-4 text-2xl font-bold tracking-tight sm:text-3xl">
           Let’s build reliable web solutions
@@ -73,7 +73,16 @@ const CTA = () => {
         <motion.div whileHover={{ scale: 1.04 }} whileTap={{ scale: 0.97 }}>
           <Link
             href="mailto:md.faizan.ahmad.web@gmail.com"
-            className="inline-block rounded-full bg-indigo-600 px-8 py-3 font-semibold text-white shadow-md transition-all hover:bg-indigo-500"
+            className="
+        inline-block rounded-full px-8 py-3 font-semibold 
+        transition-all duration-300 shadow-sm
+
+        /* LIGHT MODE */
+        bg-black text-white hover:bg-white hover:text-black border border-black
+
+        /* DARK MODE */
+        dark:bg-white dark:text-black dark:hover:bg-black dark:hover:text-white dark:border-white
+      "
           >
             Contact Me
           </Link>
