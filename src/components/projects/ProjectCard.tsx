@@ -83,19 +83,26 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           target="_blank"
           onClick={(e) => e.stopPropagation()}
           className="
-            absolute right-6 bottom-4 z-10
-            flex h-7 w-7 items-center justify-center
-            rounded-full
-            border border-white/10
-            bg-black/40
-            text-white
-            backdrop-blur-xl
-            transition-all duration-300
-            hover:scale-110
-            hover:bg-black/60
-            hover:border-white/20
-          "
+    absolute right-6 bottom-4 z-10
+    flex items-center gap-2
+    rounded-full
+    border border-emerald-500/20
+    bg-black/50
+    px-3 py-1.5
+    text-xs font-medium
+    text-white
+    backdrop-blur-xl
+    transition-all duration-300
+    hover:scale-105
+    hover:bg-black/70
+    hover:border-emerald-500/40
+  "
         >
+          {/* Blinking green dot */}
+          <span className="relative flex h-2.5 w-2.5">
+            <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75" />
+            <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-emerald-500" />
+          </span>
           Live
         </Link>
 
