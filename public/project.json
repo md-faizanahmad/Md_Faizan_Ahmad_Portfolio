@@ -34,7 +34,7 @@
   },
   {
     "title": "FindMovie",
-    "image": "YOUR_IMAGE_URL_HERE",
+    "image": "https://res.cloudinary.com/dyefyrszz/image/upload/v1782661489/findmovie_byv5hq.png",
     "description": "A modern movie discovery platform featuring trending movies, TV shows, search functionality, detailed media information, favorites management, and a responsive user experience with optimized performance and SEO.",
     "liveUrl": "https://find-movie-gamma.vercel.app",
     "codeUrl": "https://github.com/md-faizanahmad/find-movie",
@@ -49,6 +49,27 @@
       "Zod",
       "Framer Motion",
       "TMDB API"
+    ]
+  },
+  {
+    "title": "KhusShop",
+    "image": "https://your-khusshop-image-url.png",
+    "description": "A modern full-stack e-commerce platform featuring product management, category organization, secure authentication, shopping cart, wishlist, order management, payment integration, admin dashboard, and a responsive user experience with optimized performance and SEO.",
+    "liveUrl": "https://your-khusshop-live-url.com",
+    "codeUrl": "https://github.com/yourusername/khusshop",
+    "techStack": [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Mongoose",
+      "JWT",
+      "TanStack Query",
+      "Cloudinary",
+      "Razorpay",
+      "Framer Motion"
     ]
   },
   {
