@@ -45,7 +45,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       {/* Premium Glow */}
       <div
         className="
-          absolute -inset-px rounded-2xl
+          absolute -inset-px 
           bg-gradient-to-r
           from-violet-500/20
           via-cyan-500/20

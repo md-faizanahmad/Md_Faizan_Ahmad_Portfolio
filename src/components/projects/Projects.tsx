@@ -65,20 +65,10 @@ const Projects: React.FC<ExtendedProjectsProps> = ({
       <motion.div
         layout
         className="
-  flex overflow-x-auto snap-x snap-mandatory
-  gap-5 px-4 pb-10 no-scrollbar
-
-  sm:grid
-  sm:grid-cols-2
-  sm:gap-6
-  sm:px-0
-  sm:overflow-visible
-
-  md:grid-cols-2
-  lg:grid-cols-3
-  xl:grid-cols-3
-  2xl:grid-cols-4
-"
+          flex overflow-x-auto snap-x snap-mandatory gap-6 pb-10 no-scrollbar
+          sm:grid sm:grid-cols-2 lg:grid-cols-3 sm:overflow-visible 
+          px-4 sm:px-0
+        "
       >
         <AnimatePresence mode="popLayout" initial={false}>
           {isLoading
