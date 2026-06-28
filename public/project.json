@@ -33,6 +33,25 @@
     ]
   },
   {
+    "title": "FindMovie",
+    "image": "YOUR_IMAGE_URL_HERE",
+    "description": "A modern movie discovery platform featuring trending movies, TV shows, search functionality, detailed media information, favorites management, and a responsive user experience with optimized performance and SEO.",
+    "liveUrl": "https://find-movie-gamma.vercel.app",
+    "codeUrl": "https://github.com/md-faizanahmad/find-movie",
+    "techStack": [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "MongoDB",
+      "Mongoose",
+      "NextAuth",
+      "TanStack Query",
+      "Zod",
+      "Framer Motion",
+      "TMDB API"
+    ]
+  },
+  {
     "title": "Luman Studio – Interactive Storytelling Website",
     "image": "https://res.cloudinary.com/dyefyrszz/image/upload/v1775584530/luman-studio_km5g0t.png",
     "description": "Luman Studio is a high-end, animation-driven frontend experience built to showcase acoustic design solutions through immersive storytelling and smooth interactions.",
