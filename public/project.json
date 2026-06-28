@@ -56,7 +56,7 @@
     "image": "https://res.cloudinary.com/dyefyrszz/image/upload/v1782661853/KS_SHop_ent764.png",
     "description": "A modern full-stack e-commerce platform featuring product management, category organization, secure authentication, shopping cart, wishlist, order management, payment integration, admin dashboard, and a responsive user experience with optimized performance and SEO.",
     "liveUrl": "https://your-khusshop-live-url.com",
-    "codeUrl": "https://github.com/yourusername/sweets-shop",
+    "codeUrl": "https://github.com/md-faizanahmad/sweets-shop",
     "techStack": [
       "Next.js",
       "TypeScript",
@@ -125,7 +125,7 @@
     "image": "https://res.cloudinary.com/dyefyrszz/image/upload/v1782662198/cybercafe_h7jmem.png",
     "description": "A modern full-stack cyber cafe management platform featuring customer registration, system booking, session tracking, billing management, print and scan services, user authentication, role-based admin dashboard, payment management, analytics, and a responsive user experience with optimized performance and security.",
     "liveUrl": "https://your-cybercafe-live-url.com",
-    "codeUrl": "https://github.com/yourusername/cybercafe",
+    "codeUrl": "https://github.com/md-faizanahmad/cyber-cafe",
     "techStack": [
       "Next.js",
       "TypeScript",

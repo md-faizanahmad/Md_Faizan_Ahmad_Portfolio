@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { Github, ExternalLink } from "lucide-react";
+import { Globe } from "lucide-react";
 
 interface ProjectCardProps {
   title: string;
@@ -28,107 +28,170 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   return (
     <div
       className="
-        relative w-100 max-w-sm cursor-pointer overflow-hidden rounded-xl
+        group relative w-100 max-w-sm cursor-pointer
+        overflow-hidden rounded-2xl
         border border-[color:var(--border)]
-        bg-[color:var(--card)] shadow-sm
-        transition-all duration-300 hover:shadow-lg
+        bg-[color:var(--card)]
+        shadow-[0_10px_30px_rgba(0,0,0,0.08)]
+        backdrop-blur-xl
+        transition-all duration-500
+        hover:-translate-y-1
+        hover:shadow-[0_20px_50px_rgba(0,0,0,0.15)]
       "
       onClick={() => setHovered(!hovered)}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >
+      {/* Premium Glow */}
+      <div
+        className="
+          absolute -inset-px rounded-2xl
+          bg-gradient-to-r
+          from-violet-500/20
+          via-cyan-500/20
+          to-blue-500/20
+          opacity-0 blur-xl
+          transition duration-500
+          group-hover:opacity-100
+        "
+      />
+
       {/* Image */}
-      <div className="relative h-66 w-100  sm:w-100">
+      <div className="relative h-66 w-100 sm:w-100 overflow-hidden">
         <Image
           src={image}
           alt={title}
           fill
           priority
           sizes="(max-width: 768px) 100vw, 300px"
-          className="object-fit transition-transform duration-500  group-hover:scale-110"
+          className="
+            object-cover
+            transition-transform duration-700
+            group-hover:scale-105
+          "
         />
-        {/* Overlay gradient (top-to-bottom) */}
-        <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/55 to-transparent" />
+
+        {/* Accent Line */}
+        <div className="absolute left-0 top-0 h-1 w-full bg-gradient-to-r from-violet-500 via-cyan-500 to-blue-500" />
+
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+
+        {/* Live Icon */}
+        <Link
+          href={liveUrl}
+          target="_blank"
+          onClick={(e) => e.stopPropagation()}
+          className="
+            absolute right-6 bottom-4 z-10
+            flex h-7 w-7 items-center justify-center
+            rounded-full
+            border border-white/10
+            bg-black/40
+            text-white
+            backdrop-blur-xl
+            transition-all duration-300
+            hover:scale-110
+            hover:bg-black/60
+            hover:border-white/20
+          "
+        >
+          Live
+        </Link>
+
         {/* Title */}
-        <h2 className="absolute bottom-3 left-4 text-base font-bold text-white drop-shadow">
+        <h2 className="absolute bottom-4 left-4 text-lg font-semibold tracking-tight text-white drop-shadow-lg">
           {title}
         </h2>
       </div>
 
-      {/* Hover panel */}
+      {/* Hover Panel */}
       <div
         className={`
           absolute inset-0 flex flex-col justify-between p-5
-          backdrop-blur-lg transition-all duration-300
+          backdrop-blur-2xl transition-all duration-500
           ${
-            hovered ? "opacity-100 translate-y-0" : "opacity-0 translate-y-full"
+            hovered ? "translate-y-0 opacity-100" : "translate-y-full opacity-0"
           }
-          bg-[color:var(--background)]/65
-          text-[color:var(--foreground)]
+          bg-black/75 text-white
         `}
       >
-        <div>
+        <div className="overflow-hidden">
+          {/* Title */}
+          <h3 className="mb-3 text-xl font-semibold">{title}</h3>
+
           {/* Description */}
           <p
             className={`
-    mb-2 text-sm text-[color:var(--muted-foreground)]
-    transition-all duration-300
-    ${showMore ? "max-h-32 overflow-y-auto pr-2" : "line-clamp-3"}
-  `}
+              mb-3 text-sm leading-6 text-white/75
+              transition-all duration-300
+              ${showMore ? "max-h-32 overflow-y-auto pr-2" : "line-clamp-3"}
+            `}
           >
             {description}
           </p>
 
-          {/* Toggle link */}
+          {/* Show More */}
           {description.length > 100 && (
             <button
-              onClick={() => setShowMore((s) => !s)}
-              className="mb-2 cursor-pointer text-xs text-[color:var(--foreground)]/80 underline-offset-2 hover:underline"
+              onClick={(e) => {
+                e.stopPropagation();
+                setShowMore((s) => !s);
+              }}
+              className="
+                mb-4 cursor-pointer
+                text-xs font-medium
+                text-white/70
+                transition
+                hover:text-white
+              "
             >
               {showMore ? "Show Less" : "Show More"}
             </button>
           )}
 
-          {/* Tech stack */}
-          <div className="mb-2 flex flex-wrap gap-1">
-            {techStack.map((tech) => (
+          {/* Tech Stack */}
+          <div className="mb-4 flex flex-wrap gap-2">
+            {techStack.slice(0, 6).map((tech) => (
               <span
                 key={tech}
                 className="
-                  rounded-full px-3 py-1 text-xs
-                  bg-[color:var(--secondary)] text-[color:var(--secondary-foreground)]
-                  border border-[color:var(--border)]
+                  rounded-full
+                  border border-white/10
+                  bg-white/10
+                  px-3 py-1
+                  text-[11px]
+                  font-medium
+                  text-white/90
+                  backdrop-blur-md
                 "
               >
                 {tech}
               </span>
             ))}
+
+            {techStack.length > 6 && (
+              <span
+                className="
+                  rounded-full
+                  border border-white/10
+                  bg-white/5
+                  px-3 py-1
+                  text-[11px]
+                  text-white/60
+                "
+              >
+                +{techStack.length - 6}
+              </span>
+            )}
           </div>
         </div>
 
-        {/* Buttons */}
-        <div className="flex gap-3">
-          {/* <Link
-            href={codeUrl}
-            target="_blank"
-            className="
-              inline-flex items-center gap-2 rounded-md px-3 py-2 text-xs
-              bg-[color:var(--foreground)] text-[color:var(--primary-foreground)]
-              hover:opacity-90 transition
-            "
-          >
-            <Github size={14} /> Code
-          </Link> */}
-          <Link
-            href={liveUrl}
-            target="_blank"
-            className="
-              inline-flex items-center gap-2 rounded-md px-3 py-2 text-xs
-              bg-indigo-600 text-white hover:bg-indigo-700 transition
-            "
-          >
-            <ExternalLink size={14} /> Live
-          </Link>
+        {/* Footer */}
+        <div className="border-t border-white/10 pt-4">
+          <p className="text-xs text-white/50">
+            Click the globe icon to visit the live project
+          </p>
         </div>
       </div>
     </div>
