@@ -3,7 +3,6 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { Globe } from "lucide-react";
 
 interface ProjectCardProps {
   title: string;
