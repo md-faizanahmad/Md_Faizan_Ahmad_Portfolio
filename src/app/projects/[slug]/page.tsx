@@ -3,6 +3,8 @@ import projects from "@/data/project.json";
 import ProjectHero from "@/components/projects/components/ProjectHero";
 import ProjectOverview from "@/components/projects/components/ProjectOverview";
 import FrontendStack from "@/components/projects/components/FrontendStack";
+import ProjectBackend from "@/components/projects/components/ProjectBackend";
+import ProjectFeatures from "@/components/projects/components/ProjectFeatures";
 
 interface PageProps {
   params: Promise<{
@@ -46,11 +48,12 @@ export default async function ProjectPage({ params }: PageProps) {
       {/* <section>Frontend Stack</section> */}
       <FrontendStack techStack={project.techStack} />
       {/* Backend */}
-      <section>Backend</section>
+      {/* <section>Backend</section> */}
+      <ProjectBackend backend={project.backend} />
 
       {/* Features */}
-      <section>Features</section>
-
+      {/* <section>Features</section> */}
+      <ProjectFeatures features={project.features} />
       {/* Security */}
       <section>Security</section>
 
