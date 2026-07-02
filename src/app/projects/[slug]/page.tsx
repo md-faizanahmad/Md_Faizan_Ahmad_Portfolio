@@ -7,6 +7,7 @@ import ProjectBackend from "@/components/projects/components/ProjectBackend";
 import ProjectFeatures from "@/components/projects/components/ProjectFeatures";
 import ProjectSecurity from "@/components/projects/components/ProjectSecurity";
 import ProjectEngineering from "@/components/projects/components/ProjectEngineering";
+import ProjectChallenges from "@/components/projects/components/ProjectChallenges";
 
 interface PageProps {
   params: Promise<{
@@ -65,7 +66,8 @@ export default async function ProjectPage({ params }: PageProps) {
         engineeringHighlights={project.engineeringHighlights}
       />
       {/* Challenges */}
-      <section>Challenges & Solutions</section>
+      {/* <section>Challenges & Solutions</section> */}
+      <ProjectChallenges challenges={project.challenges} />
 
       {/* Learning */}
       <section>What I Learned</section>
