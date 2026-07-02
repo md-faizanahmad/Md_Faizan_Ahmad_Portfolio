@@ -6,7 +6,14 @@
     "featured": true,
     "image": "https://res.cloudinary.com/daqb5wglu/image/upload/v1766169967/AdminDash_c87c4j.png",
     "gallery": [
-      "https://res.cloudinary.com/daqb5wglu/image/upload/v1766169967/AdminDash_c87c4j.png"
+      "https://res.cloudinary.com/daqb5wglu/image/upload/v1766169967/AdminDash_c87c4j.png",
+      "https://res.cloudinary.com/dyefyrszz/image/upload/v1783006215/Sales_zce4vz.png",
+      "https://res.cloudinary.com/dyefyrszz/image/upload/v1783006214/product_ysbbbq.png",
+      "https://res.cloudinary.com/dyefyrszz/image/upload/v1783006214/Orders_ekyxdu.png",
+      "https://res.cloudinary.com/dyefyrszz/image/upload/v1783006193/Notification_p6jzlj.png",
+      "https://res.cloudinary.com/dyefyrszz/image/upload/v1783006191/Categories_gjssdb.png",
+      "https://res.cloudinary.com/dyefyrszz/image/upload/v1783006191/Hero_h18shf.png",
+      "https://res.cloudinary.com/dyefyrszz/image/upload/v1783006190/AddProduct_ljrlyh.png"
     ],
 
     "description": "A production-ready admin dashboard for managing products, orders, inventory, payments, customers, analytics, and business operations for a full-stack e-commerce platform.",

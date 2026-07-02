@@ -10,6 +10,7 @@ import ProjectEngineering from "@/components/projects/components/ProjectEngineer
 import ProjectChallenges from "@/components/projects/components/ProjectChallenges";
 import ProjectLearning from "@/components/projects/components/ProjectLearning";
 import ProjectFuture from "@/components/projects/components/ProjectFuture";
+import ProjectGallery from "@/components/projects/components/ProjectGallery";
 
 interface PageProps {
   params: Promise<{
@@ -48,7 +49,7 @@ export default async function ProjectPage({ params }: PageProps) {
         problem={project.problem}
         solution={project.solution}
       />
-
+      <ProjectGallery gallery={project.gallery} title={project.title} />
       {/* Frontend */}
       {/* <section>Frontend Stack</section> */}
       <FrontendStack techStack={project.techStack} />
