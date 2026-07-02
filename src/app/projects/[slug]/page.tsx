@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import projects from "@/data/project.json";
 import ProjectHero from "@/components/projects/components/ProjectHero";
 import ProjectOverview from "@/components/projects/components/ProjectOverview";
+import FrontendStack from "@/components/projects/components/FrontendStack";
 
 interface PageProps {
   params: Promise<{
@@ -42,8 +43,8 @@ export default async function ProjectPage({ params }: PageProps) {
       />
 
       {/* Frontend */}
-      <section>Frontend Stack</section>
-
+      {/* <section>Frontend Stack</section> */}
+      <FrontendStack techStack={project.techStack} />
       {/* Backend */}
       <section>Backend</section>
 
