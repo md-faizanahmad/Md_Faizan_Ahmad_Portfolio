@@ -1,0 +1,170 @@
+[
+  {
+    "slug": "mystore-admin-dashboard",
+    "title": "MyStore Admin Dashboard",
+    "category": "Full Stack E-Commerce Administration System",
+    "featured": true,
+    "image": "https://res.cloudinary.com/daqb5wglu/image/upload/v1766169967/AdminDash_c87c4j.png",
+    "gallery": [
+      "https://res.cloudinary.com/daqb5wglu/image/upload/v1766169967/AdminDash_c87c4j.png"
+    ],
+
+    "description": "A production-ready admin dashboard for managing products, orders, inventory, payments, customers, analytics, and business operations for a full-stack e-commerce platform.",
+    "overview": "MyStore Admin Dashboard was built to simulate a real-world e-commerce administration system. The project focuses on secure authentication, business management workflows, payment processing, invoice generation, analytics, and scalable backend architecture using modern full-stack technologies.",
+    "liveUrl": "https://admin.myazstore.shop",
+    "codeUrl": "https://github.com/md-faizanahmad/Shop_Admin",
+    "status": "Completed",
+    "role": "Full Stack Developer",
+    "duration": "4 Months",
+    "techStack": [
+      "React.js",
+      "TypeScript",
+      "CSS",
+      "TanStack Query",
+      "React Router",
+      "JWT Authentication",
+      "Google 2FA",
+      "Vercel"
+    ],
+
+    "features": {
+      "authentication": [
+        "User Registration and Authentication",
+        "JWT Authentication with HttpOnly Cookies",
+        "Email Verification and OTP Authentication",
+        "Password Hashing with bcrypt",
+        "Secure Admin Authentication",
+        "Google OAuth Integration"
+      ],
+
+      "catalog": [
+        "Product CRUD Operations",
+        "Cloudinary Image Upload and Management",
+        "Category Management",
+        "Product Search and Filtering",
+        "Pagination",
+        "Inventory and Stock Tracking"
+      ],
+
+      "commerce": [
+        "Shopping Cart Management",
+        "Checkout Workflow",
+        "Address Management",
+        "Razorpay Payment Integration",
+        "Order Creation and Processing"
+      ],
+
+      "orders": [
+        "Order Tracking and Status Updates",
+        "Admin Order Management",
+        "Automatic PDF Invoice Generation",
+        "Invoice Email Delivery",
+        "Invoice Download System"
+      ],
+
+      "analytics": [
+        "Sales Analytics",
+        "Order Analytics",
+        "Profit Insights",
+        "Inventory Insights",
+        "User Management",
+        "Analytics Dashboard APIs"
+      ]
+    },
+
+    "backend": {
+      "overview": "Custom REST API powering both the Admin Dashboard and Shop frontend applications.",
+
+      "techStack": {
+        "runtime": ["Node.js (ES Modules)", "JavaScript (ES2023)"],
+        "framework": ["Express.js"],
+        "database": ["MongoDB", "Mongoose"],
+        "authentication": ["JWT", "bcrypt"],
+        "validation": ["Zod"],
+        "payments": ["Razorpay"],
+        "fileUploads": ["Multer", "Cloudinary"],
+        "email": ["Nodemailer"],
+        "documents": ["pdfkit", "pdfkit-table"],
+        "testing": ["Node Test Runner", "Supertest", "MongoDB Memory Server"],
+        "deployment": ["Vercel Functions", "Serverless Architecture"]
+      }
+    },
+
+    "security": [
+      "JWT Authentication",
+      "HttpOnly Secure Cookies",
+      "Password Hashing with bcrypt",
+      "Google Authenticator 2FA",
+      "Email Verification",
+      "OTP Authentication",
+      "Protected API Routes",
+      "Input Validation",
+      "CORS Protection",
+      "Secure Cookie Configuration"
+    ],
+
+    "engineeringHighlights": [
+      "Built a modular backend architecture with separate routes, controllers, services, middleware, and validation layers",
+      "Implemented schema-based validation using Zod to prevent invalid API requests",
+      "Used secure JWT authentication with HttpOnly cookies instead of localStorage",
+      "Integrated a real payment workflow using Razorpay",
+      "Implemented automated PDF invoice generation and email delivery",
+      "Designed the backend to be scalable, maintainable, and serverless-ready",
+      "Created reusable middleware and centralized error handling patterns",
+      "Applied production-oriented API design and security practices"
+    ],
+
+    "problem": "Managing an e-commerce business manually becomes difficult as products, orders, customers, payments, and inventory grow. I wanted to build a centralized admin system that could handle day-to-day business operations securely and efficiently.",
+    "solution": "Built a full-stack admin dashboard and backend ecosystem that provides secure authentication, product and order management, payment processing, invoice generation, analytics, and administrative tools in a single platform.",
+
+    "challenges": [
+      {
+        "problem": "Designing professional PDF invoices that looked clean, readable, and suitable for real customer orders.",
+        "solution": "Created a custom invoice template using pdfkit and pdfkit-table, carefully designing the layout, product tables, pricing breakdown, taxes, and customer information sections."
+      },
+      {
+        "problem": "Generating and delivering invoices only after successful payment verification and order creation.",
+        "solution": "Implemented a server-side workflow that verifies payment, creates the order, generates the invoice automatically, sends it via email, and makes it available for download in the user dashboard."
+      },
+      {
+        "problem": "Implementing secure authentication without exposing tokens in the browser.",
+        "solution": "Used JWT authentication with HttpOnly cookies instead of storing tokens in localStorage, improving security and reducing the risk of token theft."
+      },
+      {
+        "problem": "Managing product image uploads, updates, and cleanup efficiently.",
+        "solution": "Integrated Multer and Cloudinary for image handling and implemented automatic cleanup using Cloudinary public IDs when products or images are removed."
+      },
+      {
+        "problem": "Keeping the backend maintainable as new features and modules were added.",
+        "solution": "Organized the backend using separate routes, controllers, services, middleware, and validation layers to keep the codebase scalable and easier to maintain."
+      },
+      {
+        "problem": "Ensuring that invalid or unexpected data did not affect business logic.",
+        "solution": "Implemented schema-based validation using Zod to validate incoming requests before processing them."
+      }
+    ],
+
+    "learning": [
+      "Designing and building production-style REST APIs",
+      "Implementing secure authentication using JWT and HttpOnly cookies",
+      "Integrating payment gateways and handling payment verification workflows",
+      "Generating and delivering PDF invoices programmatically",
+      "Building scalable backend architecture using service-based patterns",
+      "Managing file uploads and cloud storage efficiently",
+      "Implementing email workflows and transactional notifications",
+      "Writing automated API tests using Supertest and MongoDB Memory Server",
+      "Deploying and optimizing serverless applications",
+      "Designing applications with maintainability and scalability in mind"
+    ],
+
+    "futureImprovements": [
+      "Advanced admin permission management",
+      "Real-time notifications and order updates",
+      "Inventory forecasting and low-stock alerts",
+      "Comprehensive audit logs",
+      "Advanced analytics and reporting dashboards",
+      "Multi-vendor marketplace support",
+      "AI-powered business insights and recommendations"
+    ]
+  }
+]
