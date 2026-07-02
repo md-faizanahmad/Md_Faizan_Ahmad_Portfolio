@@ -5,6 +5,7 @@ import ProjectOverview from "@/components/projects/components/ProjectOverview";
 import FrontendStack from "@/components/projects/components/FrontendStack";
 import ProjectBackend from "@/components/projects/components/ProjectBackend";
 import ProjectFeatures from "@/components/projects/components/ProjectFeatures";
+import ProjectSecurity from "@/components/projects/components/ProjectSecurity";
 
 interface PageProps {
   params: Promise<{
@@ -55,8 +56,8 @@ export default async function ProjectPage({ params }: PageProps) {
       {/* <section>Features</section> */}
       <ProjectFeatures features={project.features} />
       {/* Security */}
-      <section>Security</section>
-
+      {/* <section>Security</section> */}
+      <ProjectSecurity security={project.security} />
       {/* Engineering */}
       <section>Engineering Highlights</section>
 
