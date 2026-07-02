@@ -1,4 +1,5 @@
 export interface Project {
+  slug: string;
   title: string;
   image: string;
   liveUrl: string;

@@ -4,8 +4,10 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { ExternalLink } from "lucide-react";
+import { useRouter } from "next/navigation";
 
 interface ProjectCardProps {
+  slug: string;
   title: string;
   image: string;
   liveUrl: string;
@@ -15,6 +17,7 @@ interface ProjectCardProps {
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({
+  slug,
   title,
   image,
   liveUrl,
@@ -24,7 +27,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 }) => {
   const [hovered, setHovered] = useState(false);
   const [showMore, setShowMore] = useState(false);
-
+  const router = useRouter();
   return (
     <div
       className="
@@ -33,7 +36,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         bg-[color:var(--card)] shadow-sm
         transition-all duration-300 hover:shadow-lg
       "
-      onClick={() => setHovered(!hovered)}
+      // onClick={() => setHovered(!hovered)}
+      onClick={() => router.push(`/projects/${slug}`)}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >
@@ -57,22 +61,38 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         </h2>
 
         {/* Live button on front card */}
-        <Link
-          href={liveUrl}
-          target="_blank"
-          onClick={(e) => e.stopPropagation()}
-          className="
-            absolute bottom-3 right-8 z-10
-            inline-flex items-center gap-2
-            rounded-md px-3 py-2 text-xs
-            bg-white text-black
-            shadow-lg transition
-            hover:bg-white
-          "
-        >
-          <ExternalLink size={14} />
-          Live
-        </Link>
+        {/* Action buttons */}
+        <div className="absolute bottom-3 right-6 z-10 flex gap-2">
+          {/* Details */}
+          <Link
+            href={`/projects/${slug}`}
+            onClick={(e) => e.stopPropagation()}
+            className="
+      inline-flex items-center gap-1
+      rounded-md bg-green-600 px-3 py-2
+      text-xs font-medium text-gray-100
+      shadow-lg 
+    "
+          >
+            Details
+          </Link>
+
+          {/* Live */}
+          <Link
+            href={liveUrl}
+            target="_blank"
+            onClick={(e) => e.stopPropagation()}
+            className="
+      inline-flex items-center gap-1
+      rounded-md bg-white px-3 py-2
+      text-xs font-medium text-black
+      shadow-lg transition hover:bg-gray-100
+    "
+          >
+            <ExternalLink size={14} />
+            Live
+          </Link>
+        </div>
       </div>
 
       {/* Hover panel */}
