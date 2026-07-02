@@ -1,102 +1,20 @@
 [
   {
-    "slug": "mystore-admin-dashboard",
     "title": "MyStore Admin Dashboard",
-    "category": "Full Stack Admin Dashboard",
-    "featured": true,
     "image": "https://res.cloudinary.com/daqb5wglu/image/upload/v1766169967/AdminDash_c87c4j.png",
-    "gallery": [
-      "https://res.cloudinary.com/daqb5wglu/image/upload/v1766169967/AdminDash_c87c4j.png"
-    ],
-
-    "description": "A production-ready admin dashboard for managing an e-commerce platform, featuring secure authentication, product and category management, analytics, media uploads, and administrative tools.",
-    "overview": "MyStore Admin Dashboard was built to simulate a real-world e-commerce administration system. The project focuses on secure authentication, role-based administration, product management, image handling, analytics, and scalable backend architecture using modern full-stack technologies.",
+    "description": "MyStore Admin Dashboard is running successfully on Vercel Serverless",
     "liveUrl": "https://admin.myazstore.shop",
     "codeUrl": "https://github.com/md-faizanahmad/Shop_Admin",
-    "status": "Completed",
-    "role": "Full Stack Developer",
-    "duration": "4 Months",
-
     "techStack": [
       "React.js",
       "TypeScript",
       "CSS",
-      "Node.js",
-      "Express.js",
+      "Vercel Serverless",
       "MongoDB Atlas",
       "JWT Auth with HttpOnly Cookies",
+      "Node.js",
       "Google 2FA",
-      "Cloudinary",
-      "Vercel Serverless"
-    ],
-
-    "features": [
-      "Secure Admin Authentication",
-      "JWT Authentication with HttpOnly Cookies",
-      "Google Authenticator 2FA",
-      "Recovery Codes",
-      "Product Management CRUD",
-      "Category Management CRUD",
-      "Subcategory Management",
-      "Cloudinary Image Upload",
-      "Dashboard Analytics",
-      "Role-Based Access Control",
-      "Search and Filtering",
-      "Pagination",
-      "Product Archiving",
-      "Soft Delete Functionality",
-      "Responsive Admin Interface",
-      "Serverless Deployment"
-    ],
-
-    "problem": "Small and medium businesses require a centralized and secure administration system to manage products, categories, orders, and customer-facing content efficiently.",
-    "solution": "Developed a scalable full-stack admin dashboard with secure authentication, media management, analytics, and complete administrative control over the e-commerce ecosystem.",
-    "challenges": [
-      {
-        "problem": "Managing secure authentication across frontend and backend applications.",
-        "solution": "Implemented JWT authentication using HttpOnly cookies with proper CORS and domain configurations."
-      },
-      {
-        "problem": "Securing administrator accounts against unauthorized access.",
-        "solution": "Integrated Google Authenticator based two-factor authentication with recovery code support."
-      },
-      {
-        "problem": "Handling image uploads and cleanup efficiently.",
-        "solution": "Integrated Cloudinary storage and implemented automatic image deletion using public_id references."
-      },
-      {
-        "problem": "Preventing accidental product deletion.",
-        "solution": "Implemented soft-delete and archive functionality for safer product management."
-      },
-      {
-        "problem": "Deploying a scalable backend architecture.",
-        "solution": "Used Vercel Serverless Functions to deploy APIs with optimized resource usage."
-      }
-    ],
-
-    "learning": [
-      "Production-level JWT Authentication",
-      "HttpOnly Cookie Security",
-      "Two-Factor Authentication Implementation",
-      "Serverless Architecture",
-      "MongoDB Schema Design",
-      "Cloudinary Media Management",
-      "Role-Based Access Control",
-      "REST API Design",
-      "State Management Patterns",
-      "Performance Optimization",
-      "Error Handling Strategies",
-      "Full-Stack Deployment Workflows"
-    ],
-
-    "futureImprovements": [
-      "Real-Time Analytics Dashboard",
-      "Admin Activity Logs",
-      "Order Management Module",
-      "Inventory Management",
-      "Email Notification System",
-      "Multi-Admin Permission System",
-      "Advanced Reporting and Export Features"
+      "Express.js"
     ]
   },
   {
