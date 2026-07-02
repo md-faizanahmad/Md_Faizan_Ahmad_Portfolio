@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import projects from "@/data/project.json";
 import ProjectHero from "@/components/projects/components/ProjectHero";
+import ProjectOverview from "@/components/projects/components/ProjectOverview";
 
 interface PageProps {
   params: Promise<{
@@ -18,7 +19,7 @@ export default async function ProjectPage({ params }: PageProps) {
   }
 
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen mt-12">
       {/* Hero */}
       <ProjectHero
         title={project.title}
@@ -34,7 +35,11 @@ export default async function ProjectPage({ params }: PageProps) {
       />
 
       {/* Overview */}
-      <section>Overview</section>
+      <ProjectOverview
+        overview={project.overview}
+        problem={project.problem}
+        solution={project.solution}
+      />
 
       {/* Frontend */}
       <section>Frontend Stack</section>
