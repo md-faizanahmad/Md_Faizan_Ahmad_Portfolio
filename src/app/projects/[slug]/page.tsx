@@ -30,7 +30,7 @@ export default async function ProjectPage({ params }: PageProps) {
 
   return (
     <main className="min-h-screen mt-22">
-      <nav className="w-full flex justify-start ms-8">
+      <nav className="w-full flex justify-start ps-8">
         <BackButton fallbackUrl="/projects" label="Back to Projects" />
       </nav>
       {/* Hero */}
