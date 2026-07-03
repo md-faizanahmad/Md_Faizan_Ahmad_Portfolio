@@ -27,7 +27,7 @@ export default function BackButton({
     <div className="w-full bg-white text-black transition-colors duration-300 dark:bg-black dark:text-white">
       <button
         onClick={handleNavigation}
-        className="group inline-flex items-center gap-3 border border-neutral-200 bg-white px-4 py-2.5 text-xs font-semibold uppercase tracking-widest text-black transition-all duration-200 hover:bg-neutral-50 active:scale-95 dark:border-neutral-800 dark:bg-black dark:text-white dark:hover:bg-neutral-900 w-full sm:w-auto justify-center sm:justify-start rounded-sm"
+        className="cursor-pointer group inline-flex items-center gap-3 border border-neutral-200 bg-white px-4 py-2.5 text-xs font-semibold uppercase tracking-widest text-black transition-all duration-200 hover:bg-neutral-50 active:scale-95 dark:border-neutral-800 dark:bg-black dark:text-white dark:hover:bg-neutral-900 w-full sm:w-auto justify-center sm:justify-start rounded-sm"
         aria-label={label}
       >
         <ArrowLeft

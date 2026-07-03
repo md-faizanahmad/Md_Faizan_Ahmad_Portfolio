@@ -11,6 +11,7 @@ import ProjectChallenges from "@/components/projects/components/ProjectChallenge
 import ProjectLearning from "@/components/projects/components/ProjectLearning";
 import ProjectFuture from "@/components/projects/components/ProjectFuture";
 import ProjectGallery from "@/components/projects/components/ProjectGallery";
+import BackButton from "@/components/projects/components/BackButton";
 
 interface PageProps {
   params: Promise<{
@@ -28,7 +29,10 @@ export default async function ProjectPage({ params }: PageProps) {
   }
 
   return (
-    <main className="min-h-screen mt-12">
+    <main className="min-h-screen mt-22">
+      <nav className="w-full flex justify-start ms-8">
+        <BackButton fallbackUrl="/projects" label="Back to Projects" />
+      </nav>
       {/* Hero */}
       <ProjectHero
         title={project.title}
