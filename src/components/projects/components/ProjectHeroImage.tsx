@@ -12,7 +12,7 @@ export default function ProjectHeroImage({
   title,
 }: ProjectHeroImageProps) {
   return (
-    <div className="flex w-full items-center justify-center bg-white p-2 transition-colors duration-300 dark:bg-black ">
+    <div className="flex w-full items-start justify-center transition-colors duration-300 dark:bg-black ">
       {/* Controlled Dimension Wrapper:
         - Sets a maximum width envelope (max-w-2xl) so it stays clean on wide monitors
         - Enforces a strictly bounded, highly responsive height profile (h-48 up to h-96)

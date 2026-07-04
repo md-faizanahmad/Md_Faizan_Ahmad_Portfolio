@@ -62,7 +62,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 
         {/* Live button on front card */}
         {/* Action buttons */}
-        <div className="absolute bottom-3 right-6 z-10 flex gap-2">
+        <div className="absolute bottom-3 right-7 z-10 flex gap-2">
           {/* Details */}
           <Link
             href={`/projects/${slug}`}
