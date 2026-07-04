@@ -17,7 +17,7 @@
     ],
 
     "description": "A production-ready admin dashboard for managing products, orders, inventory, payments, customers, analytics, and business operations for a full-stack e-commerce platform.",
-    "overview": "MyStore Admin Dashboard was built to simulate a real-world e-commerce administration system. The project focuses on secure authentication, business management workflows, payment processing, invoice generation, analytics, and scalable backend architecture using modern full-stack technologies.",
+    "overview": "MyStore Admin Dashboard is a centralized administration platform built for managing products, inventory, orders, customers, payments, and business analytics within the MyAZStore ecosystem. The project was designed to handle real-world e-commerce workflows with a focus on secure authentication, operational efficiency, scalability, and long-term maintainability.",
     "liveUrl": "https://admin.myazstore.shop",
     "codeUrl": "https://github.com/md-faizanahmad/Shop_Admin",
     "status": "Completed",
@@ -26,11 +26,15 @@
     "techStack": [
       "React.js",
       "TypeScript",
-      "CSS",
+      "Tailwind CSS",
       "TanStack Query",
-      "React Router",
-      "JWT Authentication",
-      "Google 2FA",
+      "React Router DOM",
+      "Axios",
+      "React Hook Form",
+      "Zod",
+      "Lucide React",
+      "Recharts",
+      "Cloudinary",
       "Vercel"
     ],
 

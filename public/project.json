@@ -19,11 +19,15 @@
     "techStack": [
       "React.js",
       "TypeScript",
-      "CSS",
+      "Tailwind CSS",
       "TanStack Query",
-      "React Router",
-      "JWT Authentication",
-      "Google 2FA",
+      "React Router DOM",
+      "Axios",
+      "React Hook Form",
+      "Zod",
+      "Lucide React",
+      "Recharts",
+      "Cloudinary",
       "Vercel"
     ],
 
