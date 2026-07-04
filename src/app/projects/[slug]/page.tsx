@@ -2,7 +2,6 @@ import { notFound } from "next/navigation";
 import projects from "@/data/project.json";
 import ProjectHero from "@/components/projects/components/ProjectHero";
 import ProjectOverview from "@/components/projects/components/ProjectOverview";
-import FrontendStack from "@/components/projects/components/FrontendStack";
 import ProjectFeatures from "@/components/projects/components/ProjectFeatures";
 import ProjectSecurity from "@/components/projects/components/ProjectSecurity";
 import ProjectEngineering from "@/components/projects/components/ProjectEngineering";
@@ -12,7 +11,6 @@ import ProjectFuture from "@/components/projects/components/ProjectFuture";
 import ProjectGallery from "@/components/projects/components/ProjectGallery";
 import BackButton from "@/components/projects/components/BackButton";
 import ProjectTechStack from "@/components/projects/components/ProjectTechStack";
-import BackendStack from "@/components/projects/components/ProjectBackend";
 
 interface PageProps {
   params: Promise<{
@@ -30,7 +28,7 @@ export default async function ProjectPage({ params }: PageProps) {
   }
 
   return (
-    <main className="min-h-screen mt-22">
+    <main className="min-h-screen pt-22">
       <nav className="w-full flex justify-start ps-8">
         <BackButton fallbackUrl="/projects" label="Back to Projects" />
       </nav>

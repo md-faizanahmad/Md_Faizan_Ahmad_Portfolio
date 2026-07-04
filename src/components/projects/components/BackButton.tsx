@@ -27,6 +27,7 @@ export default function BackButton({
       onClick={handleNavigation}
       aria-label={label}
       className="
+      cursor-pointer
         group
         inline-flex
         items-center
