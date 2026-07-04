@@ -58,6 +58,7 @@ import { Analytics } from "@vercel/analytics/next";
 import ThemeProvider from "./providers";
 import CursorSpotlight from "@/components/visual/CursorSpotlight";
 import Footer from "../components/footer/Footer";
+import AssetGuard from "@/shared/AssetGuard";
 
 const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 const geistMono = Geist_Mono({
@@ -106,6 +107,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <ThemeProvider>
+          <AssetGuard />
           <CursorSpotlight />
           <Navbar />
           {children}

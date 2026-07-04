@@ -22,7 +22,7 @@ export default function ProjectGallery({
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
         {/* Standout Primary Section Heading */}
         <div className="space-y-1.5 max-w-4xl text-left">
-          <h2 className="text-xl font-extrabold uppercase tracking-tight sm:text-2xl md:text-3xl">
+          <h2 className="text-xl  font-extrabold uppercase tracking-tight sm:text-2xl md:text-3xl">
             Project Gallery
           </h2>
           <p className="text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">
@@ -30,11 +30,8 @@ export default function ProjectGallery({
           </p>
         </div>
 
-        {/* Crisp structural break line */}
-        <hr className="my-8 border-neutral-100 dark:border-neutral-900" />
-
         {/* Main Fluid Asset Preview Viewport Frame */}
-        <div className="w-full max-w-5xl border border-neutral-200 bg-neutral-50 dark:border-neutral-800 dark:bg-neutral-900/20 rounded-sm overflow-hidden">
+        <div className="w-full  max-w-4xl border border-neutral-200 bg-neutral-50 dark:border-neutral-800 dark:bg-neutral-900/20 rounded-sm overflow-hidden">
           <div className="relative w-full aspect-video">
             <Image
               src={gallery[selected]}
@@ -42,7 +39,7 @@ export default function ProjectGallery({
               fill
               priority
               sizes="(max-width: 1024px) 100vw, 1024px"
-              className="object-contain p-2 md:p-4 grayscale transition-all duration-300 hover:grayscale-0"
+              className="object-contain"
             />
           </div>
         </div>
@@ -57,7 +54,7 @@ export default function ProjectGallery({
                   <button
                     key={image}
                     onClick={() => setSelected(index)}
-                    className={`relative aspect-video w-20 shrink-0 overflow-hidden border p-0.5 bg-neutral-50 dark:bg-neutral-900 transition-all duration-200 sm:w-auto rounded-sm ${
+                    className={`relative cursor-pointer aspect-video w-20 shrink-0 overflow-hidden border p-0.5 bg-neutral-50 dark:bg-neutral-900 transition-all duration-200 sm:w-auto rounded-sm ${
                       isSelected
                         ? "border-black dark:border-white opacity-100 scale-[1.02]"
                         : "border-neutral-200 dark:border-neutral-800 opacity-40 hover:opacity-100"
