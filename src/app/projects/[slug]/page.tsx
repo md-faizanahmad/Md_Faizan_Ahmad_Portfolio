@@ -55,15 +55,7 @@ export default async function ProjectPage({ params }: PageProps) {
         solution={project.solution}
       />
       <ProjectGallery gallery={project.gallery} title={project.title} />
-      {/* Frontend */}
-      {/* <section>Frontend Stack</section> */}
-      {/* <FrontendStack techStack={project.techStack} /> */}
-      {/* Backend */}
-      {/* <section>Backend</section> */}
-      {/* <ProjectTechStack>
-        <FrontendStack techStack={project.techStack} />
-        <BackendStack backend={project.backend} />
-      </ProjectTechStack> */}
+
       <ProjectTechStack
         frontend={project.techStack}
         backend={project.backend.techStack}
