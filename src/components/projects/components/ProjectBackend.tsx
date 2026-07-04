@@ -5,44 +5,58 @@ interface BackendProps {
   };
 }
 
-export default function ProjectBackend({ backend }: BackendProps) {
-  return (
-    <section className="mx-auto max-w-7xl px-4 py-12">
-      {/* Header */}
-      <div className="mb-8">
-        <h2 className="text-3xl font-bold tracking-tight">
-          Backend Architecture
-        </h2>
+export default function BackendStack({ backend }: BackendProps) {
+  const formatTitle = (title: string) =>
+    title.replace(/([A-Z])/g, " $1").replace(/^./, (str) => str.toUpperCase());
 
-        <p className="mt-2 text-sm text-muted-foreground">
-          Technologies, services, and architecture used to power the
-          application.
+  return (
+    <div className="space-y-6">
+      {/* Heading */}
+      <div>
+        <h3 className="mb-3 text-xl font-semibold">Backend & Infrastructure</h3>
+
+        <p className="max-w-4xl leading-7 text-neutral-600 dark:text-neutral-400">
+          {backend.overview}
         </p>
       </div>
 
-      {/* Overview */}
-      <div className="mb-8 rounded-xl border bg-card p-6">
-        <p className="leading-7 text-muted-foreground">{backend.overview}</p>
-      </div>
-
-      {/* Tech Stack */}
-      <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+      {/* Scrollable Tech Groups */}
+      <div className="flex gap-4 overflow-x-auto pb-3">
         {Object.entries(backend.techStack).map(([category, technologies]) => (
-          <div key={category} className="rounded-xl border bg-card p-5">
-            <h3 className="mb-4 text-lg font-semibold capitalize">
-              {category.replace(/([A-Z])/g, " $1")}
-            </h3>
+          <div
+            key={category}
+            className="
+                min-w-[220px]
+                shrink-0
+                rounded-lg
+                border
+                border-neutral-200
+                bg-white
+                p-4
+                dark:border-neutral-800
+                dark:bg-black
+              "
+          >
+            {/* Category */}
+            <h4 className="mb-3 text-sm font-semibold text-neutral-500">
+              {formatTitle(category)}
+            </h4>
 
+            {/* Technologies */}
             <div className="flex flex-wrap gap-2">
               {technologies.map((tech) => (
                 <span
                   key={tech}
                   className="
-                      rounded-full
-                      border
-                      px-3
+                      rounded-md
+                      bg-neutral-100
+                      px-2.5
                       py-1
-                      text-sm
+                      text-xs
+                      font-medium
+                      text-neutral-700
+                      dark:bg-neutral-900
+                      dark:text-neutral-300
                     "
                 >
                   {tech}
@@ -52,6 +66,6 @@ export default function ProjectBackend({ backend }: BackendProps) {
           </div>
         ))}
       </div>
-    </section>
+    </div>
   );
 }

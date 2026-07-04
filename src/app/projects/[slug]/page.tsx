@@ -3,7 +3,6 @@ import projects from "@/data/project.json";
 import ProjectHero from "@/components/projects/components/ProjectHero";
 import ProjectOverview from "@/components/projects/components/ProjectOverview";
 import FrontendStack from "@/components/projects/components/FrontendStack";
-import ProjectBackend from "@/components/projects/components/ProjectBackend";
 import ProjectFeatures from "@/components/projects/components/ProjectFeatures";
 import ProjectSecurity from "@/components/projects/components/ProjectSecurity";
 import ProjectEngineering from "@/components/projects/components/ProjectEngineering";
@@ -12,6 +11,8 @@ import ProjectLearning from "@/components/projects/components/ProjectLearning";
 import ProjectFuture from "@/components/projects/components/ProjectFuture";
 import ProjectGallery from "@/components/projects/components/ProjectGallery";
 import BackButton from "@/components/projects/components/BackButton";
+import ProjectTechStack from "@/components/projects/components/ProjectTechStack";
+import BackendStack from "@/components/projects/components/ProjectBackend";
 
 interface PageProps {
   params: Promise<{
@@ -56,11 +57,18 @@ export default async function ProjectPage({ params }: PageProps) {
       <ProjectGallery gallery={project.gallery} title={project.title} />
       {/* Frontend */}
       {/* <section>Frontend Stack</section> */}
-      <FrontendStack techStack={project.techStack} />
+      {/* <FrontendStack techStack={project.techStack} /> */}
       {/* Backend */}
       {/* <section>Backend</section> */}
-      <ProjectBackend backend={project.backend} />
-
+      {/* <ProjectTechStack>
+        <FrontendStack techStack={project.techStack} />
+        <BackendStack backend={project.backend} />
+      </ProjectTechStack> */}
+      <ProjectTechStack
+        frontend={project.techStack}
+        backend={project.backend.techStack}
+        security={project.security}
+      />
       {/* Features */}
       {/* <section>Features</section> */}
       <ProjectFeatures features={project.features} />
