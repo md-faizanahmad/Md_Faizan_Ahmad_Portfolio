@@ -1,3 +1,5 @@
+"use client";
+
 interface ProjectOverviewProps {
   overview: string;
   problem: string;
@@ -10,35 +12,46 @@ export default function ProjectOverview({
   solution,
 }: ProjectOverviewProps) {
   return (
-    <section className="mx-auto max-w-7xl px-4 py-12">
-      {/* Section Title */}
-      <div className="mb-8">
-        <h2 className="text-3xl font-bold tracking-tight">Project Overview</h2>
-        <p className="mt-2 text-sm text-muted-foreground">
-          Background, business problem, and solution approach.
-        </p>
-      </div>
-
-      <div className="grid gap-6 lg:grid-cols-3">
-        {/* Overview */}
-        <div className="rounded-xl border bg-card p-6">
-          <h3 className="mb-4 text-xl font-semibold">Overview</h3>
-
-          <p className="leading-7 text-muted-foreground">{overview}</p>
+    <section className="w-full bg-white text-black transition-colors duration-300 dark:bg-black dark:text-white">
+      {/* 
+        The max-w-7xl grid centers the main workspace section container perfectly on high-res monitors, 
+        while all interior header text blocks and column elements align cleanly to the same left margin line.
+      */}
+      <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+        {/* Top Block Container */}
+        <div className="space-y-4 max-w-4xl">
+          <h2 className="text-xs font-bold uppercase tracking-widest text-neutral-400 dark:text-neutral-500">
+            Project Overview
+          </h2>
+          <p className="text-base leading-relaxed text-neutral-700 dark:text-neutral-300 sm:text-lg sm:leading-relaxed font-normal">
+            {overview}
+          </p>
         </div>
 
-        {/* Problem */}
-        <div className="rounded-xl border bg-card p-6">
-          <h3 className="mb-4 text-xl font-semibold">Problem</h3>
+        {/* Clean, low-contrast structural break line */}
+        <hr className="my-10 border-neutral-100 dark:border-neutral-900" />
 
-          <p className="leading-7 text-muted-foreground">{problem}</p>
-        </div>
+        {/* Dynamic Two Column Grid Layer */}
+        <div className="grid gap-8 sm:gap-12 md:grid-cols-2 lg:gap-16">
+          {/* Challenge / Problem Space */}
+          <div className="space-y-2">
+            <h3 className="text-xs font-bold uppercase tracking-widest text-neutral-400 dark:text-neutral-500">
+              The Challenge
+            </h3>
+            <p className="text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">
+              {problem}
+            </p>
+          </div>
 
-        {/* Solution */}
-        <div className="rounded-xl border bg-card p-6">
-          <h3 className="mb-4 text-xl font-semibold">Solution</h3>
-
-          <p className="leading-7 text-muted-foreground">{solution}</p>
+          {/* Execution / Solution Space */}
+          <div className="space-y-2">
+            <h3 className="text-xs font-bold uppercase tracking-widest text-neutral-400 dark:text-neutral-500">
+              The Execution
+            </h3>
+            <p className="text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">
+              {solution}
+            </p>
+          </div>
         </div>
       </div>
     </section>
