@@ -19,15 +19,15 @@ export default function ProjectOverview({
       */}
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
         {/* Top Block Container */}
-        <div className="space-y-4 max-w-4xl">
-          <h2 className="text-xs font-bold uppercase tracking-widest text-neutral-400 dark:text-neutral-500">
+
+        <div className="space-y-1.5 max-w-4xl text-left">
+          <h2 className="text-xl font-extrabold uppercase tracking-tight sm:text-2xl md:text-3xl">
             Project Overview
           </h2>
-          <p className="text-base leading-relaxed text-neutral-700 dark:text-neutral-300 sm:text-lg sm:leading-relaxed font-normal">
+          <p className="text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">
             {overview}
           </p>
         </div>
-
         {/* Clean, low-contrast structural break line */}
         <hr className="my-10 border-neutral-100 dark:border-neutral-900" />
 

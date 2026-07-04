@@ -17,71 +17,67 @@ export default function ProjectGallery({
   if (!gallery?.length) return null;
 
   return (
-    <section className="mx-auto w-full max-w-3xl px-4 py-6 md:py-8">
-      {/* Header */}
-      <div className="mb-4 md:mb-6 text-center sm:text-left">
-        <h2 className="text-xl font-semibold tracking-tight text-neutral-900 md:text-2xl">
-          Project Gallery
-        </h2>
-        <p className="mt-1 text-xs text-neutral-500">
-          Screenshots showcasing different parts of {title}.
-        </p>
-      </div>
-
-      {/* Main Preview Container - Scaled Down & Centered */}
-      <div className="mx-auto max-w-2xl overflow-hidden rounded-xl border border-neutral-200 bg-white">
-        <div className="relative aspect-[16/10] w-full sm:aspect-video">
-          <Image
-            src={gallery[selected]}
-            alt={`${title} screenshot ${selected + 1}`}
-            fill
-            priority
-            className="object-contain p-3 md:p-4"
-          />
+    <section className="w-full bg-white text-black transition-colors duration-300 dark:bg-black dark:text-white">
+      {/* Shared alignment layout master bounding box */}
+      <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+        {/* Standout Primary Section Heading */}
+        <div className="space-y-1.5 max-w-4xl text-left">
+          <h2 className="text-xl font-extrabold uppercase tracking-tight sm:text-2xl md:text-3xl">
+            Project Gallery
+          </h2>
+          <p className="text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">
+            Visual interfaces and architectural breakdown logs for {title}.
+          </p>
         </div>
-      </div>
 
-      {/* Thumbnails - Sized to match the narrower preview container */}
-      {gallery.length > 1 && (
-        <div className="mx-auto max-w-2xl">
-          <div
-            className="
-              mt-4 
-              flex gap-2.5 overflow-x-auto pb-2 scrollbar-none
-              sm:grid sm:grid-cols-4 sm:overflow-x-visible sm:pb-0
-              md:grid-cols-5
-            "
-          >
-            {gallery.map((image, index) => {
-              const isSelected = selected === index;
-              return (
-                <button
-                  key={image}
-                  onClick={() => setSelected(index)}
-                  className={`
-                    relative aspect-video w-20 shrink-0 overflow-hidden rounded-lg border bg-white p-0.5 transition-all duration-200
-                    sm:w-auto
-                    ${
-                      isSelected
-                        ? "border-neutral-900 ring-1 ring-neutral-900 opacity-100"
-                        : "border-neutral-200 opacity-60 hover:opacity-100"
-                    }
-                  `}
-                  aria-label={`View image ${index + 1}`}
-                >
-                  <Image
-                    src={image}
-                    alt={`${title} thumbnail ${index + 1}`}
-                    fill
-                    sizes="(max-width: 640px) 80px, 150px"
-                    className="object-contain"
-                  />
-                </button>
-              );
-            })}
+        {/* Crisp structural break line */}
+        <hr className="my-8 border-neutral-100 dark:border-neutral-900" />
+
+        {/* Main Fluid Asset Preview Viewport Frame */}
+        <div className="w-full max-w-5xl border border-neutral-200 bg-neutral-50 dark:border-neutral-800 dark:bg-neutral-900/20 rounded-sm overflow-hidden">
+          <div className="relative w-full aspect-video">
+            <Image
+              src={gallery[selected]}
+              alt={`${title} snapshot ${selected + 1}`}
+              fill
+              priority
+              sizes="(max-width: 1024px) 100vw, 1024px"
+              className="object-contain p-2 md:p-4 grayscale transition-all duration-300 hover:grayscale-0"
+            />
           </div>
         </div>
-      )}
+
+        {/* Thumbnail Selector Layer */}
+        {gallery.length > 1 && (
+          <div className="w-full max-w-5xl mt-4">
+            <div className="flex gap-2 overflow-x-auto pb-2 scrollbar-none sm:grid sm:grid-cols-6 sm:gap-3 sm:overflow-x-visible sm:pb-0 md:grid-cols-8">
+              {gallery.map((image, index) => {
+                const isSelected = selected === index;
+                return (
+                  <button
+                    key={image}
+                    onClick={() => setSelected(index)}
+                    className={`relative aspect-video w-20 shrink-0 overflow-hidden border p-0.5 bg-neutral-50 dark:bg-neutral-900 transition-all duration-200 sm:w-auto rounded-sm ${
+                      isSelected
+                        ? "border-black dark:border-white opacity-100 scale-[1.02]"
+                        : "border-neutral-200 dark:border-neutral-800 opacity-40 hover:opacity-100"
+                    }`}
+                    aria-label={`Switch viewport to snapshot image reference ${index + 1}`}
+                  >
+                    <Image
+                      src={image}
+                      alt={`${title} miniature track preview index slot ${index + 1}`}
+                      fill
+                      sizes="(max-width: 640px) 80px, 120px"
+                      className="object-contain"
+                    />
+                  </button>
+                );
+              })}
+            </div>
+          </div>
+        )}
+      </div>
     </section>
   );
 }
