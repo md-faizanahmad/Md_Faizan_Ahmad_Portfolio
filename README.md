@@ -2,7 +2,7 @@
 
 # Md Faizan Ahmad
 
-### Clean • Responsive • High Performance • Full Stack Portfolio
+### Clean • Responsive • Fast Load • Full Stack Portfolio
 
 <p>
 A premium developer portfolio crafted to showcase projects,
