@@ -93,9 +93,3 @@ The application emphasizes clean architecture, accessibility, smooth interaction
 
 ---
 
-<div align="center">
-
-### Designed & Developed by Md Faizan Ahmad
-
-
-</div>
