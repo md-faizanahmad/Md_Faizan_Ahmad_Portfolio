@@ -1,6 +1,5 @@
 <div align="center">
 
-# Faizan
 
 ### Clean • Responsive • Fast Load • Full Stack Portfolio
 
