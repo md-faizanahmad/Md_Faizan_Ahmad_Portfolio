@@ -1,6 +1,6 @@
 <div align="center">
 
-# Md Faizan Ahmad
+# Faizan
 
 ### Clean • Responsive • Fast Load • Full Stack Portfolio
 
