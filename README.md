@@ -77,6 +77,7 @@ The application emphasizes clean architecture, accessibility, smooth interaction
 * About
 * Skills
 * Projects
+* Projects Details 
 * Experience
 * Contact
 
