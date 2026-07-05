@@ -5,7 +5,7 @@
 ### Clean • Responsive • Fast Load • Full Stack Portfolio
 
 <p>
-A premium developer portfolio crafted to showcase projects,
+A clean and expensive developer portfolio crafted to showcase projects,
 technical expertise, and professional experience through
 clean design and exceptional user experience.
 </p>
