@@ -1,6 +1,6 @@
 <div align="center">
 
-# ✨ Md Faizan Ahmad
+# Md Faizan Ahmad
 
 ### Modern • Responsive • High Performance • Full Stack Portfolio
 
