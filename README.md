@@ -45,7 +45,7 @@ The application emphasizes clean architecture, accessibility, smooth interaction
 <table>
 <tr>
 <td><strong>Frontend</strong></td>
-<td>Next.js, React.js, TypeScript</td>
+<td>Next.js,TypeScript</td>
 </tr>
 
 <tr>
