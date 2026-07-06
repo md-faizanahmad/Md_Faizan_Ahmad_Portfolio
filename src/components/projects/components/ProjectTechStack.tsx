@@ -1,49 +1,72 @@
 "use client";
 
+import TechIconMap from "@/shared/TechIconMap";
+import React from "react";
+
 interface ProjectTechStackProps {
   frontend: string[];
   backend: Record<string, string[]>;
-  security: string[];
+  security?: string[];
 }
 
 export default function ProjectTechStack({
   frontend,
   backend,
-  security,
+  security = [],
 }: ProjectTechStackProps) {
   const infrastructure = [
-    ...(backend.deployment || []),
-    ...(backend.payments || []),
-    ...(backend.fileUploads || []),
+    ...(backend?.deployment || []),
+    ...(backend?.payments || []),
+    ...(backend?.fileUploads || []),
   ];
 
-  const coreBackend = Object.entries(backend)
+  const coreBackend = Object.entries(backend || {})
     .filter(([key]) => !["deployment", "payments", "fileUploads"].includes(key))
     .flatMap(([_, values]) => values);
 
   const stackCategories = [
-    { title: "Frontend", data: frontend },
-    { title: "Backend", data: coreBackend },
-    { title: "Security", data: security },
+    { title: "Frontend Scope", data: frontend },
+    { title: "Backend Core", data: coreBackend },
     { title: "API & Infrastructure", data: infrastructure },
+    ...(security.length
+      ? [{ title: "Security Protocols", data: security }]
+      : []),
   ];
 
   return (
-    <section className="w-full mt-3 bg-white text-black transition-colors duration-300 dark:bg-black dark:text-white">
-      <div className="space-y-1.5 max-w-4xl text-left ms-21 mb-10">
+    <section className="w-full mt-3 bg-white text-black transition-colors duration-300 dark:bg-black dark:text-white overflow-hidden">
+      <style
+        dangerouslySetInnerHTML={{
+          __html: `
+        @keyframes marquee {
+          0% { transform: translateX(0%); }
+          100% { transform: translateX(-50%); }
+        }
+        .animate-marquee-loop {
+          display: flex;
+          width: max-content;
+          animation: marquee 32s linear infinite;
+        }
+        .animate-marquee-loop:hover {
+          animation-play-state: paused;
+        }
+      `,
+        }}
+      />
+
+      <div className="space-y-1.5 max-w-4xl text-left lg:ms-21 md:ms-21 ms-5 mb-10">
         <h2 className="text-xl font-extrabold uppercase tracking-tight sm:text-2xl md:text-3xl font-sans text-neutral-900 dark:text-white">
           System Architecture Stack
         </h2>
         <p className="text-sm leading-relaxed text-neutral-600 dark:text-neutral-400 font-sans">
-          Modular software components and microservices running across the core
-          layout layers.
+          Modular software components, databases, and microservices running
+          across the layout layers.
         </p>
       </div>
 
-      {/* Locked alignment to match your core case study layouts */}
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
         <div className="grid gap-12 lg:grid-cols-[240px_1fr] lg:gap-16">
-          {/* LEFT INDEX DIRECTORY - Clean vertical list linking visually on desktop */}
+          {/* LEFT INDEX DIRECTORY */}
           <div className="hidden lg:block">
             <div className="sticky top-32 space-y-6 border-l border-neutral-100 dark:border-neutral-900 pl-4">
               <div className="text-xs font-bold uppercase tracking-widest text-neutral-400 dark:text-neutral-500 mb-8"></div>
@@ -58,28 +81,37 @@ export default function ProjectTechStack({
             </div>
           </div>
 
-          {/* RIGHT VIEWPORT CONTENT - Borderless High-Readability Blur-Pills */}
-          <div className="space-y-12 sm:space-y-16">
+          {/* RIGHT VIEWPORT CONTENT - Infinite Marquees calling TechIconMap */}
+          <div className="space-y-12 max-w-full overflow-hidden">
             {stackCategories.map((category) => {
               if (!category.data?.length) return null;
 
+              // Quadruple arrays to support pristine continuous loops across wide displays
+              const marqueeItems = [
+                ...category.data,
+                ...category.data,
+                ...category.data,
+                ...category.data,
+              ];
+
               return (
-                <div key={category.title} className="space-y-4">
-                  {/* Category Section Header */}
-                  <h3 className="text-xs font-mono font-bold uppercase tracking-widest text-neutral-500 dark:text-neutral-400">
+                <div key={category.title} className="space-y-4 relative">
+                  <h3 className="text-xs font-mono font-bold uppercase tracking-widest text-neutral-400 dark:text-neutral-500 px-1">
                     [ {category.title} ]
                   </h3>
 
-                  {/* Clean Borderless Soft Blur Matrix */}
-                  <div className="flex flex-wrap gap-2">
-                    {category.data.map((tech) => (
-                      <span
-                        key={tech}
-                        className="inline-block backdrop-blur-md bg-neutral-100/60 dark:bg-neutral-900/40 text-neutral-800 dark:text-neutral-300 px-3.5 py-1.5 text-xs font-mono uppercase tracking-wide rounded-sm select-none transition-all duration-200 hover:bg-neutral-200/80 dark:hover:bg-neutral-800/80"
-                      >
-                        {tech}
-                      </span>
-                    ))}
+                  <div className="relative w-full overflow-hidden [mask-image:linear-gradient(to_right,transparent,white_12%,white_88%,transparent)]">
+                    <div className="animate-marquee-loop gap-12 py-2 items-center">
+                      {marqueeItems.map((tech, idx) => (
+                        <div
+                          key={`${tech}-${idx}`}
+                          className="flex items-center gap-2.5 text-neutral-800 dark:text-neutral-200 hover:text-black dark:hover:text-white transition-colors duration-150 select-none cursor-default shrink-0 text-sm font-sans font-medium tracking-tight"
+                        >
+                          <TechIconMap name={tech} />
+                          <span>{tech}</span>
+                        </div>
+                      ))}
+                    </div>
                   </div>
                 </div>
               );
