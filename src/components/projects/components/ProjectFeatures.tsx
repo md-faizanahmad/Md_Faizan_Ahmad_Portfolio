@@ -98,9 +98,7 @@ export default function ProjectFeatures({ features }: ProjectFeaturesProps) {
           {/* LEFT INDEX TRACK - Sidebar Dynamic Scroll Highlighter Nav */}
           <aside className="hidden lg:block">
             <div className="sticky top-32 space-y-4 border-l border-neutral-100 dark:border-neutral-800 pl-4 transition-colors duration-300">
-              <div className="text-[10px] font-bold font-mono uppercase tracking-widest text-neutral-300 dark:text-neutral-600">
-                // System Registry
-              </div>
+              <div className="text-[10px] font-bold font-mono uppercase tracking-widest text-neutral-300 dark:text-neutral-600"></div>
               <nav
                 className="space-y-3"
                 aria-label="Feature tracking scroll navigation"
