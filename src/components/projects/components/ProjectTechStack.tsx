@@ -54,7 +54,7 @@ export default function ProjectTechStack({
         }}
       />
 
-      <div className="space-y-1.5 max-w-4xl text-left lg:ms-21 md:ms-21 ms-5 mb-10">
+      <div className="space-y-1.5 max-w-4xl text-left lg:ms-21 md:ms-21 ms-5 ">
         <h2 className="text-xl font-extrabold uppercase tracking-tight sm:text-2xl md:text-3xl font-sans text-neutral-900 dark:text-white">
           System Architecture Stack
         </h2>
@@ -69,7 +69,7 @@ export default function ProjectTechStack({
           {/* LEFT INDEX DIRECTORY */}
           <div className="hidden lg:block">
             <div className="sticky top-32 space-y-6 border-l border-neutral-100 dark:border-neutral-900 pl-4">
-              <div className="text-xs font-bold uppercase tracking-widest text-neutral-400 dark:text-neutral-500 mb-8"></div>
+              <div className="text-xs font-bold uppercase tracking-widest text-neutral-400 dark:text-neutral-500"></div>
               {stackCategories.map((cat) => (
                 <div
                   key={cat.title}
