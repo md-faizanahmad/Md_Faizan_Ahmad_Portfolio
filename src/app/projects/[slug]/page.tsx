@@ -46,7 +46,7 @@ export default async function ProjectPage({ params }: PageProps) {
       />
 
       {/* Overview */}
-      <ProjectOverview overview={project.overview} />
+      {/* <ProjectOverview overview={project.overview} /> */}
       <ProjectDescription lgdescription={project.lgdescription} />
 
       <ProjectTechStack

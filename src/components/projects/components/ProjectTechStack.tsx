@@ -14,7 +14,7 @@ export default function ProjectTechStack({
   backend,
   security = [],
 }: ProjectTechStackProps) {
-  const infrastructure = [
+  const toolsAndServices = [
     ...(backend?.deployment || []),
     ...(backend?.payments || []),
     ...(backend?.fileUploads || []),
@@ -25,68 +25,77 @@ export default function ProjectTechStack({
     .flatMap(([_, values]) => values);
 
   const stackCategories = [
-    { title: "Frontend Scope", data: frontend },
-    { title: "Backend Core", data: coreBackend },
-    { title: "API & Infrastructure", data: infrastructure },
+    { title: "Frontend", data: frontend },
+    { title: "Backend", data: coreBackend },
+    { title: "Tools & Services", data: toolsAndServices },
     ...(security.length
-      ? [{ title: "Security Protocols", data: security }]
+      ? [{ title: "Security & Authentication", data: security }]
       : []),
   ];
 
   return (
-    <section className="w-full mt-3 bg-white text-black transition-colors duration-300 dark:bg-black dark:text-white overflow-hidden">
+    <section className="mt-3 w-full overflow-hidden bg-white text-black transition-colors duration-300 dark:bg-black dark:text-white">
       <style
         dangerouslySetInnerHTML={{
           __html: `
-        @keyframes marquee {
-          0% { transform: translateX(0%); }
-          100% { transform: translateX(-50%); }
-        }
-        .animate-marquee-loop {
-          display: flex;
-          width: max-content;
-          animation: marquee 32s linear infinite;
-        }
-        .animate-marquee-loop:hover {
-          animation-play-state: paused;
-        }
-      `,
+            @keyframes marquee {
+              0% {
+                transform: translateX(0%);
+              }
+              100% {
+                transform: translateX(-50%);
+              }
+            }
+
+            .animate-marquee-loop {
+              display: flex;
+              width: max-content;
+              animation: marquee 32s linear infinite;
+            }
+
+            .animate-marquee-loop:hover {
+              animation-play-state: paused;
+            }
+          `,
         }}
       />
 
-      <div className="space-y-1.5 max-w-4xl text-left lg:ms-21 md:ms-21 ms-5 ">
-        <h2 className="text-xl font-extrabold uppercase tracking-tight sm:text-2xl md:text-3xl font-sans text-neutral-900 dark:text-white">
-          Tech Stack
-        </h2>
-        <p className="text-sm leading-relaxed text-neutral-600 dark:text-neutral-400 font-sans">
-          Modular software components, databases, and microservices running
-          across the layout layers.
-        </p>
+      {/* Section Header */}
+      <div className="mx-auto max-w-7xl px-4 pt-12 sm:px-6 lg:px-8">
+        <div className="max-w-4xl space-y-3">
+          <h2 className="text-2xl font-bold tracking-tight md:text-3xl">
+            Tech Stack
+          </h2>
+
+          <p className="text-base leading-7 text-neutral-700 dark:text-neutral-300">
+            The technologies, tools, and services I used to build, secure, and
+            deploy this project.
+          </p>
+        </div>
       </div>
 
+      {/* Content */}
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
-        <div className="grid gap-12 lg:grid-cols-[240px_1fr] lg:gap-16">
-          {/* LEFT INDEX DIRECTORY */}
+        <div className="grid gap-12 lg:grid-cols-[220px_1fr] lg:gap-16">
+          {/* Left Navigation */}
           <div className="hidden lg:block">
-            <div className="sticky top-32 space-y-6 border-l border-neutral-100 dark:border-neutral-900 pl-4">
-              <div className="text-xs font-bold uppercase tracking-widest text-neutral-400 dark:text-neutral-500"></div>
-              {stackCategories.map((cat) => (
+            <div className="sticky top-32 space-y-5 border-l border-neutral-200 pl-4 dark:border-neutral-800">
+              {stackCategories.map((category) => (
                 <div
-                  key={cat.title}
-                  className="text-xs font-mono font-bold uppercase tracking-wider text-neutral-400 dark:text-neutral-500 hover:text-black dark:hover:text-white transition-colors cursor-default"
+                  key={category.title}
+                  className="text-sm font-medium text-neutral-500 dark:text-neutral-400"
                 >
-                  {cat.title}
+                  {category.title}
                 </div>
               ))}
             </div>
           </div>
 
-          {/* RIGHT VIEWPORT CONTENT - Infinite Marquees calling TechIconMap */}
-          <div className="space-y-12 max-w-full overflow-hidden">
+          {/* Tech Marquees */}
+          <div className="space-y-12 overflow-hidden">
             {stackCategories.map((category) => {
               if (!category.data?.length) return null;
 
-              // Quadruple arrays to support pristine continuous loops across wide displays
               const marqueeItems = [
                 ...category.data,
                 ...category.data,
@@ -95,17 +104,17 @@ export default function ProjectTechStack({
               ];
 
               return (
-                <div key={category.title} className="space-y-4 relative">
-                  <h3 className="text-xs font-mono font-bold uppercase tracking-widest text-neutral-400 dark:text-neutral-500 px-1">
-                    [ {category.title} ]
+                <div key={category.title} className="space-y-4">
+                  <h3 className="text-sm font-semibold text-neutral-900 dark:text-neutral-100">
+                    {category.title}
                   </h3>
 
                   <div className="relative w-full overflow-hidden [mask-image:linear-gradient(to_right,transparent,white_12%,white_88%,transparent)]">
-                    <div className="animate-marquee-loop gap-12 py-2 items-center">
+                    <div className="animate-marquee-loop items-center gap-12 py-2">
                       {marqueeItems.map((tech, idx) => (
                         <div
                           key={`${tech}-${idx}`}
-                          className="flex items-center gap-2.5 text-neutral-800 dark:text-neutral-200 hover:text-black dark:hover:text-white transition-colors duration-150 select-none cursor-default shrink-0 text-sm font-sans font-medium tracking-tight"
+                          className="flex shrink-0 cursor-default select-none items-center gap-2.5 text-sm font-medium text-neutral-800 transition-colors duration-150 hover:text-black dark:text-neutral-200 dark:hover:text-white"
                         >
                           <TechIconMap name={tech} />
                           <span>{tech}</span>
