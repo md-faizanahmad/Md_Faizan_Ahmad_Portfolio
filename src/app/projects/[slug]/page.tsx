@@ -47,32 +47,14 @@ export default async function ProjectPage({ params }: PageProps) {
       />
 
       {/* Overview */}
-      <ProjectOverview
-        overview={project.overview}
-        problem={project.problem}
-        solution={project.solution}
-      />
+      <ProjectOverview overview={project.overview} />
       <ProjectGallery gallery={project.gallery} title={project.title} />
 
-      <ProjectTechStack
-        frontend={project.techStack}
-        backend={project.backend.techStack}
-        security={project.security}
-      />
       {/* Features */}
       {/* <section>Features</section> */}
       <ProjectFeatures features={project.features} />
       {/* Security */}
       {/* <section>Security</section> */}
-      <ProjectSecurity security={project.security} />
-      {/* Engineering */}
-      {/* <section>Engineering Highlights</section> */}
-      <ProjectEngineering
-        engineeringHighlights={project.engineeringHighlights}
-      />
-      {/* Challenges */}
-      {/* <section>Challenges & Solutions</section> */}
-      <ProjectChallenges challenges={project.challenges} />
 
       {/* Learning */}
       {/* <section>What I Learned</section> */}

@@ -17,7 +17,7 @@
     ],
 
     "description": "A production-ready admin dashboard for managing products, orders, inventory, payments, customers, analytics, and business operations for a full-stack e-commerce platform.",
-    "overview": "MyStore Admin Dashboard is a centralized administration platform built for managing products, inventory, orders, customers, payments, and business analytics within the MyAZStore ecosystem. The project was designed to handle real-world e-commerce workflows with a focus on secure authentication, operational efficiency, scalability, and long-term maintainability.",
+    "overview": "MyStore Admin Dashboard is a full-stack administration platform built to manage products, categories, inventory, orders, customers, payments, analytics, and promotional content for an e-commerce business. The project includes mobile-first responsive design, secure admin authentication with Google 2FA, email notifications, customer insights, shop hero banner management, and payment workflows. The primary goal of this project was to understand and implement real-world e-commerce business operations, security practices, and administrative workflows.",
     "liveUrl": "https://admin.myazstore.shop",
     "codeUrl": "https://github.com/md-faizanahmad/Shop_Admin",
     "status": "Completed",
@@ -100,30 +100,6 @@
         "deployment": ["Vercel Functions", "Serverless Architecture"]
       }
     },
-
-    "security": [
-      "JWT Authentication",
-      "HttpOnly Secure Cookies",
-      "Password Hashing with bcrypt",
-      "Google Authenticator 2FA",
-      "Email Verification",
-      "OTP Authentication",
-      "Protected API Routes",
-      "Input Validation",
-      "CORS Protection",
-      "Secure Cookie Configuration"
-    ],
-
-    "engineeringHighlights": [
-      "Built a modular backend architecture with separate routes, controllers, services, middleware, and validation layers",
-      "Implemented schema-based validation using Zod to prevent invalid API requests",
-      "Used secure JWT authentication with HttpOnly cookies instead of localStorage",
-      "Integrated a real payment workflow using Razorpay",
-      "Implemented automated PDF invoice generation and email delivery",
-      "Designed the backend to be scalable, maintainable, and serverless-ready",
-      "Created reusable middleware and centralized error handling patterns",
-      "Applied production-oriented API design and security practices"
-    ],
 
     "problem": "Managing an e-commerce business manually becomes difficult as products, orders, customers, payments, and inventory grow. I wanted to build a centralized admin system that could handle day-to-day business operations securely and efficiently.",
     "solution": "Built a full-stack admin dashboard and backend ecosystem that provides secure authentication, product and order management, payment processing, invoice generation, analytics, and administrative tools in a single platform.",
