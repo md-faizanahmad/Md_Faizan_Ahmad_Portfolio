@@ -56,7 +56,7 @@ export default function ProjectTechStack({
 
       <div className="space-y-1.5 max-w-4xl text-left lg:ms-21 md:ms-21 ms-5 ">
         <h2 className="text-xl font-extrabold uppercase tracking-tight sm:text-2xl md:text-3xl font-sans text-neutral-900 dark:text-white">
-          System Architecture Stack
+          Tech Stack
         </h2>
         <p className="text-sm leading-relaxed text-neutral-600 dark:text-neutral-400 font-sans">
           Modular software components, databases, and microservices running

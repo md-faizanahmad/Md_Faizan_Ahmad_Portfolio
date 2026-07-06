@@ -3,14 +3,13 @@ import projects from "@/data/project.json";
 import ProjectHero from "@/components/projects/components/ProjectHero";
 import ProjectOverview from "@/components/projects/components/ProjectOverview";
 import ProjectFeatures from "@/components/projects/components/ProjectFeatures";
-import ProjectSecurity from "@/components/projects/components/ProjectSecurity";
-import ProjectEngineering from "@/components/projects/components/ProjectEngineering";
 import ProjectChallenges from "@/components/projects/components/ProjectChallenges";
 import ProjectLearning from "@/components/projects/components/ProjectLearning";
 import ProjectFuture from "@/components/projects/components/ProjectFuture";
 import ProjectGallery from "@/components/projects/components/ProjectGallery";
 import BackButton from "@/components/projects/components/BackButton";
 import ProjectTechStack from "@/components/projects/components/ProjectTechStack";
+import ProjectDescription from "@/components/projects/components/ProjectDescription";
 
 interface PageProps {
   params: Promise<{
@@ -48,13 +47,21 @@ export default async function ProjectPage({ params }: PageProps) {
 
       {/* Overview */}
       <ProjectOverview overview={project.overview} />
-      <ProjectGallery gallery={project.gallery} title={project.title} />
+      <ProjectDescription lgdescription={project.lgdescription} />
 
+      <ProjectTechStack
+        frontend={project.techStack}
+        backend={project.backend.techStack}
+      />
       {/* Features */}
       {/* <section>Features</section> */}
       <ProjectFeatures features={project.features} />
       {/* Security */}
       {/* <section>Security</section> */}
+
+      {/* Challenges */}
+      {/* <section>Challenges & Solutions</section> */}
+      {/* <ProjectChallenges challenges={project.challenges} /> */}
 
       {/* Learning */}
       {/* <section>What I Learned</section> */}
@@ -62,6 +69,7 @@ export default async function ProjectPage({ params }: PageProps) {
       {/* Future */}
       {/* <section>Future Improvements</section> */}
       <ProjectFuture futureImprovements={project.futureImprovements} />
+      <ProjectGallery gallery={project.gallery} title={project.title} />
     </main>
   );
 }

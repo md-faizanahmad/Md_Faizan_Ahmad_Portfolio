@@ -17,7 +17,10 @@
     ],
 
     "description": "A production-ready admin dashboard for managing products, orders, inventory, payments, customers, analytics, and business operations for a full-stack e-commerce platform.",
+    "lgdescription": "I built MyStore Admin Dashboard to understand how real-world e-commerce businesses manage products, inventory, orders, customers, payments, analytics, and promotional content from a centralized platform. Instead of creating a basic CRUD application, I focused on implementing practical business workflows such as secure admin authentication with Google Authenticator (2FA), email notifications, customer insights, payment processing, invoice generation, and cloud-based file management.\n\nThroughout this project, I worked on solving real development challenges while building a responsive and maintainable application using modern web technologies. The experience helped me gain hands-on knowledge of authentication, API design, payment workflows, cloud storage, business reporting, and the architectural decisions involved in developing a complete e-commerce administration system.",
+
     "overview": "MyStore Admin Dashboard is a full-stack administration platform built to manage products, categories, inventory, orders, customers, payments, analytics, and promotional content for an e-commerce business. The project includes mobile-first responsive design, secure admin authentication with Google 2FA, email notifications, customer insights, shop hero banner management, and payment workflows. The primary goal of this project was to understand and implement real-world e-commerce business operations, security practices, and administrative workflows.",
+
     "liveUrl": "https://admin.myazstore.shop",
     "codeUrl": "https://github.com/md-faizanahmad/Shop_Admin",
     "status": "Completed",
