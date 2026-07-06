@@ -135,18 +135,17 @@
     ],
 
     "learning": [
-      "Designing and building production-style REST APIs",
-      "Implementing secure authentication using JWT and HttpOnly cookies",
-      "Integrating payment gateways and handling payment verification workflows",
-      "Generating and delivering PDF invoices programmatically",
-      "Building scalable backend architecture using service-based patterns",
-      "Managing file uploads and cloud storage efficiently",
-      "Implementing email workflows and transactional notifications",
-      "Writing automated API tests using Supertest and MongoDB Memory Server",
-      "Deploying and optimizing serverless applications",
-      "Designing applications with maintainability and scalability in mind"
+      "How to implement secure authentication using JWT, HttpOnly cookies, and Google Authenticator (2FA).",
+      "How payment verification workflows work after successful transactions.",
+      "How to generate and deliver PDF invoices automatically.",
+      "How to organize a growing backend using routes, controllers, services, and middleware.",
+      "How to manage file uploads, updates, and cleanup using Cloudinary.",
+      "How to build and consume REST APIs for real-world business workflows.",
+      "How to implement email notifications and transactional email systems.",
+      "How to write and test API endpoints using Supertest and MongoDB Memory Server.",
+      "How to deploy and optimize applications using serverless platforms.",
+      "How challenging it is to keep a full-stack application maintainable as new features are added."
     ],
-
     "futureImprovements": [
       "Advanced admin permission management",
       "Real-time notifications and order updates",

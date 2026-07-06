@@ -56,15 +56,7 @@ export default async function ProjectPage({ params }: PageProps) {
       {/* Features */}
       {/* <section>Features</section> */}
       <ProjectFeatures features={project.features} />
-      {/* Security */}
-      {/* <section>Security</section> */}
 
-      {/* Challenges */}
-      {/* <section>Challenges & Solutions</section> */}
-      {/* <ProjectChallenges challenges={project.challenges} /> */}
-
-      {/* Learning */}
-      {/* <section>What I Learned</section> */}
       <ProjectLearning learning={project.learning} />
       {/* Future */}
       {/* <section>Future Improvements</section> */}
