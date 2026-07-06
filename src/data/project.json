@@ -146,14 +146,15 @@
       "How to deploy and optimize applications using serverless platforms.",
       "How challenging it is to keep a full-stack application maintainable as new features are added."
     ],
+
     "futureImprovements": [
-      "Advanced admin permission management",
-      "Real-time notifications and order updates",
-      "Inventory forecasting and low-stock alerts",
-      "Comprehensive audit logs",
-      "Advanced analytics and reporting dashboards",
+      "Role-based access control with different admin permissions",
+      "Real-time notifications for orders and system updates",
+      "Low-stock alerts and inventory forecasting",
+      "Activity logs and audit history for admin actions",
+      "More detailed analytics and business reports",
       "Multi-vendor marketplace support",
-      "AI-powered business insights and recommendations"
+      "AI-powered insights and business recommendations"
     ]
   }
 ]
