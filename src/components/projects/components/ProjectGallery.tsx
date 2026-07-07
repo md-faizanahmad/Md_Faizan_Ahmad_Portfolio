@@ -31,7 +31,7 @@ export default function ProjectGallery({
         </div>
 
         {/* Main Fluid Asset Preview Viewport Frame */}
-        <div className="w-full  max-w-4xl border border-neutral-200 bg-neutral-50 dark:border-neutral-800 dark:bg-neutral-900/20 rounded-sm overflow-hidden">
+        <div className="w-full  max-w-4xl  rounded-sm overflow-hidden">
           <div className="relative w-full aspect-video">
             <Image
               src={gallery[selected]}
