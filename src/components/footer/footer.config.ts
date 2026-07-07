@@ -3,7 +3,7 @@
 export const footerConfig = {
   brand: {
     name: "Md Faizan Ahmad",
-    title: "Frontend Engineer • Full Stack Developer",
+    title: "React Developer • Full Stack Developer",
     description:
       "I build responsive web applications focused on performance, usability, and clean, maintainable code.",
     stats: "2+ years experience • React & Next.js • Full Stack Development",
