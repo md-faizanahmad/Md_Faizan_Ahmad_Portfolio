@@ -51,5 +51,5 @@ export const footerConfig = {
     location: "India",
   },
 
-  bottomText: "Built with Next.js, TypeScript, and Tailwind CSS.",
+  bottomText: "",
 };

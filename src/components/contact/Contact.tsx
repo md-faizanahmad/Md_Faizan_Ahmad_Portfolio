@@ -31,8 +31,8 @@ export default function Contact() {
         <a
           href="mailto:md.faizan.ahmad.web@gmail.com"
           className="
-            mb-8 inline-block rounded-lg bg-indigo-600 px-6 py-3 font-semibold
-            text-white transition-colors hover:bg-indigo-500
+            mb-8 inline-block rounded-lg bg-black px-6 py-3 font-semibold
+            text-white transition-colors hover:bg-gray-900
           "
         >
           Email Me
