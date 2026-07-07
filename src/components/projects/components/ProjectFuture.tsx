@@ -29,7 +29,7 @@ export default function ProjectFuture({
           {/* Sidebar */}
           <aside className="hidden lg:block">
             <div className="sticky top-32 border-l border-neutral-200 pl-4 dark:border-neutral-800">
-              <p className="text-sm font-medium text-neutral-500 dark:text-neutral-400">
+              <p className="text-1 font-medium text-neutral-500 dark:text-neutral-400">
                 Next Steps
               </p>
             </div>

@@ -20,7 +20,7 @@ export default function ProjectHeroContent({
   category,
   description,
   liveUrl,
-  techStack,
+
   status,
   role,
   duration,
@@ -101,30 +101,6 @@ export default function ProjectHeroContent({
         </div>
 
         {/* Tech Stack */}
-        {/* <div>
-          <h2 className="mb-4 text-sm font-semibold text-neutral-500">
-            Technologies Used
-          </h2>
-
-          <div className="flex flex-wrap gap-2">
-            {techStack.map((tech) => (
-              <span
-                key={tech}
-                className="
-                  rounded-md
-                  border
-                  px-3
-                  py-1.5
-                  text-sm
-                  text-neutral-700
-                  dark:text-neutral-300
-                "
-              >
-                {tech}
-              </span>
-            ))}
-          </div>
-        </div> */}
       </div>
     </div>
   );

@@ -1,9 +1,7 @@
 import { notFound } from "next/navigation";
 import projects from "@/data/project.json";
 import ProjectHero from "@/components/projects/components/ProjectHero";
-import ProjectOverview from "@/components/projects/components/ProjectOverview";
 import ProjectFeatures from "@/components/projects/components/ProjectFeatures";
-import ProjectChallenges from "@/components/projects/components/ProjectChallenges";
 import ProjectLearning from "@/components/projects/components/ProjectLearning";
 import ProjectFuture from "@/components/projects/components/ProjectFuture";
 import ProjectGallery from "@/components/projects/components/ProjectGallery";

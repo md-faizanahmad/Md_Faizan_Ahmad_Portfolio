@@ -20,7 +20,11 @@ export default function ProjectHero(props: ProjectHeroProps) {
       <div className="grid gap-10 lg:grid-cols-2">
         <ProjectHeroContent {...props} />
 
-        <ProjectHeroImage image={props.image} title={props.title} />
+        <ProjectHeroImage
+          image={props.image}
+          title={props.title}
+          techStack={props.techStack}
+        />
       </div>
     </section>
   );

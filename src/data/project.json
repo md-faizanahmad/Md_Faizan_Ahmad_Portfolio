@@ -109,31 +109,22 @@
 
     "challenges": [
       {
-        "problem": "Designing professional PDF invoices that looked clean, readable, and suitable for real customer orders.",
-        "solution": "Created a custom invoice template using pdfkit and pdfkit-table, carefully designing the layout, product tables, pricing breakdown, taxes, and customer information sections."
+        "problem": "Creating professional PDF invoices that looked clean, readable, and suitable for real customer orders.",
+        "solution": "Built custom invoice templates using pdfkit and pdfkit-table, carefully designing the layout, product tables, pricing information, taxes, and customer details."
       },
       {
-        "problem": "Generating and delivering invoices only after successful payment verification and order creation.",
-        "solution": "Implemented a server-side workflow that verifies payment, creates the order, generates the invoice automatically, sends it via email, and makes it available for download in the user dashboard."
+        "problem": "Generating invoices only after successful payment verification and order creation.",
+        "solution": "Implemented a server-side workflow that verifies payments, creates orders, generates invoices automatically, sends them by email, and makes them available for download."
       },
       {
         "problem": "Implementing secure authentication without exposing tokens in the browser.",
-        "solution": "Used JWT authentication with HttpOnly cookies instead of storing tokens in localStorage, improving security and reducing the risk of token theft."
+        "solution": "Used JWT authentication with HttpOnly cookies instead of storing tokens in localStorage to improve security and reduce token exposure risks."
       },
       {
         "problem": "Managing product image uploads, updates, and cleanup efficiently.",
-        "solution": "Integrated Multer and Cloudinary for image handling and implemented automatic cleanup using Cloudinary public IDs when products or images are removed."
-      },
-      {
-        "problem": "Keeping the backend maintainable as new features and modules were added.",
-        "solution": "Organized the backend using separate routes, controllers, services, middleware, and validation layers to keep the codebase scalable and easier to maintain."
-      },
-      {
-        "problem": "Ensuring that invalid or unexpected data did not affect business logic.",
-        "solution": "Implemented schema-based validation using Zod to validate incoming requests before processing them."
+        "solution": "Integrated Multer and Cloudinary and implemented automatic cleanup using Cloudinary public IDs when products or images were deleted."
       }
     ],
-
     "learning": [
       "How to implement secure authentication using JWT, HttpOnly cookies, and Google Authenticator (2FA).",
       "How payment verification workflows work after successful transactions.",
