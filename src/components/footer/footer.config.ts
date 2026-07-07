@@ -5,8 +5,8 @@ export const footerConfig = {
     name: "Md Faizan Ahmad",
     title: "Frontend Engineer • Full Stack Developer",
     description:
-      "I design and build modern web products focused on speed, clean user experience, and maintainable code.",
-    stats: "2+ years experience • Real projects • Performance focused",
+      "I build responsive web applications focused on performance, usability, and clean, maintainable code.",
+    stats: "2+ years experience • React & Next.js • Full Stack Development",
   },
 
   featuredWork: [
@@ -51,5 +51,5 @@ export const footerConfig = {
     location: "India",
   },
 
-  bottomText: "Built with Next.js, TypeScript, and attention to detail.",
+  bottomText: "Built with Next.js, TypeScript, and Tailwind CSS.",
 };
