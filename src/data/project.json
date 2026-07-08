@@ -256,6 +256,54 @@
         "email": ["Nodemailer"],
         "deployment": ["Vercel", "Serverless Architecture"]
       }
-    }
+    },
+    "problem": "Online shopping should be simple, fast, and secure, but building a complete customer experience involves much more than displaying products. I wanted to create a shopping platform where users could easily discover products, manage their wishlist and cart, place secure orders, receive email notifications, download invoices, and track their purchases from a single application.",
+
+    "solution": "Built a full-stack e-commerce storefront that provides product browsing, advanced search and filtering, wishlist management, shopping cart, secure OTP authentication, Razorpay payment integration, address management, order tracking, PDF invoice downloads, email notifications, and Progressive Web App support using a shared backend with the admin dashboard.",
+
+    "challenges": [
+      {
+        "problem": "Keeping the wishlist and shopping cart available only for authenticated users while maintaining a smooth shopping experience.",
+        "solution": "Protected wishlist and cart operations using JWT authentication with HttpOnly cookies and prompted users to sign in whenever authentication was required."
+      },
+      {
+        "problem": "Creating a complete checkout workflow that handled addresses, payment verification, order creation, and invoice generation.",
+        "solution": "Implemented a multi-step checkout process that validates user information, verifies Razorpay payments on the server, creates the order, generates the invoice, and sends confirmation emails automatically."
+      },
+      {
+        "problem": "Providing users with order updates without requiring them to repeatedly check their account.",
+        "solution": "Integrated email notifications for order confirmation, invoice delivery, and order status updates to keep customers informed throughout the purchase process."
+      },
+      {
+        "problem": "Building a shopping experience that worked well across mobile, tablet, and desktop devices.",
+        "solution": "Designed the application with a mobile-first responsive approach and optimized layouts, navigation, and interactions for different screen sizes."
+      }
+    ],
+
+    "learning": [
+      "How to build a complete customer shopping experience from product discovery to order delivery.",
+      "How OTP-based authentication improves account security while keeping the login process simple.",
+      "How shopping carts, wishlists, and checkout workflows work together in a real e-commerce application.",
+      "How payment verification should be handled securely before creating customer orders.",
+      "How to generate and deliver PDF invoices automatically after successful purchases.",
+      "How to implement email notifications for order confirmations and status updates.",
+      "How to build responsive user interfaces using a mobile-first approach.",
+      "How Progressive Web Apps improve accessibility and usability across different devices.",
+      "How a shared backend can efficiently power both customer and admin applications.",
+      "How important performance, usability, and user experience are in an e-commerce platform."
+    ],
+
+    "futureImprovements": [
+      "Product reviews and ratings",
+      "Recently viewed products",
+      "Product recommendations based on browsing history",
+      "Real-time order tracking",
+      "Multiple payment gateway support",
+      "Coupon and promotional offer system",
+      "Product comparison feature",
+      "AI-powered product recommendations",
+      "Multi-language support",
+      "Dark mode customization"
+    ]
   }
 ]
