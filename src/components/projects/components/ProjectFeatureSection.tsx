@@ -18,7 +18,7 @@ export default function ProjectFeatureSection({
 }: ProjectFeatureSectionProps) {
   return (
     <div
-      className={`py-3 px-2 sm:px-4 transition-all duration-500 ${
+      className={`cursor-pointer py-3 px-2 sm:px-4 transition-all duration-500 ${
         isActive
           ? "bg-neutral-50 dark:bg-neutral-900/20 opacity-100"
           : "opacity-70 hover:opacity-100"

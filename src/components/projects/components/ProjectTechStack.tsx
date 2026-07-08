@@ -34,7 +34,7 @@ export default function ProjectTechStack({
   ];
 
   return (
-    <section className="mt-3 w-full overflow-hidden bg-white text-black transition-colors duration-300 dark:bg-black dark:text-white">
+    <section className="cursor-pointer w-full overflow-hidden bg-white text-black transition-colors duration-300 dark:bg-black dark:text-white">
       <style
         dangerouslySetInnerHTML={{
           __html: `
@@ -92,7 +92,7 @@ export default function ProjectTechStack({
           </div>
 
           {/* Tech Marquees */}
-          <div className="space-y-12 overflow-hidden">
+          <div className="space-y-12 overflow-hidden cursor-pointer">
             {stackCategories.map((category) => {
               if (!category.data?.length) return null;
 
@@ -110,7 +110,7 @@ export default function ProjectTechStack({
                   </h3>
 
                   <div className="relative w-full overflow-hidden [mask-image:linear-gradient(to_right,transparent,white_12%,white_88%,transparent)]">
-                    <div className="animate-marquee-loop items-center gap-12 py-2">
+                    <div className="animate-marquee-loop items-center gap-12 py-2 cursor-pointer">
                       {marqueeItems.map((tech, idx) => (
                         <div
                           key={`${tech}-${idx}`}

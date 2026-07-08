@@ -66,7 +66,7 @@ export default function ProjectFeatures({ features }: ProjectFeaturesProps) {
   if (!categories.length) return null;
 
   return (
-    <section className="w-full bg-white text-black dark:bg-black dark:text-white">
+    <section className="w-full bg-white text-black dark:bg-black dark:text-white cursor-pointer">
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="mb-10 max-w-4xl space-y-3">
