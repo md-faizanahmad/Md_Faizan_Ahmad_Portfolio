@@ -16,7 +16,7 @@ interface ProjectHeroProps {
 
 export default function ProjectHero(props: ProjectHeroProps) {
   return (
-    <section className="mx-auto max-w-7xl px-4 py-6">
+    <section className="mx-auto max-w-7xl px-4 py-6 ">
       <div className="grid gap-10 lg:grid-cols-2">
         <ProjectHeroContent {...props} />
 

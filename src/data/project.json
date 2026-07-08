@@ -147,5 +147,115 @@
       "Multi-vendor marketplace support",
       "AI-powered insights and business recommendations"
     ]
+  },
+
+  {
+    "slug": "mystore-shop",
+    "title": "MyAZStore Shop",
+    "category": "Full Stack E-Commerce Shopping Platform",
+    "featured": true,
+
+    "image": "YOUR_SHOP_HOME_SCREEN",
+
+    "gallery": [
+      "https://res.cloudinary.com/dyefyrszz/image/upload/v1771411785/myazstore-header_mrodnd.png",
+      "https://res.cloudinary.com/dyefyrszz/image/upload/v1771411921/myazstore-profile_ljeubt.png",
+      "https://res.cloudinary.com/dyefyrszz/image/upload/v1771411837/myazstore-myorder_vijv7t.png",
+      "https://res.cloudinary.com/dyefyrszz/image/upload/v1771413275/Screenshot_20260218-164015_ciouem.png",
+      "https://res.cloudinary.com/dyefyrszz/image/upload/v1771411785/myazstore-footer_enyatr.png",
+      "https://res.cloudinary.com/dyefyrszz/image/upload/v1771413460/myazstore-invoice_nlpxnn.png"
+    ],
+
+    "description": "A modern full-stack e-commerce shopping platform where users can discover products, manage their wishlist and cart, securely place orders, download invoices, and track purchases from any device.",
+    "lgdescription": "I built MyAZStore Shop to understand how modern e-commerce websites provide a complete shopping experience from product discovery to order delivery. Instead of focusing only on product listings, I wanted to build a customer-facing platform that supports secure authentication, product search, wishlist management, shopping cart, checkout, online payments, order history, invoice generation, and email notifications.\n\nThroughout this project, I focused on creating a responsive, mobile-first shopping experience that feels fast, simple, and easy to use across different devices. Building this application helped me gain practical experience with customer workflows, payment processing, API integration, state management, cloud storage, Progressive Web App (PWA) features, and building a complete e-commerce frontend powered by a shared backend.",
+    "overview": "MyAZStore Shop is a full-stack e-commerce shopping platform where users can browse products, search and filter items, manage their wishlist and cart, complete secure online payments, download invoices, and track orders. The application is built with a mobile-first responsive design, PWA support, OTP-based authentication, email notifications, and a shared backend that powers both the customer storefront and the admin dashboard.",
+
+    "liveUrl": "https://myazstore.shop",
+    "codeUrl": "https://github.com/md-faizanahmad/Shop_Frontend",
+
+    "status": "Completed",
+    "role": "Full Stack Developer",
+    "duration": "4 Months",
+
+    "techStack": [
+      "React.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "TanStack Query",
+      "React Router DOM",
+      "Axios",
+      "React Hook Form",
+      "Zod",
+      "Redux Toolkit",
+      "Lucide React",
+      "Cloudinary",
+      "Razorpay",
+      "Vercel",
+      "PWA"
+    ],
+
+    "features": {
+      "authentication": [
+        "OTP-based User Registration and Login",
+        "JWT Authentication with HttpOnly Cookies",
+        "Email Verification",
+        "Secure Session Management",
+        "Protected Wishlist and Cart",
+        "User Profile Management"
+      ],
+
+      "catalog": [
+        "Product Browsing",
+        "Category and Subcategory Browsing",
+        "Product Search",
+        "Advanced Product Filtering",
+        "Pagination",
+        "Responsive Product Details Page"
+      ],
+
+      "commerce": [
+        "Wishlist Management",
+        "Shopping Cart",
+        "Address Management",
+        "Default Address Selection",
+        "Secure Checkout",
+        "Razorpay Test Mode Integration",
+        "Order Summary"
+      ],
+
+      "orders": [
+        "Order History",
+        "Order Tracking",
+        "Order Status Updates",
+        "Download PDF Invoice",
+        "Invoice Email Delivery",
+        "Order Confirmation Email"
+      ],
+
+      "experience": [
+        "Mobile-first Responsive Design",
+        "Progressive Web App (PWA)",
+        "Cloudinary Image Delivery",
+        "Fast Product Loading",
+        "Shared Backend with Admin Dashboard",
+        "Email Notifications for Order Updates"
+      ]
+    },
+
+    "backend": {
+      "overview": "The shop frontend shares a common REST API with the MyStore Admin Dashboard, allowing both applications to work together using the same products, customers, orders, payments, and inventory.",
+
+      "techStack": {
+        "runtime": ["Node.js (ES Modules)", "JavaScript (ES2023)"],
+        "framework": ["Express.js"],
+        "database": ["MongoDB", "Mongoose"],
+        "authentication": ["JWT", "bcrypt"],
+        "validation": ["Zod"],
+        "payments": ["Razorpay"],
+        "fileUploads": ["Cloudinary"],
+        "email": ["Nodemailer"],
+        "deployment": ["Vercel", "Serverless Architecture"]
+      }
+    }
   }
 ]

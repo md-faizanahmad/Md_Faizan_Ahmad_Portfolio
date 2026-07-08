@@ -173,6 +173,7 @@
   },
 
   {
+    "slug": "mystore-shop",
     "title": "MyStore Shop",
     "image": "https://res.cloudinary.com/daqb5wglu/image/upload/v1766169968/ShopUI_evspte.png",
     "description": "Responsive public-facing EMI and salary calculator with fast loading, SEO optimization, and user-friendly design.",
