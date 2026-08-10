@@ -33,7 +33,7 @@ const About = () => {
               fill
               priority
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-              className="rounded-full object-cover border-4 border-indigo-600/20 shadow-xl"
+              className="rounded-full object-cover border-4 border-indigo-600/20 shadow-xl grayscale hover:grayscale-0 transition-all duration-300"
             />
           </div>
         </div>
