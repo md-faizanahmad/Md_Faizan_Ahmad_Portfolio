@@ -105,13 +105,12 @@ export default function ProjectFeatures({ features }: ProjectFeaturesProps) {
             ref={containerRef}
             className="divide-y divide-neutral-200 dark:divide-neutral-800"
           >
-            {Object.entries(features).map(([category, items]) => (
-              <div
-                key={category}
-                id={`feature-${category}`}
-                data-category={category}
-              >
+            {Object.entries(features).map(([category, items]) => {
+              if (!items?.length) return null;
+
+              return (
                 <ProjectFeatureSection
+                  key={category}
                   category={category}
                   title={formatTitle(category)}
                   items={items}
@@ -121,8 +120,8 @@ export default function ProjectFeatures({ features }: ProjectFeaturesProps) {
                     setOpenCategory(openCategory === category ? null : category)
                   }
                 />
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </div>
