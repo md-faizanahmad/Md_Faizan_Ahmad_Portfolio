@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import ProjectFeatureSection from "./ProjectFeatureSection";
 
 interface ProjectFeaturesProps {
-  features: Record<string, string[]>;
+  features: Partial<Record<string, string[]>>;
 }
 
 export default function ProjectFeatures({ features }: ProjectFeaturesProps) {
