@@ -22,9 +22,14 @@ export default function ProjectTechStack({
     ...(backend?.fileUploads || []),
   ];
 
-  const coreBackend = Object.entries(backend || {})
-    .filter(([key]) => !["deployment", "payments", "fileUploads"].includes(key))
-    .flatMap(([_, values]) => values);
+  // const coreBackend = Object.entries(backend || {})
+  //   .filter(([key]) => !["deployment", "payments", "fileUploads"].includes(key))
+  //   .flatMap(([_, values]) => values);
+  const coreBackend = Object.entries(backend).flatMap(([key, values]) =>
+    ["deployment", "payments", "fileUploads"].includes(key)
+      ? []
+      : (values ?? []),
+  );
 
   const stackCategories = [
     { title: "Frontend", data: frontend },
