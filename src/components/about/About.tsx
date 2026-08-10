@@ -27,11 +27,9 @@ const About = () => {
           </div>
 
           <div className="relative h-32 w-32 sm:h-40 sm:w-40 shrink-0">
-            <Image
+            <img
               src={hero.image.src}
               alt={hero.image.alt}
-              fill
-              priority
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               className="rounded-full object-cover border-4 border-indigo-600/20 shadow-xl grayscale hover:grayscale-0 transition-all duration-300"
             />
