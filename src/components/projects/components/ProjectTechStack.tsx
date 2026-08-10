@@ -5,7 +5,9 @@ import React from "react";
 
 interface ProjectTechStackProps {
   frontend: string[];
-  backend: Record<string, string[]>;
+  // backend: Record<string, string[]>;
+
+  backend: Partial<Record<string, string[]>>;
   security?: string[];
 }
 
