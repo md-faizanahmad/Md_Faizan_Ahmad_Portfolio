@@ -263,7 +263,7 @@
     "title": "Clinic Website with Appointment Request Flow",
     "image": "https://res.cloudinary.com/dyefyrszz/image/upload/v1775585097/clinic-website_mkuhub.png",
     "description": "Built a clinic website with an appointment request flow using email integration instead of a backend system. Focused on performance, SEO, and conversion-driven UI, enabling patients to easily connect with the clinic without complex infrastructure.",
-    "liveUrl": "https://clinic-web-app-nine.vercel.app",
+    "liveUrl": "https://clinic-web-app-six.vercel.app/",
     "codeUrl": "https://github.com/md-faizanahmad",
     "techStack": ["Next.js", "TypeScript", "Tailwind CSS", "EmailJS"]
   },
@@ -272,15 +272,15 @@
     "title": "School Website",
     "image": "https://res.cloudinary.com/dyefyrszz/image/upload/v1770280034/Header_yt9bly.png",
     "description": "Responsive school website with navigation, admission form, PDF generation, email notifications, and downloadable forms.",
-    "liveUrl": "https://school-demo-sepia.vercel.app",
-    "codeUrl": "https://github.com/md-faizanahmad/ecom",
+    "liveUrl": "https://school-demo-sable-eta.vercel.app/",
+    "codeUrl": "https://github.com/md-faizanahmad",
     "techStack": ["Next.js", "TypeScript", "Tailwind", "Framer Motion"]
   },
   {
     "title": "CyberCafe",
     "image": "https://res.cloudinary.com/dyefyrszz/image/upload/v1782662198/cybercafe_h7jmem.png",
     "description": "A modern full-stack cyber cafe management platform featuring customer registration, system booking, session tracking, billing management, print and scan services, user authentication, role-based admin dashboard, payment management, analytics, and a responsive user experience with optimized performance and security.",
-    "liveUrl": "https://your-cybercafe-live-url.com",
+    "liveUrl": "https://cyber-cafe-zeta.vercel.app/",
     "codeUrl": "https://github.com/md-faizanahmad/cyber-cafe",
     "techStack": [
       "Next.js",
@@ -310,7 +310,7 @@
     "title": "Rent Ride",
     "image": "https://res.cloudinary.com/dyefyrszz/image/upload/v1775584898/rent-ride_mkmxlj.png",
     "description": "Responsive car rental platform with dynamic bookings, user authentication, and mobile-friendly design.",
-    "liveUrl": "https://rentrideapp.vercel.app",
+    "liveUrl": "https://rent-ride-app.vercel.app/",
     "codeUrl": "https://github.com/md-faizanahmad",
     "techStack": ["Next.js", "TypeScript", "Tailwind"]
   }
