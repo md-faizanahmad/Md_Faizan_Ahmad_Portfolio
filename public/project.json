@@ -192,7 +192,7 @@
     "title": "FindMovie",
     "image": "https://res.cloudinary.com/dyefyrszz/image/upload/v1782661489/findmovie_byv5hq.png",
     "description": "A modern movie discovery platform featuring trending movies, TV shows, search functionality, detailed media information, favorites management, and a responsive user experience with optimized performance and SEO.",
-    "liveUrl": "https://find-movie-gamma.vercel.app",
+    "liveUrl": "https://find-movie-liart.vercel.app",
     "codeUrl": "https://github.com/md-faizanahmad/find-movie",
     "techStack": [
       "Next.js",
