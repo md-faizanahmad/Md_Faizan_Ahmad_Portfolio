@@ -17,11 +17,11 @@ const About = () => {
         {/* Hero */}
         <div className="flex flex-col-reverse md:flex-row md:items-center md:justify-between gap-8 mt-10 mb-4">
           <div>
-            <h1 className="text-4xl font-bold sm:text-5xl">
+            <h1 className="text-4xl font-bold sm:text-4xl">
               Hi, I’m {hero.name}
             </h1>
 
-            <p className="mt-4 text-xl text-[color:var(--muted-foreground)]">
+            <p className="mt-1 text-xl text-[color:var(--muted-foreground)]">
               {hero.title}
             </p>
           </div>

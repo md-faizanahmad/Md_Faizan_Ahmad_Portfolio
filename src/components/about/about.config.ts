@@ -1,5 +1,3 @@
-// components/about/about.config.ts
-
 import aboutData from "./about.json";
 
 export const aboutConfig = {
@@ -11,10 +9,9 @@ export const aboutConfig = {
   },
 
   seo: {
-    heading:
-      "Md Faizan Ahmad | UI Engineer | Frontend Developer | Full Stack Developer",
+    heading: "Md Faizan Ahmad | Frontend Developer",
     description:
-      "Full Stack Developer with 2+ years of experience in React.js, Next.js, TypeScript, Node.js, Express.js, MongoDB, responsive UI development, SEO, and performance optimization.",
+      "Md Faizan Ahmad is a Frontend Developer specializing in React, Next.js, TypeScript, responsive UI development, and full-stack web applications.",
   },
 
   links: {

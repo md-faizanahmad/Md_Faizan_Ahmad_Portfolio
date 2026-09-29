@@ -1,23 +1,21 @@
 {
   "hero": {
     "name": "Md Faizan Ahmad",
-    "title": "Frontend Developer | Full Stack Developer",
+    "title": "Frontend Developer | React & Next.js",
     "image": {
       "src": "/profilePic.png",
-      "alt": "Md Faizan Ahmad - Full Stack Developer"
+      "alt": "Md Faizan Ahmad - Frontend Developer"
     }
   },
 
   "paragraphs": [
-    "Full Stack Developer with 2+ years of experience building scalable web applications using React.js, Next.js, TypeScript, Node.js, Express.js, and MongoDB.",
-
-    "Skilled in responsive UI development, reusable components, REST API integration, authentication, SEO, and performance optimization for production-ready products.",
-
-    "Experienced in delivering frontend, UI engineering, and full-stack solutions focused on clean architecture, usability, and business growth."
+    "I'm a Frontend Developer focused on building responsive and user-friendly web applications with React, Next.js, and TypeScript.",
+    "I also have hands-on experience with Node.js, Express.js, and MongoDB, allowing me to work across the frontend and backend when needed.",
+    "I enjoy turning ideas into clean, practical interfaces and building products with a focus on usability, performance, and maintainable code."
   ],
 
   "cta": {
-    "label": "Let’s Connect",
+    "label": "Let's Connect",
     "href": "mailto:md.faizan.ahmad.web@gmail.com"
   }
 }
