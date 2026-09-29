@@ -21,7 +21,7 @@ const HeroSectionServer = () => {
       <div className="flex flex-wrap justify-center gap-4">
         <Button
           asChild
-          className="bg-blue-800 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-full transition-all duration-300 hover:scale-105"
+          className="bg-sky-800 hover:bg-sky-700 text-white font-semibold px-6 py-3 rounded-full transition-all duration-300 hover:scale-105"
         >
           <Link href={heroConfig.primaryCta.href}>
             {heroConfig.primaryCta.label}
