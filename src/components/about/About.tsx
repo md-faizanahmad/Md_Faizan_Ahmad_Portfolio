@@ -55,7 +55,7 @@ const About = () => {
           <HomeTechStack />
         </div>
 
-        <div className="mt-16">
+        <div className="mt-8">
           <Highlights />
         </div>
       </div>
