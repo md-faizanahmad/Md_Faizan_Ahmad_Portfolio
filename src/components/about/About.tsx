@@ -41,7 +41,7 @@ const About = () => {
         {/* About Section */}
         <h2 className="mt-12 mb-8 text-3xl font-bold">{section.title}</h2>
 
-        <div className="space-y-6 text-lg leading-relaxed">
+        <div className="space-y-2 text-lg leading-relaxed">
           {paragraphs.map((text, index) => (
             <AboutAnimations key={index} index={index}>
               <p>{text}</p>
