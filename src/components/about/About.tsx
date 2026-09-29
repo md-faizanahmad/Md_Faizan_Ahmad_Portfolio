@@ -1,9 +1,9 @@
 // components/about/About.tsx
 
 import Image from "next/image";
-import TechnicalSkills from "../skills/Skills";
 import AboutAnimations from "./AboutAnimations";
 import { aboutConfig } from "./about.config";
+import HomeTechStack from "../skills/HomeTechStack";
 
 const About = () => {
   const { hero, paragraphs, section } = aboutConfig;
@@ -50,7 +50,7 @@ const About = () => {
         </div>
 
         {/* Skills */}
-        <TechnicalSkills />
+        <HomeTechStack />
       </div>
     </section>
   );
