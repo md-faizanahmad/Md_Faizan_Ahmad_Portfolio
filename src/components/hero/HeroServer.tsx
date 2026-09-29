@@ -10,11 +10,11 @@ const HeroSectionServer = () => {
         {heroConfig.name}
       </h1>
 
-      <h2 className="mb-4 text-2xl font-bold sm:text-2xl md:text-3xl">
+      <h2 className="mb-4 text-2xl font-bold sm:text-2xl md:text-2xl">
         {heroConfig.title}
       </h2>
 
-      <p className="mb-8 text-lg sm:text-xl md:text-2xl text-[color:var(--muted-foreground)] max-w-3xl mx-auto">
+      <p className="mb-8 text-lg sm:text-xl md:text-1xl text-[color:var(--muted-foreground)] max-w-3xl mx-auto">
         {heroConfig.description}
       </p>
 
