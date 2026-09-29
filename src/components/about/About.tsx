@@ -3,8 +3,6 @@
 import Image from "next/image";
 import AboutAnimations from "./AboutAnimations";
 import { aboutConfig } from "./about.config";
-import HomeTechStack from "../skills/HomeTechStack";
-import Highlights from "../Ehighlights/Highlights";
 
 const About = () => {
   const { hero, paragraphs, section } = aboutConfig;
@@ -51,13 +49,6 @@ const About = () => {
         </div>
 
         {/* Skills */}
-        <div className="mt-16">
-          <HomeTechStack />
-        </div>
-
-        <div className="mt-8">
-          <Highlights />
-        </div>
       </div>
     </section>
   );

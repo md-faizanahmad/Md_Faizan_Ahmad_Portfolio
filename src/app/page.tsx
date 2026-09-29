@@ -5,6 +5,8 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react"; // Import an icon for the button
 import type { Metadata } from "next";
 import About from "@/components/about/About";
+import HomeTechStack from "@/components/skills/HomeTechStack";
+import Highlights from "@/components/Ehighlights/Highlights";
 
 export const metadata: Metadata = {
   title: "Md Faizan Ahmad – Frontend & Full Stack Web Developer",
@@ -116,9 +118,18 @@ export default function Home() {
         {/* Content wrapper with better vertical spacing */}
         <div className="relative z-10 flex flex-col gap-20 pb-20">
           <HeroSection />
-          <section>
-            <About />
-          </section>
+
+          <About />
+
+          <div className="mx-auto max-w-4xl">
+            <div>
+              <HomeTechStack />
+            </div>
+
+            <div>
+              <Highlights />
+            </div>
+          </div>
           {/* Featured Projects Section */}
           <section className="max-w-7xl mx-auto px-4 w-full">
             <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">

@@ -1,4 +1,5 @@
 import About from "@/components/about/About";
+import TechnicalSkills from "@/components/skills/Skills";
 export const metadata = {
   title: "About | Md Faizan Ahmad",
   description:
@@ -9,5 +10,10 @@ export const metadata = {
   },
 };
 export default function AboutPage() {
-  return <About />;
+  return (
+    <div>
+      <About />
+      <TechnicalSkills />
+    </div>
+  );
 }

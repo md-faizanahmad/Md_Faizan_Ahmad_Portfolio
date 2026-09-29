@@ -61,8 +61,8 @@ export default function TechnicalSkills() {
         }}
       />
 
-      <div className="mx-auto max-w-6xl">
-        <h2 className="mb-10 text-center text-3xl font-bold sm:text-4xl">
+      <div className="mx-auto max-w-4xl">
+        <h2 className="mb-10  text-3xl font-bold sm:text-3xl">
           Technical Skills
         </h2>
 
