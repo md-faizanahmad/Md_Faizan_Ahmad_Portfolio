@@ -50,7 +50,9 @@ const About = () => {
         </div>
 
         {/* Skills */}
-        <HomeTechStack />
+        <div className="mt-16">
+          <HomeTechStack />
+        </div>
       </div>
     </section>
   );
