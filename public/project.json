@@ -29,146 +29,6 @@
       "Recharts",
       "Cloudinary",
       "Vercel"
-    ],
-
-    "features": {
-      "authentication": [
-        "User Registration and Authentication",
-        "JWT Authentication with HttpOnly Cookies",
-        "Email Verification and OTP Authentication",
-        "Password Hashing with bcrypt",
-        "Secure Admin Authentication",
-        "Google OAuth Integration"
-      ],
-
-      "catalog": [
-        "Product CRUD Operations",
-        "Cloudinary Image Upload and Management",
-        "Category Management",
-        "Product Search and Filtering",
-        "Pagination",
-        "Inventory and Stock Tracking"
-      ],
-
-      "commerce": [
-        "Shopping Cart Management",
-        "Checkout Workflow",
-        "Address Management",
-        "Razorpay Payment Integration",
-        "Order Creation and Processing"
-      ],
-
-      "orders": [
-        "Order Tracking and Status Updates",
-        "Admin Order Management",
-        "Automatic PDF Invoice Generation",
-        "Invoice Email Delivery",
-        "Invoice Download System"
-      ],
-
-      "analytics": [
-        "Sales Analytics",
-        "Order Analytics",
-        "Profit Insights",
-        "Inventory Insights",
-        "User Management",
-        "Analytics Dashboard APIs"
-      ]
-    },
-
-    "backend": {
-      "overview": "Custom REST API powering both the Admin Dashboard and Shop frontend applications.",
-
-      "techStack": {
-        "runtime": ["Node.js (ES Modules)", "JavaScript (ES2023)"],
-        "framework": ["Express.js"],
-        "database": ["MongoDB", "Mongoose"],
-        "authentication": ["JWT", "bcrypt"],
-        "validation": ["Zod"],
-        "payments": ["Razorpay"],
-        "fileUploads": ["Multer", "Cloudinary"],
-        "email": ["Nodemailer"],
-        "documents": ["pdfkit", "pdfkit-table"],
-        "testing": ["Node Test Runner", "Supertest", "MongoDB Memory Server"],
-        "deployment": ["Vercel Functions", "Serverless Architecture"]
-      }
-    },
-
-    "security": [
-      "JWT Authentication",
-      "HttpOnly Secure Cookies",
-      "Password Hashing with bcrypt",
-      "Google Authenticator 2FA",
-      "Email Verification",
-      "OTP Authentication",
-      "Protected API Routes",
-      "Input Validation",
-      "CORS Protection",
-      "Secure Cookie Configuration"
-    ],
-
-    "engineeringHighlights": [
-      "Built a modular backend architecture with separate routes, controllers, services, middleware, and validation layers",
-      "Implemented schema-based validation using Zod to prevent invalid API requests",
-      "Used secure JWT authentication with HttpOnly cookies instead of localStorage",
-      "Integrated a real payment workflow using Razorpay",
-      "Implemented automated PDF invoice generation and email delivery",
-      "Designed the backend to be scalable, maintainable, and serverless-ready",
-      "Created reusable middleware and centralized error handling patterns",
-      "Applied production-oriented API design and security practices"
-    ],
-
-    "problem": "Managing an e-commerce business manually becomes difficult as products, orders, customers, payments, and inventory grow. I wanted to build a centralized admin system that could handle day-to-day business operations securely and efficiently.",
-    "solution": "Built a full-stack admin dashboard and backend ecosystem that provides secure authentication, product and order management, payment processing, invoice generation, analytics, and administrative tools in a single platform.",
-
-    "challenges": [
-      {
-        "problem": "Designing professional PDF invoices that looked clean, readable, and suitable for real customer orders.",
-        "solution": "Created a custom invoice template using pdfkit and pdfkit-table, carefully designing the layout, product tables, pricing breakdown, taxes, and customer information sections."
-      },
-      {
-        "problem": "Generating and delivering invoices only after successful payment verification and order creation.",
-        "solution": "Implemented a server-side workflow that verifies payment, creates the order, generates the invoice automatically, sends it via email, and makes it available for download in the user dashboard."
-      },
-      {
-        "problem": "Implementing secure authentication without exposing tokens in the browser.",
-        "solution": "Used JWT authentication with HttpOnly cookies instead of storing tokens in localStorage, improving security and reducing the risk of token theft."
-      },
-      {
-        "problem": "Managing product image uploads, updates, and cleanup efficiently.",
-        "solution": "Integrated Multer and Cloudinary for image handling and implemented automatic cleanup using Cloudinary public IDs when products or images are removed."
-      },
-      {
-        "problem": "Keeping the backend maintainable as new features and modules were added.",
-        "solution": "Organized the backend using separate routes, controllers, services, middleware, and validation layers to keep the codebase scalable and easier to maintain."
-      },
-      {
-        "problem": "Ensuring that invalid or unexpected data did not affect business logic.",
-        "solution": "Implemented schema-based validation using Zod to validate incoming requests before processing them."
-      }
-    ],
-
-    "learning": [
-      "Designing and building production-style REST APIs",
-      "Implementing secure authentication using JWT and HttpOnly cookies",
-      "Integrating payment gateways and handling payment verification workflows",
-      "Generating and delivering PDF invoices programmatically",
-      "Building scalable backend architecture using service-based patterns",
-      "Managing file uploads and cloud storage efficiently",
-      "Implementing email workflows and transactional notifications",
-      "Writing automated API tests using Supertest and MongoDB Memory Server",
-      "Deploying and optimizing serverless applications",
-      "Designing applications with maintainability and scalability in mind"
-    ],
-
-    "futureImprovements": [
-      "Advanced admin permission management",
-      "Real-time notifications and order updates",
-      "Inventory forecasting and low-stock alerts",
-      "Comprehensive audit logs",
-      "Advanced analytics and reporting dashboards",
-      "Multi-vendor marketplace support",
-      "AI-powered business insights and recommendations"
     ]
   },
 
@@ -189,7 +49,8 @@
     ]
   },
   {
-    "title": "FindMovie",
+    "slug": "find-movie",
+    "title": "Find Movie",
     "image": "https://res.cloudinary.com/dyefyrszz/image/upload/v1782661489/findmovie_byv5hq.png",
     "description": "A modern movie discovery platform featuring trending movies, TV shows, search functionality, detailed media information, favorites management, and a responsive user experience with optimized performance and SEO.",
     "liveUrl": "https://find-movie-liart.vercel.app",
@@ -208,6 +69,7 @@
     ]
   },
   {
+    "slug": "khus-shop",
     "title": "KhusShop",
     "image": "https://res.cloudinary.com/dyefyrszz/image/upload/v1782661853/KS_SHop_ent764.png",
     "description": "A modern full-stack e-commerce platform featuring product management, category organization, secure authentication, shopping cart, wishlist, order management, payment integration, admin dashboard, and a responsive user experience with optimized performance and SEO.",
@@ -229,6 +91,7 @@
     ]
   },
   {
+    "slug": "luman-studio",
     "title": "Luman Studio – Interactive Storytelling Website",
     "image": "https://res.cloudinary.com/dyefyrszz/image/upload/v1775584530/luman-studio_km5g0t.png",
     "description": "Luman Studio is a high-end, animation-driven frontend experience built to showcase acoustic design solutions through immersive storytelling and smooth interactions.",
@@ -245,6 +108,7 @@
     ]
   },
   {
+    "slug": "luman-hotel",
     "title": "Luman Hotel – Luxury Hotel Frontend Experience",
     "image": "https://res.cloudinary.com/dyefyrszz/image/upload/v1775583960/Luman_Hotel_zd8avm.png",
     "description": "Luman Hotel is a modern hotel website focused on premium UI, smooth animations, and user-friendly room exploration to simulate a real hospitality booking experience.",
@@ -260,6 +124,7 @@
     ]
   },
   {
+    "slug": "clinic-website",
     "title": "Clinic Website with Appointment Request Flow",
     "image": "https://res.cloudinary.com/dyefyrszz/image/upload/v1775585097/clinic-website_mkuhub.png",
     "description": "Built a clinic website with an appointment request flow using email integration instead of a backend system. Focused on performance, SEO, and conversion-driven UI, enabling patients to easily connect with the clinic without complex infrastructure.",
@@ -269,6 +134,7 @@
   },
 
   {
+    "slug": "school-website",
     "title": "School Website",
     "image": "https://res.cloudinary.com/dyefyrszz/image/upload/v1770280034/Header_yt9bly.png",
     "description": "Responsive school website with navigation, admission form, PDF generation, email notifications, and downloadable forms.",
@@ -277,6 +143,7 @@
     "techStack": ["Next.js", "TypeScript", "Tailwind", "Framer Motion"]
   },
   {
+    "slug": "cyber-cafe",
     "title": "CyberCafe",
     "image": "https://res.cloudinary.com/dyefyrszz/image/upload/v1782662198/cybercafe_h7jmem.png",
     "description": "A modern full-stack cyber cafe management platform featuring customer registration, system booking, session tracking, billing management, print and scan services, user authentication, role-based admin dashboard, payment management, analytics, and a responsive user experience with optimized performance and security.",
@@ -298,6 +165,7 @@
     ]
   },
   {
+    "slug": "nerd-nest",
     "title": "Nerd Nest",
     "image": "https://res.cloudinary.com/duvavjepw/image/upload/v1740425162/Nerdnest_czsfhr.png",
     "description": "Tech blog displaying latest news with API integration, responsive UI, and dynamic content fetching.",
@@ -307,6 +175,7 @@
   },
 
   {
+    "slug": "rent-ride",
     "title": "Rent Ride",
     "image": "https://res.cloudinary.com/dyefyrszz/image/upload/v1775584898/rent-ride_mkmxlj.png",
     "description": "Responsive car rental platform with dynamic bookings, user authentication, and mobile-friendly design.",

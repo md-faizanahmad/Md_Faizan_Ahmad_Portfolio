@@ -116,7 +116,9 @@ export default function Home() {
         {/* Content wrapper with better vertical spacing */}
         <div className="relative z-10 flex flex-col gap-20 pb-20">
           <HeroSection />
-
+          <section>
+            <About />
+          </section>
           {/* Featured Projects Section */}
           <section className="max-w-7xl mx-auto px-4 w-full">
             <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
@@ -138,7 +140,7 @@ export default function Home() {
               </Link>
             </div>
 
-            <Projects limit={3} showFilter={false} />
+            <Projects limit={5} showFilter={false} />
 
             {/* Mobile/Centered "More" Button */}
             <div className="flex justify-center mt-12 md:hidden">
@@ -159,9 +161,7 @@ export default function Home() {
               </Link>
             </div>
           </section>
-          <section>
-            <About />
-          </section>
+
           <CTA />
         </div>
       </div>

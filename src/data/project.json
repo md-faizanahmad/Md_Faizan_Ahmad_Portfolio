@@ -305,5 +305,334 @@
       "Multi-language support",
       "Dark mode customization"
     ]
+  },
+  {
+    "slug": "find-movie",
+    "title": "Find Movie",
+    "category": "Full Stack Movie Discovery Platform",
+    "featured": true,
+    "image": "https://res.cloudinary.com/dyefyrszz/image/upload/v1782661489/findmovie_byv5hq.png",
+    "gallery": [
+      "https://res.cloudinary.com/dyefyrszz/image/upload/v1782661489/findmovie_byv5hq.png"
+    ],
+
+    "description": "A modern movie discovery platform featuring trending movies, TV shows, search functionality, detailed media information, favorites management, and a responsive user experience with optimized performance and SEO.",
+
+    "lgdescription": "FindMovie is a modern full-stack movie and TV discovery platform built with Next.js, TypeScript, Tailwind CSS, MongoDB, Mongoose, NextAuth, TanStack Query, Zod, Framer Motion, and the TMDb API. The platform allows users to discover trending and popular movies and TV shows, search for specific titles, explore detailed media information, and save content to their personal favorites. The application uses Next.js server-side architecture for secure API communication with TMDb while MongoDB and Mongoose provide persistent storage for user-related data such as favorites. Authentication is handled through NextAuth, while TanStack Query manages asynchronous data fetching and caching. Zod provides schema-based validation, and Framer Motion adds smooth interface animations. The application was designed with a responsive, mobile-first interface, reusable components, optimized media loading, and SEO in mind.",
+    "overview": "FindMovie is a modern movie and TV discovery platform built to provide a fast, responsive, and engaging experience for discovering movies and television shows. The application integrates the TMDb API for media data while using Next.js server-side architecture to handle API communication securely. Users can explore trending and popular content, search for movies and TV shows, view detailed media information, and manage their favorite content. The platform was designed with a strong focus on reusable component architecture, type safety, responsive UX, performance, and SEO.",
+
+    "liveUrl": "https://find-movie-liart.vercel.app",
+    "codeUrl": "https://github.com/md-faizanahmad/find-movie",
+    "status": "Completed",
+    "role": "Full Stack Developer",
+    "duration": "2 Months",
+
+    "techStack": [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "MongoDB",
+      "Mongoose",
+      "NextAuth",
+      "TanStack Query",
+      "Zod",
+      "Framer Motion",
+      "TMDB API"
+    ],
+
+    "features": {
+      "discovery": [
+        "Trending Movies and TV Shows",
+        "Popular Movies and TV Shows",
+        "Top Rated Content",
+        "Upcoming Movies",
+        "Latest Media",
+        "Genre-Based Discovery",
+        "Movie and TV Search",
+        "Media Category Filtering"
+      ],
+
+      "media": [
+        "Movie Details Pages",
+        "TV Show Details Pages",
+        "Detailed Media Information",
+        "Genres and Categories",
+        "Release Information",
+        "Ratings and Popularity Data",
+        "Poster and Backdrop Images",
+        "Related Media Discovery"
+      ],
+
+      "user": [
+        "User Authentication",
+        "Favorites Management",
+        "Add Movies to Favorites",
+        "Remove Movies from Favorites",
+        "Personalized Favorite Collection"
+      ],
+
+      "userExperience": [
+        "Responsive Mobile-First Design",
+        "Skeleton Loading States",
+        "Reusable Media Cards",
+        "Horizontal Media Rows",
+        "Responsive Movie Hero Sections",
+        "Smooth Page Transitions",
+        "Framer Motion Animations",
+        "Optimized Image Rendering",
+        "Error and Empty States"
+      ],
+
+      "performance": [
+        "TanStack Query Data Management",
+        "Client-Side Data Caching",
+        "Server-Side API Requests",
+        "Reusable API Service Layer",
+        "Optimized Data Fetching",
+        "Responsive Image Handling",
+        "SEO Optimization",
+        "Production Deployment with Vercel"
+      ]
+    },
+
+    "backend": {
+      "overview": "A Next.js-based backend architecture supporting authentication, favorites management, data validation, MongoDB persistence, and secure communication with the TMDb API.",
+
+      "techStack": {
+        "runtime": ["Next.js Server Runtime", "TypeScript"],
+        "framework": ["Next.js App Router"],
+        "database": ["MongoDB", "Mongoose"],
+        "authentication": ["NextAuth"],
+        "api": ["TMDB API", "Next.js API Routes"],
+        "validation": ["Zod"],
+        "dataFetching": ["TanStack Query"],
+        "deployment": ["Vercel", "Serverless Functions"]
+      }
+    },
+
+    "security": [
+      "NextAuth Authentication",
+      "Server-Side TMDb API Requests",
+      "Environment Variable API Key Management",
+      "API Key Protection",
+      "Protected User Operations",
+      "Zod Input Validation",
+      "Secure Database Operations",
+      "Controlled API Access"
+    ],
+
+    "engineeringHighlights": [
+      "Built a full-stack movie discovery platform using Next.js App Router and TypeScript",
+      "Integrated TMDb API for movie and TV content discovery",
+      "Implemented user authentication using NextAuth",
+      "Built favorites management with MongoDB and Mongoose",
+      "Created reusable TypeScript media models supporting both movies and TV shows",
+      "Integrated TanStack Query for data fetching, caching, and asynchronous state management",
+      "Implemented schema-based request validation using Zod",
+      "Created reusable components for media cards, media rows, search, filters, metadata, and hero sections",
+      "Used Framer Motion to create smooth and responsive interface animations",
+      "Implemented server-side API communication to protect external API credentials",
+      "Designed the application with a mobile-first responsive architecture",
+      "Implemented SEO-focused metadata and page structure",
+      "Deployed the application using Vercel serverless infrastructure"
+    ],
+
+    "problem": "Movie discovery platforms often contain large amounts of content but can provide a cluttered or inefficient browsing experience. Users also need a convenient way to discover movies and TV shows, search for specific content, view detailed information, and save interesting titles for later. Additionally, directly exposing external API credentials from the browser creates security concerns. I wanted to build a modern movie platform that solved these problems while maintaining strong performance, responsive design, and SEO.",
+
+    "solution": "Built a full-stack movie and TV discovery platform using Next.js, TypeScript, Tailwind CSS, MongoDB, and the TMDb API. Implemented secure authentication with NextAuth, persistent favorites using MongoDB and Mongoose, server-side API communication, TanStack Query for efficient data management, Zod validation, and reusable responsive components for discovery and detailed media experiences.",
+
+    "challenges": [
+      {
+        "problem": "Direct requests to the TMDb API were unreliable in the local development environment due to regional network restrictions.",
+        "solution": "Implemented server-side API communication through the Next.js application so the frontend could communicate through the application's own API layer instead of directly requesting TMDb from the browser."
+      },
+      {
+        "problem": "The application needed to support both movies and TV shows while maintaining a consistent UI architecture.",
+        "solution": "Created normalized TypeScript media models and reusable components so movies and TV shows could share common rendering, filtering, and interaction patterns."
+      },
+      {
+        "problem": "Users needed a persistent way to save movies and TV shows they wanted to watch later.",
+        "solution": "Implemented authentication with NextAuth and built a MongoDB/Mongoose persistence layer for managing user favorites."
+      },
+      {
+        "problem": "Managing asynchronous data across trending sections, search results, filters, and detail pages could lead to duplicated fetching logic.",
+        "solution": "Created reusable API service functions and integrated TanStack Query for caching, request management, loading states, and data synchronization."
+      },
+      {
+        "problem": "Movie and TV API responses contain different structures and optional fields.",
+        "solution": "Created dedicated TypeScript interfaces and normalized media types to provide consistent data structures across the application while maintaining strict type safety."
+      },
+      {
+        "problem": "Detail pages required different metadata while maintaining a consistent responsive interface.",
+        "solution": "Separated the detail-page UI into reusable components for hero sections, metadata, genres, ratings, and additional media information."
+      },
+      {
+        "problem": "Large movie posters and backdrop images could negatively affect loading performance.",
+        "solution": "Implemented responsive image rendering and optimized media layouts to reduce unnecessary image overhead while maintaining visual quality."
+      },
+      {
+        "problem": "The application needed to remain usable while API requests were loading or failed.",
+        "solution": "Implemented skeleton loading states, error handling, empty states, and controlled asynchronous UI states across the application."
+      }
+    ],
+
+    "learning": [
+      "Building production-style applications with Next.js App Router",
+      "Designing full-stack applications using Next.js",
+      "Integrating and consuming third-party REST APIs",
+      "Working with the TMDb API and complex media data",
+      "Implementing authentication using NextAuth",
+      "Persisting user data using MongoDB and Mongoose",
+      "Building favorites and personalized user features",
+      "Using TanStack Query for asynchronous data management and caching",
+      "Implementing schema validation using Zod",
+      "Designing reusable TypeScript architectures for multiple media types",
+      "Building responsive media-heavy interfaces",
+      "Using Framer Motion for UI animations",
+      "Optimizing applications for performance and SEO",
+      "Deploying full-stack Next.js applications using Vercel"
+    ],
+
+    "futureImprovements": [
+      "Personalized movie recommendations",
+      "Advanced search and filtering",
+      "Infinite scrolling and pagination",
+      "Movie trailers and video integration",
+      "Actor and director profile pages",
+      "Watch history",
+      "User ratings and reviews",
+      "Social sharing features",
+      "Advanced user profiles",
+      "AI-powered movie recommendations",
+      "Personalized recommendation engine"
+    ]
+  },
+  {
+    "slug": "luman-studio",
+    "title": "Luman Studio – Interactive Storytelling Website",
+    "category": "Interactive Studio & Acoustic Design Experience",
+    "featured": true,
+    "image": "https://res.cloudinary.com/dyefyrszz/image/upload/v1775584530/luman-studio_km5g0t.png",
+    "gallery": [
+      "https://res.cloudinary.com/dyefyrszz/image/upload/v1775584530/luman-studio_km5g0t.png"
+    ],
+    "description": "Luman Studio is a high-end, animation-driven frontend experience built to showcase acoustic design solutions through immersive storytelling, smooth interactions, and a premium responsive interface.",
+    "lgdescription": "Luman Studio is an interactive storytelling website designed to present acoustic design solutions through a visually immersive digital experience. Built with Next.js, TypeScript, React.js, Tailwind CSS, and Framer Motion, the platform focuses on smooth transitions, animation-driven storytelling, responsive layouts, and optimized image rendering. The experience uses reusable components and modern frontend architecture to create a premium presentation across desktop and mobile devices.",
+    "overview": "Luman Studio is a premium interactive website focused on presenting acoustic design solutions through visual storytelling. The project combines responsive layouts, smooth animations, optimized imagery, and reusable React components to create an engaging browsing experience.",
+    "liveUrl": "https://luman-studio.vercel.app",
+    "codeUrl": "https://github.com/md-faizanahmad/furniture-shop",
+    "status": "Completed",
+    "role": "Frontend Developer",
+    "duration": "2 Months",
+
+    "techStack": [
+      "Next.js",
+      "TypeScript",
+      "React.js",
+      "Tailwind CSS",
+      "Framer Motion",
+      "Next.js Image Optimization",
+      "Vercel"
+    ],
+
+    "features": {
+      "experience": [
+        "Interactive Storytelling",
+        "Animation-Driven Sections",
+        "Smooth Page Transitions",
+        "Immersive Visual Presentation"
+      ],
+      "content": [
+        "Acoustic Design Solutions",
+        "Project Showcase",
+        "Visual Product Presentation",
+        "Studio Information"
+      ],
+      "userExperience": [
+        "Responsive Mobile-First Design",
+        "Smooth Framer Motion Animations",
+        "Reusable React Components",
+        "Responsive Layout Architecture",
+        "Optimized Image Rendering",
+        "Interactive Visual Sections"
+      ],
+      "performance": [
+        "Next.js Image Optimization",
+        "Optimized Media Loading",
+        "Component-Based Architecture",
+        "Production Deployment with Vercel"
+      ]
+    },
+
+    "backend": {
+      "overview": "Luman Studio is primarily a frontend-focused interactive experience without a dedicated custom backend.",
+      "techStack": {
+        "runtime": ["Next.js"],
+        "framework": ["Next.js App Router"],
+        "frontend": ["React.js", "TypeScript", "Tailwind CSS"],
+        "animation": ["Framer Motion"],
+        "deployment": ["Vercel"]
+      }
+    },
+
+    "security": [
+      "TypeScript Type Safety",
+      "Next.js Application Architecture",
+      "Optimized Client Rendering"
+    ],
+
+    "engineeringHighlights": [
+      "Built a premium interactive storytelling experience using Next.js and React",
+      "Implemented animation-driven UI interactions using Framer Motion",
+      "Created reusable TypeScript and React components",
+      "Designed responsive layouts for desktop and mobile experiences",
+      "Implemented optimized image rendering using Next.js Image Optimization",
+      "Used Tailwind CSS for scalable responsive styling",
+      "Focused on immersive visual storytelling and smooth interaction design",
+      "Deployed the production application using Vercel"
+    ],
+
+    "problem": "Traditional studio websites can present design solutions as static content, making it difficult to communicate the visual quality and atmosphere of premium acoustic design work. The project needed a more immersive way to present the studio and its solutions while maintaining responsive performance across devices.",
+    "solution": "Built an animation-driven interactive storytelling website using Next.js, React, TypeScript, Tailwind CSS, and Framer Motion. The interface combines visual storytelling, smooth transitions, responsive layouts, reusable components, and optimized imagery to create a premium digital presentation.",
+
+    "challenges": [
+      {
+        "problem": "The website needed to communicate premium acoustic design work through an immersive digital experience rather than a conventional static layout.",
+        "solution": "Designed the interface around visual storytelling, interactive sections, animation, and carefully structured content presentation."
+      },
+      {
+        "problem": "Heavy visual content and animations could negatively affect the browsing experience on smaller devices.",
+        "solution": "Implemented responsive layouts and optimized image rendering using Next.js Image Optimization."
+      },
+      {
+        "problem": "Multiple interactive sections needed consistent animation behavior without duplicating implementation logic.",
+        "solution": "Used reusable React components and Framer Motion patterns to maintain consistent interaction behavior."
+      },
+      {
+        "problem": "The experience needed to remain visually rich while adapting to different screen sizes.",
+        "solution": "Built the interface using responsive Tailwind CSS layouts with mobile and desktop considerations throughout the component architecture."
+      }
+    ],
+
+    "learning": [
+      "Building interactive storytelling experiences with Next.js",
+      "Creating animation-driven interfaces with Framer Motion",
+      "Designing premium responsive frontend experiences",
+      "Structuring reusable React and TypeScript components",
+      "Working with Next.js Image Optimization",
+      "Balancing visual animation with frontend performance",
+      "Designing responsive layouts with Tailwind CSS",
+      "Deploying production frontend applications using Vercel"
+    ],
+
+    "futureImprovements": [
+      "CMS-based content management",
+      "Advanced project filtering",
+      "Interactive acoustic product configurator",
+      "Additional project case studies",
+      "More advanced page transition effects",
+      "Contact and inquiry management",
+      "Analytics-driven interaction optimization"
+    ]
   }
 ]

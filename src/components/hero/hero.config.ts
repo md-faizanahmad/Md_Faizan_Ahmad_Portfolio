@@ -2,15 +2,18 @@
 
 export const heroConfig = {
   name: "Md Faizan Ahmad",
-  title: "React Developer | Full Stack Developer",
+
+  title: "Frontend Developer | React & Next.js",
+
   description:
-    "I build fast, responsive web applications using React, Next.js, TypeScript, and Node.js with a focus on usability and clean code.",
+    "I build responsive web applications with React, Next.js, and TypeScript.",
   primaryCta: {
-    label: "Contact",
-    href: "/contact",
-  },
-  secondaryCta: {
     label: "View Projects",
     href: "/projects",
+  },
+
+  secondaryCta: {
+    label: "Contact Me",
+    href: "/contact",
   },
 };
