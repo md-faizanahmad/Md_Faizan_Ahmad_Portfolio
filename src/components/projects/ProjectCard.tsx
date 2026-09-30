@@ -3,7 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowUpRight, Globe, Info } from "lucide-react";
+import { Globe, Info } from "lucide-react";
 
 interface ProjectCardProps {
   slug: string;
@@ -28,13 +28,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       className="
         group relative mx-auto w-full max-w-[380px]
         overflow-hidden
-        rounded-xl
         border border-neutral-200
         bg-white
         shadow-[0_-6px_18px_-12px_rgba(0,0,0,0.4)]
         transition-all duration-300
         hover:-translate-y-1
-
         dark:border-neutral-800
         dark:bg-neutral-950
         dark:shadow-[0_-8px_20px_-12px_rgba(238,236,236,0.3)]
@@ -77,66 +75,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         />
 
         {/* Live Project */}
-        <Link
-          href={liveUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label={`Open ${title} live website`}
-          onClick={(e) => e.stopPropagation()}
-          className="
-            absolute bottom-3 right-3
-            flex h-8 w-8
-            items-center justify-center
-            rounded-full
-            border border-white/20
-            bg-white/90
-            text-black
-            opacity-0
-            shadow-md
-            backdrop-blur-sm
-            translate-y-1
-            transition-all duration-300
-            hover:scale-105
-            group-hover:translate-y-0
-            group-hover:opacity-100
-
-            dark:bg-black/80
-            dark:text-white
-            dark:border-white/15
-          "
-        >
-          <Globe size={15} />
-        </Link>
 
         {/* Project Details */}
-        <Link
-          href={`/projects/${slug}`}
-          aria-label={`View ${title} details`}
-          onClick={(e) => e.stopPropagation()}
-          className="
-            absolute bottom-3 left-3
-            flex h-8 w-8
-            items-center justify-center
-            rounded-full
-            border border-white/20
-            bg-white/90
-            text-black
-            opacity-0
-            shadow-md
-            backdrop-blur-sm
-            translate-y-1
-            transition-all duration-300
-            hover:scale-105
-            group-hover:translate-y-0
-            group-hover:opacity-100
-
-            dark:bg-black/80
-            dark:text-white
-            dark:border-white/15
-          "
-        >
-          <Info size={15} />
-        </Link>
       </div>
 
       {/* Card Footer */}
@@ -145,31 +85,53 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         <div className="flex items-center justify-between gap-2">
           <h2
             className="
-              truncate
-              text-sm font-semibold
-              tracking-tight
-              text-neutral-900
-              dark:text-neutral-100
-            "
+      min-w-0 truncate
+      text-sm font-semibold
+      tracking-tight
+      text-neutral-900
+      dark:text-neutral-100
+    "
           >
             {title}
           </h2>
 
-          <Link
-            href={`/projects/${slug}`}
-            aria-label={`View ${title} details`}
-            onClick={(e) => e.stopPropagation()}
-            className="
-              shrink-0
-              text-neutral-400
-              transition-colors
-              hover:text-neutral-900
-              dark:text-neutral-500
-              dark:hover:text-neutral-100
-            "
-          >
-            <ArrowUpRight size={15} />
-          </Link>
+          <div className="flex shrink-0 items-center gap-2">
+            {/* Details */}
+            <Link
+              href={`/projects/${slug}`}
+              aria-label={`View ${title} details`}
+              onClick={(e) => e.stopPropagation()}
+              className="
+        text-red-500
+        transition-all duration-200
+        hover:scale-105
+        hover:text-red-700
+        dark:text-red-400
+        dark:hover:text-red-300
+      "
+            >
+              <Info size={17} />
+            </Link>
+
+            {/* Live Website */}
+            <Link
+              href={liveUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`Open ${title} live website`}
+              onClick={(e) => e.stopPropagation()}
+              className="
+        text-sky-500
+        transition-all duration-200
+        hover:scale-105
+        hover:text-sky-700
+        dark:text-sky-400
+        dark:hover:text-sky-300
+      "
+            >
+              <Globe size={17} />
+            </Link>
+          </div>
         </div>
 
         {/* Tech Stack */}
