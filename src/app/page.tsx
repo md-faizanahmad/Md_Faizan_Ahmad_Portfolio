@@ -116,9 +116,9 @@ export default function Home() {
       />
       <div className="relative font-sans min-h-screen selection:bg-indigo-500/30">
         {/* Content wrapper with better vertical spacing */}
-        <div className="relative z-10 flex flex-col gap-20 pb-20">
+        {/* <div className="relative z-10 flex flex-col gap-20 pb-20"> */}
+        <div className="relative z-10 flex flex-col gap-12 pb-12 md:gap-20 md:pb-20">
           <HeroSection />
-
           <About />
 
           <div className="mx-auto max-w-4xl">

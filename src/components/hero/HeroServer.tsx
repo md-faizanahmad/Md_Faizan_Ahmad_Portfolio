@@ -5,7 +5,8 @@ import { heroConfig } from "./hero.config";
 
 const HeroSectionServer = () => {
   return (
-    <div className="container mx-auto px-4 mt-15 text-center">
+    // <div className="container mx-auto px-4 mt-15 text-center">
+    <div className="container mx-auto px-4 text-center">
       <h1 className="mb-4 text-4xl font-bold sm:text-5xl md:text-6xl lg:text-7xl">
         {heroConfig.name}
       </h1>
