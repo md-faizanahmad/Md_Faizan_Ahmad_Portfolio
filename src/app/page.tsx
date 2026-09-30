@@ -112,62 +112,61 @@ export default function Home() {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(personSchema),
+        }}
       />
-      <div className="relative font-sans min-h-screen selection:bg-indigo-500/30">
-        {/* Content wrapper with better vertical spacing */}
-        {/* <div className="relative z-10 flex flex-col gap-20 pb-20"> */}
+
+      <main className="relative min-h-screen font-sans selection:bg-indigo-500/30">
         <div className="relative z-10 flex flex-col gap-12 pb-12 md:gap-20 md:pb-20">
           <HeroSection />
+
           <About />
 
-          <div className="mx-auto max-w-4xl">
-            <div>
-              <HomeTechStack />
-            </div>
+          <section className="mx-auto w-full max-w-4xl">
+            <HomeTechStack />
+            <Highlights />
+          </section>
 
-            <div>
-              <Highlights />
-            </div>
-          </div>
-          {/* Featured Projects Section */}
-          <section className="max-w-7xl mx-auto px-4 w-full">
-            <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
+          <section className="mx-auto w-full max-w-7xl px-4">
+            <div className="mb-10 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
               <div>
-                <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
+                <h2 className="text-3xl font-bold tracking-tight md:text-4xl">
                   Featured Work
                 </h2>
-                <p className="text-[color:var(--muted-foreground)] mt-2">
+
+                <p className="mt-2 text-[color:var(--muted-foreground)]">
                   A selection of my recent web development projects.
                 </p>
               </div>
 
-              {/* Desktop "More" Link */}
               <Link
                 href="/projects"
-                className="hidden md:flex items-center gap-2 text-indigo-500 font-semibold hover:gap-3 transition-all"
+                className="hidden items-center gap-2 font-semibold text-indigo-500 transition-all hover:gap-3 md:flex"
               >
-                View all projects <ArrowRight size={18} />
+                View all projects
+                <ArrowRight size={18} />
               </Link>
             </div>
 
             <Projects limit={5} showFilter={false} />
 
-            {/* Mobile/Centered "More" Button */}
-            <div className="flex justify-center mt-12 md:hidden">
+            <div className="mt-12 flex justify-center md:hidden">
               <Link
                 href="/projects"
                 className="
-                group inline-flex items-center gap-2 px-8 py-4 rounded-full
-                bg-gradient-to-r from-indigo-600 to-purple-600 
-                text-white font-bold shadow-lg shadow-indigo-500/25
-                hover:shadow-indigo-500/40 transition-all active:scale-95
-              "
+                  group inline-flex items-center gap-2 rounded-full
+                  bg-gradient-to-r from-indigo-600 to-purple-600
+                  px-8 py-4 font-bold text-white
+                  shadow-lg shadow-indigo-500/25
+                  transition-all hover:shadow-indigo-500/40
+                  active:scale-95
+                "
               >
                 See More Projects
                 <ArrowRight
                   size={18}
-                  className="group-hover:translate-x-1 transition-transform"
+                  className="transition-transform group-hover:translate-x-1"
                 />
               </Link>
             </div>
@@ -175,7 +174,7 @@ export default function Home() {
 
           <CTA />
         </div>
-      </div>
+      </main>
     </>
   );
 }
