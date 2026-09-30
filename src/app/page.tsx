@@ -129,27 +129,29 @@ export default function Home() {
           </section>
 
           <section className="mx-auto w-full max-w-7xl px-4">
-            <div className="mb-10 flex flex-col  gap-4 md:flex-row md:items-end md:justify-between">
-              <div>
-                <h2 className="text-3xl font-bold tracking-tight md:text-3xl">
+            <div className="mb-10 flex flex-col items-center gap-4 md:flex-row md:items-center md:justify-between">
+              <div className="text-center">
+                <h2 className="text-3xl font-bold tracking-tight">
                   Featured Work
                 </h2>
-
-                <p className="mt-2 text-[color:var(--muted-foreground)]">
-                  A selection of my recent web development projects.
-                </p>
               </div>
 
               <Link
                 href="/projects"
-                className="hidden items-center gap-2 font-semibold text-sky-600 underline transition-all hover:gap-3 md:flex"
+                className="
+      hidden md:flex
+      items-center gap-2
+      font-semibold text-sky-600
+      underline
+      transition-all hover:gap-3
+    "
               >
                 View all projects
                 <ArrowRight size={18} />
               </Link>
             </div>
 
-            <Projects limit={5} showFilter={false} />
+            <Projects limit={3} showFilter={false} />
 
             <div className="mt-12 flex justify-center md:hidden">
               <Link
