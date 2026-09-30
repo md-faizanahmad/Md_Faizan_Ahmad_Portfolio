@@ -5,7 +5,6 @@
     "category": "Full Stack E-Commerce Administration System",
     "featured": true,
     "image": "https://res.cloudinary.com/dyefyrszz/image/upload/v1790771205/myazstore-admin_h81dcc.png",
-
     "description": "A production-ready admin dashboard for managing products, orders, inventory, payments, customers, analytics, and business operations for a full-stack e-commerce platform.",
     "overview": "MyStore Admin Dashboard is a centralized administration platform built for managing products, inventory, orders, customers, payments, and business analytics within the MyAZStore ecosystem. The project was designed to handle real-world e-commerce workflows with a focus on secure authentication, operational efficiency, scalability, and long-term maintainability.",
     "liveUrl": "https://admin.myazstore.shop",
@@ -66,11 +65,11 @@
     ]
   },
   {
-    "slug": "khus-shop",
-    "title": "KhusShop",
+    "slug": "sweets-shop",
+    "title": "SweetsShop",
     "image": "https://res.cloudinary.com/dyefyrszz/image/upload/v1790771203/khus-shop_d0t32g.png",
     "description": "A modern full-stack e-commerce platform featuring product management, category organization, secure authentication, shopping cart, wishlist, order management, payment integration, admin dashboard, and a responsive user experience with optimized performance and SEO.",
-    "liveUrl": "https://your-khusshop-live-url.com",
+    "liveUrl": "https://sweet-shop-seven-zeta.vercel.app",
     "codeUrl": "https://github.com/md-faizanahmad/sweets-shop",
     "techStack": [
       "Next.js",
