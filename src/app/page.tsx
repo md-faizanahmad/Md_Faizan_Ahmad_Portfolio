@@ -156,8 +156,8 @@ export default function Home() {
                 href="/projects"
                 className="
                   group inline-flex items-center gap-2 rounded-full
-                  bg-gradient-to-r from-indigo-600 to-purple-600
-                  px-8 py-4 font-bold text-white
+                  bg-black text-white hover:bg-neutral-800 dark:bg-white dark:text-black dark:hover:bg-neutral-200
+                  px-8 py-4 font-bold 
                   shadow-lg shadow-indigo-500/25
                   transition-all hover:shadow-indigo-500/40
                   active:scale-95
