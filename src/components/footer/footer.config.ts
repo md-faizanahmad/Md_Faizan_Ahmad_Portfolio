@@ -3,10 +3,9 @@
 export const footerConfig = {
   brand: {
     name: "Md Faizan Ahmad",
-    title: "React Developer • Full Stack Developer",
+    title: "Full-Stack Web Developer",
     description:
-      "I build responsive web applications focused on performance, usability, and clean, maintainable code.",
-    stats: "2+ years experience • React & Next.js • Full Stack Development",
+      "I build modern web applications with a focus on performance, usability, scalable architecture, and maintainable code.",
   },
 
   featuredWork: [
@@ -19,7 +18,7 @@ export const footerConfig = {
       href: "https://luman-studio.vercel.app",
     },
     {
-      name: "Luman Hotel Booking",
+      name: "Luman Hotel",
       href: "https://luman-hotel.vercel.app",
     },
     {
@@ -29,9 +28,15 @@ export const footerConfig = {
   ],
 
   navigation: [
-    { name: "About", href: "/about" },
-    { name: "Projects", href: "/projects" },
-    { name: "Contact", href: "/contact" },
+    {
+      name: "About",
+      href: "/about",
+    },
+
+    {
+      name: "Contact",
+      href: "/contact",
+    },
   ],
 
   socials: [
@@ -51,5 +56,5 @@ export const footerConfig = {
     location: "India",
   },
 
-  bottomText: "",
+  bottomText: "Built with React & Next.js",
 };
