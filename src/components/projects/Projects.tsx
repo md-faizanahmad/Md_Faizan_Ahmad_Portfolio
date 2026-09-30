@@ -65,10 +65,10 @@ const Projects: React.FC<ExtendedProjectsProps> = ({
       <motion.div
         layout
         className="
-          flex overflow-x-auto snap-x snap-mandatory gap-6 pb-10 no-scrollbar
-          sm:grid sm:grid-cols-2 lg:grid-cols-3 sm:overflow-visible 
-          px-4 sm:px-0
-        "
+    flex overflow-x-auto snap-x snap-mandatory gap-6 pb-10 no-scrollbar
+    sm:grid sm:grid-cols-2 lg:grid-cols-3 sm:overflow-visible
+    px-4 sm:px-6 lg:px-10
+  "
       >
         <AnimatePresence mode="popLayout" initial={false}>
           {isLoading
@@ -88,7 +88,7 @@ const Projects: React.FC<ExtendedProjectsProps> = ({
                   animate={{ opacity: 1, scale: 1 }}
                   exit={{ opacity: 0, scale: 0.9 }}
                   transition={{ duration: 0.3 }}
-                  className="w-[85vw] sm:w-auto flex-shrink-0 mt-4 snap-center m-auto"
+                  className="w-[85vw] sm:w-auto flex-shrink-0 mt-4 snap-center  "
                 >
                   <ProjectCard {...project} />
                 </motion.div>

@@ -129,9 +129,9 @@ export default function Home() {
           </section>
 
           <section className="mx-auto w-full max-w-7xl px-4">
-            <div className="mb-10 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+            <div className="mb-10 flex flex-col  gap-4 md:flex-row md:items-end md:justify-between">
               <div>
-                <h2 className="text-3xl font-bold tracking-tight md:text-4xl">
+                <h2 className="text-3xl font-bold tracking-tight md:text-3xl">
                   Featured Work
                 </h2>
 
@@ -142,7 +142,7 @@ export default function Home() {
 
               <Link
                 href="/projects"
-                className="hidden items-center gap-2 font-semibold text-indigo-500 transition-all hover:gap-3 md:flex"
+                className="hidden items-center gap-2 font-semibold text-sky-600 underline transition-all hover:gap-3 md:flex"
               >
                 View all projects
                 <ArrowRight size={18} />

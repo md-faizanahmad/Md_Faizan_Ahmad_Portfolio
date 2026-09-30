@@ -4,10 +4,7 @@
     "title": "MyStore Admin Dashboard",
     "category": "Full Stack E-Commerce Administration System",
     "featured": true,
-    "image": "https://res.cloudinary.com/daqb5wglu/image/upload/v1766169967/AdminDash_c87c4j.png",
-    "gallery": [
-      "https://res.cloudinary.com/daqb5wglu/image/upload/v1766169967/AdminDash_c87c4j.png"
-    ],
+    "image": "https://res.cloudinary.com/dyefyrszz/image/upload/v1790771205/myazstore-admin_h81dcc.png",
 
     "description": "A production-ready admin dashboard for managing products, orders, inventory, payments, customers, analytics, and business operations for a full-stack e-commerce platform.",
     "overview": "MyStore Admin Dashboard is a centralized administration platform built for managing products, inventory, orders, customers, payments, and business analytics within the MyAZStore ecosystem. The project was designed to handle real-world e-commerce workflows with a focus on secure authentication, operational efficiency, scalability, and long-term maintainability.",
@@ -35,7 +32,7 @@
   {
     "slug": "mystore-shop",
     "title": "MyStore Shop",
-    "image": "https://res.cloudinary.com/daqb5wglu/image/upload/v1766169968/ShopUI_evspte.png",
+    "image": "https://res.cloudinary.com/dyefyrszz/image/upload/v1790771429/azstore-shop_ljgniu.png",
     "description": "Responsive public-facing EMI and salary calculator with fast loading, SEO optimization, and user-friendly design.",
     "liveUrl": "https://myazstore.shop",
     "codeUrl": "https://github.com/md-faizanahmad/MyShop",
@@ -51,7 +48,7 @@
   {
     "slug": "find-movie",
     "title": "Find Movie",
-    "image": "https://res.cloudinary.com/dyefyrszz/image/upload/v1782661489/findmovie_byv5hq.png",
+    "image": "https://res.cloudinary.com/dyefyrszz/image/upload/v1790771199/find-movie_id7rzd.png",
     "description": "A modern movie discovery platform featuring trending movies, TV shows, search functionality, detailed media information, favorites management, and a responsive user experience with optimized performance and SEO.",
     "liveUrl": "https://find-movie-liart.vercel.app",
     "codeUrl": "https://github.com/md-faizanahmad/find-movie",
@@ -71,7 +68,7 @@
   {
     "slug": "khus-shop",
     "title": "KhusShop",
-    "image": "https://res.cloudinary.com/dyefyrszz/image/upload/v1782661853/KS_SHop_ent764.png",
+    "image": "https://res.cloudinary.com/dyefyrszz/image/upload/v1790771203/khus-shop_d0t32g.png",
     "description": "A modern full-stack e-commerce platform featuring product management, category organization, secure authentication, shopping cart, wishlist, order management, payment integration, admin dashboard, and a responsive user experience with optimized performance and SEO.",
     "liveUrl": "https://your-khusshop-live-url.com",
     "codeUrl": "https://github.com/md-faizanahmad/sweets-shop",
@@ -93,7 +90,7 @@
   {
     "slug": "luman-studio",
     "title": "Luman Studio – Interactive Storytelling Website",
-    "image": "https://res.cloudinary.com/dyefyrszz/image/upload/v1775584530/luman-studio_km5g0t.png",
+    "image": "https://res.cloudinary.com/dyefyrszz/image/upload/v1790771207/luman-shop_umil6e.png",
     "description": "Luman Studio is a high-end, animation-driven frontend experience built to showcase acoustic design solutions through immersive storytelling and smooth interactions.",
     "liveUrl": "https://luman-studio.vercel.app",
     "codeUrl": "https://github.com/md-faizanahmad/furniture-shop",
@@ -110,7 +107,7 @@
   {
     "slug": "luman-hotel",
     "title": "Luman Hotel – Luxury Hotel Frontend Experience",
-    "image": "https://res.cloudinary.com/dyefyrszz/image/upload/v1775583960/Luman_Hotel_zd8avm.png",
+    "image": "https://res.cloudinary.com/dyefyrszz/image/upload/v1790771203/luman-hotel_kfplao.png",
     "description": "Luman Hotel is a modern hotel website focused on premium UI, smooth animations, and user-friendly room exploration to simulate a real hospitality booking experience.",
     "liveUrl": "https://luman-hotel.vercel.app",
     "codeUrl": "https://github.com/md-faizanahmad/luman-hotel",
@@ -126,7 +123,7 @@
   {
     "slug": "clinic-website",
     "title": "Clinic Website with Appointment Request Flow",
-    "image": "https://res.cloudinary.com/dyefyrszz/image/upload/v1775585097/clinic-website_mkuhub.png",
+    "image": "https://res.cloudinary.com/dyefyrszz/image/upload/v1790772819/clinic_tgpqrg.png",
     "description": "Built a clinic website with an appointment request flow using email integration instead of a backend system. Focused on performance, SEO, and conversion-driven UI, enabling patients to easily connect with the clinic without complex infrastructure.",
     "liveUrl": "https://clinic-web-app-six.vercel.app/",
     "codeUrl": "https://github.com/md-faizanahmad",
@@ -136,7 +133,7 @@
   {
     "slug": "school-website",
     "title": "School Website",
-    "image": "https://res.cloudinary.com/dyefyrszz/image/upload/v1770280034/Header_yt9bly.png",
+    "image": "https://res.cloudinary.com/dyefyrszz/image/upload/v1790771206/school_x0bb8m.png",
     "description": "Responsive school website with navigation, admission form, PDF generation, email notifications, and downloadable forms.",
     "liveUrl": "https://school-demo-sable-eta.vercel.app/",
     "codeUrl": "https://github.com/md-faizanahmad",
@@ -145,7 +142,7 @@
   {
     "slug": "cyber-cafe",
     "title": "CyberCafe",
-    "image": "https://res.cloudinary.com/dyefyrszz/image/upload/v1782662198/cybercafe_h7jmem.png",
+    "image": "https://res.cloudinary.com/dyefyrszz/image/upload/v1790772817/cafe_fvlzgz.png",
     "description": "A modern full-stack cyber cafe management platform featuring customer registration, system booking, session tracking, billing management, print and scan services, user authentication, role-based admin dashboard, payment management, analytics, and a responsive user experience with optimized performance and security.",
     "liveUrl": "https://cyber-cafe-zeta.vercel.app/",
     "codeUrl": "https://github.com/md-faizanahmad/cyber-cafe",
@@ -167,7 +164,7 @@
   {
     "slug": "nerd-nest",
     "title": "Nerd Nest",
-    "image": "https://res.cloudinary.com/duvavjepw/image/upload/v1740425162/Nerdnest_czsfhr.png",
+    "image": "https://res.cloudinary.com/dyefyrszz/image/upload/v1790772823/nerdnest_p0ut81.png",
     "description": "Tech blog displaying latest news with API integration, responsive UI, and dynamic content fetching.",
     "liveUrl": "https://nerdnestt.web.app/",
     "codeUrl": "https://github.com/md-faizanahmad/nerdnest",
@@ -177,7 +174,7 @@
   {
     "slug": "rent-ride",
     "title": "Rent Ride",
-    "image": "https://res.cloudinary.com/dyefyrszz/image/upload/v1775584898/rent-ride_mkmxlj.png",
+    "image": "https://res.cloudinary.com/dyefyrszz/image/upload/v1790772823/rentride_m8vfao.png",
     "description": "Responsive car rental platform with dynamic bookings, user authentication, and mobile-friendly design.",
     "liveUrl": "https://rent-ride-app.vercel.app/",
     "codeUrl": "https://github.com/md-faizanahmad",

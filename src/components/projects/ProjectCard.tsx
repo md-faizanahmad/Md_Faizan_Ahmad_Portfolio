@@ -1,10 +1,9 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { ExternalLink } from "lucide-react";
-import { useRouter } from "next/navigation";
+import { ArrowUpRight, Globe, Info } from "lucide-react";
 
 interface ProjectCardProps {
   slug: string;
@@ -21,143 +20,217 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   title,
   image,
   liveUrl,
-  codeUrl,
   techStack,
   description,
 }) => {
-  const [hovered, setHovered] = useState(false);
-  const [showMore, setShowMore] = useState(false);
-  const router = useRouter();
   return (
-    <div
+    <article
       className="
-        relative w-100 max-w-sm cursor-pointer overflow-hidden rounded-xl
-        border border-[color:var(--border)]
-        bg-[color:var(--card)] shadow-sm
-        transition-all duration-300 hover:shadow-lg
+        group relative mx-auto w-full max-w-[380px]
+        overflow-hidden
+        rounded-xl
+        border border-neutral-200
+        bg-white
+        shadow-[0_-6px_18px_-12px_rgba(0,0,0,0.4)]
+        transition-all duration-300
+        hover:-translate-y-1
+
+        dark:border-neutral-800
+        dark:bg-neutral-950
+        dark:shadow-[0_-8px_20px_-12px_rgba(238,236,236,0.3)]
       "
-      // onClick={() => setHovered(!hovered)}
-      onClick={() => router.push(`/projects/${slug}`)}
-      onMouseEnter={() => setHovered(true)}
-      onMouseLeave={() => setHovered(false)}
     >
-      {/* Image */}
-      <div className="relative h-66 w-100 sm:w-100">
+      {/* Project Image */}
+      <div
+        className="
+          relative aspect-[16/10]
+          overflow-hidden
+          bg-neutral-100
+          dark:bg-neutral-900
+        "
+      >
         <Image
           src={image}
-          alt={title}
+          alt={`${title} project preview`}
           fill
-          priority
-          sizes="(max-width: 768px) 100vw, 300px"
-          className="object-fit transition-transform duration-500 group-hover:scale-110"
+          sizes="
+            (max-width: 640px) 85vw,
+            (max-width: 1024px) 45vw,
+            25vw
+          "
+          className="
+            object-contain
+            transition-transform duration-500
+            group-hover:scale-[1.03]
+          "
         />
 
-        {/* Overlay gradient */}
-        <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/55 to-transparent" />
+        {/* Image overlay */}
+        <div
+          className="
+            pointer-events-none absolute inset-0
+            bg-gradient-to-t
+            from-black/45
+            via-transparent
+            to-transparent
+          "
+        />
 
+        {/* Live Project */}
+        <Link
+          href={liveUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={`Open ${title} live website`}
+          onClick={(e) => e.stopPropagation()}
+          className="
+            absolute bottom-3 right-3
+            flex h-8 w-8
+            items-center justify-center
+            rounded-full
+            border border-white/20
+            bg-white/90
+            text-black
+            opacity-0
+            shadow-md
+            backdrop-blur-sm
+            translate-y-1
+            transition-all duration-300
+            hover:scale-105
+            group-hover:translate-y-0
+            group-hover:opacity-100
+
+            dark:bg-black/80
+            dark:text-white
+            dark:border-white/15
+          "
+        >
+          <Globe size={15} />
+        </Link>
+
+        {/* Project Details */}
+        <Link
+          href={`/projects/${slug}`}
+          aria-label={`View ${title} details`}
+          onClick={(e) => e.stopPropagation()}
+          className="
+            absolute bottom-3 left-3
+            flex h-8 w-8
+            items-center justify-center
+            rounded-full
+            border border-white/20
+            bg-white/90
+            text-black
+            opacity-0
+            shadow-md
+            backdrop-blur-sm
+            translate-y-1
+            transition-all duration-300
+            hover:scale-105
+            group-hover:translate-y-0
+            group-hover:opacity-100
+
+            dark:bg-black/80
+            dark:text-white
+            dark:border-white/15
+          "
+        >
+          <Info size={15} />
+        </Link>
+      </div>
+
+      {/* Card Footer */}
+      <div className="p-3">
         {/* Title */}
-        <h2 className="absolute bottom-3 left-4 text-base font-bold text-white drop-shadow">
-          {title}
-        </h2>
+        <div className="flex items-center justify-between gap-2">
+          <h2
+            className="
+              truncate
+              text-sm font-semibold
+              tracking-tight
+              text-neutral-900
+              dark:text-neutral-100
+            "
+          >
+            {title}
+          </h2>
 
-        {/* Live button on front card */}
-        {/* Action buttons */}
-        <div className="absolute bottom-3 right-7 z-10 flex gap-2">
-          {/* Details */}
           <Link
             href={`/projects/${slug}`}
+            aria-label={`View ${title} details`}
             onClick={(e) => e.stopPropagation()}
             className="
-      inline-flex items-center gap-1
-      rounded-md bg-green-600 px-3 py-2
-      text-xs font-medium text-gray-100
-      shadow-lg 
-    "
+              shrink-0
+              text-neutral-400
+              transition-colors
+              hover:text-neutral-900
+              dark:text-neutral-500
+              dark:hover:text-neutral-100
+            "
           >
-            Details
-          </Link>
-
-          {/* Live */}
-          <Link
-            href={liveUrl}
-            target="_blank"
-            onClick={(e) => e.stopPropagation()}
-            className="
-      inline-flex items-center gap-1
-      rounded-md bg-white px-3 py-2
-      text-xs font-medium text-black
-      shadow-lg transition hover:bg-gray-100
-    "
-          >
-            <ExternalLink size={14} />
-            Live
+            <ArrowUpRight size={15} />
           </Link>
         </div>
-      </div>
 
-      {/* Hover panel */}
-      <div
-        className={`
-          absolute inset-0 flex flex-col justify-between p-5
-          backdrop-blur-lg transition-all duration-300
-          ${
-            hovered ? "opacity-100 translate-y-0" : "opacity-0 translate-y-full"
-          }
-          bg-[color:var(--background)]/65
-          text-[color:var(--foreground)]
-        `}
-      >
-        <div>
-          {/* Description */}
-          <p
-            className={`
-              mb-2 text-sm text-[color:var(--muted-foreground)]
-              transition-all duration-300
-              ${showMore ? "max-h-32 overflow-y-auto pr-2" : "line-clamp-3"}
-            `}
-          >
-            {description}
-          </p>
-
-          {/* Toggle link */}
-          {description.length > 100 && (
-            <button
-              onClick={(e) => {
-                e.stopPropagation();
-                setShowMore((s) => !s);
-              }}
+        {/* Tech Stack */}
+        <div className="mt-2 flex flex-wrap gap-1">
+          {techStack.slice(0, 3).map((tech) => (
+            <span
+              key={tech}
               className="
-                mb-2 cursor-pointer text-xs
-                text-[color:var(--foreground)]/80
-                underline-offset-2 hover:underline
+                rounded-md
+                border
+                border-neutral-200
+                bg-neutral-100
+                px-1.5 py-0.5
+                text-[9px] font-medium
+                text-neutral-600
+
+                dark:border-neutral-800
+                dark:bg-neutral-900
+                dark:text-neutral-400
               "
             >
-              {showMore ? "Show Less" : "Show More"}
-            </button>
-          )}
+              {tech}
+            </span>
+          ))}
 
-          {/* Tech stack */}
-          <div className="mb-2 flex flex-wrap gap-1">
-            {techStack.map((tech) => (
-              <span
-                key={tech}
-                className="
-                  rounded-full px-3 py-1 text-xs
-                  bg-[color:var(--secondary)]
-                  text-[color:var(--secondary-foreground)]
-                  border border-[color:var(--border)]
-                "
-              >
-                {tech}
-              </span>
-            ))}
-          </div>
+          {techStack.length > 3 && (
+            <span
+              className="
+                rounded-md
+                border
+                border-neutral-200
+                px-1.5 py-0.5
+                text-[9px]
+                text-neutral-500
+
+                dark:border-neutral-800
+                dark:text-neutral-500
+              "
+            >
+              +{techStack.length - 3}
+            </span>
+          )}
         </div>
 
-        {/* Bottom area kept empty to preserve spacing/layout */}
-        <div />
+        {/* Description */}
+        <p
+          className="
+            mt-2
+            line-clamp-2
+            min-h-[30px]
+            text-[11px]
+            leading-[1.4]
+            text-neutral-500
+
+            dark:text-neutral-400
+          "
+        >
+          {description}
+        </p>
       </div>
-    </div>
+    </article>
   );
 };
 
