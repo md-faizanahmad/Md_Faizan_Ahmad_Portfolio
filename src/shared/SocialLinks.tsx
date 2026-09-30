@@ -34,13 +34,13 @@ export default function SocialLink() {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="fixed bottom-6 right-1 z-50 sm:hidden">
+    <div className="fixed bottom-6 lg:right-3 right-1 z-50 lg:hidden">
       {/* Actions */}
       <div
-        className={`mb-4 flex flex-col items-center gap-3 transition-all duration-300 ${
+        className={`flex flex-col items-center-safe gap-3 mb-4 transition-all duration-300 ${
           open
-            ? "translate-y-0 opacity-100"
-            : "pointer-events-none translate-y-4 opacity-0"
+            ? "opacity-100 translate-y-0"
+            : "opacity-0 pointer-events-none translate-y-4"
         }`}
       >
         {actions.map(({ label, href, icon: Icon, bg }) => (
@@ -49,29 +49,28 @@ export default function SocialLink() {
             href={href}
             target="_blank"
             rel="noopener noreferrer"
-            aria-label={label}
-            className={`group flex items-center gap-3 rounded-full px-4 py-2 text-white shadow-lg ${bg}`}
+            className={`group flex items-center gap-3 px-4 py-2 rounded-full text-white shadow-lg ${bg}`}
           >
             <Icon size={18} />
-            <span className="text-sm font-medium">{label}</span>
+            <span className="text-sm font-medium hidden sm:block">{label}</span>
           </a>
         ))}
       </div>
 
       {/* Main Button */}
       <button
-        onClick={() => setOpen((prev) => !prev)}
+        onClick={() => setOpen(!open)}
         className="
-          flex h-14 w-14 cursor-pointer items-center justify-center
-          rounded-full
-          border border-[color:var(--border)]
-          bg-[color:var(--card)]
-          text-[color:var(--foreground)]
-          shadow-md transition-all duration-200
-          hover:scale-105 hover:shadow-lg
-        "
-        aria-label={open ? "Close social links" : "Open social links"}
-        aria-expanded={open}
+    flex h-14 w-14 items-center justify-center
+    rounded-full cursor-pointer
+    border border-[color:var(--border)]
+    bg-[color:var(--card)]
+    text-[color:var(--foreground)]
+    shadow-md hover:shadow-lg
+    hover:scale-105 transition-all duration-200
+    ms-1 lg:ms-11
+  "
+        aria-label="Open social links"
       >
         <Share2
           size={22}
