@@ -34,7 +34,7 @@ export default function SocialLink() {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="fixed bottom-6 right-3 z-50 sm:hidden">
+    <div className="fixed bottom-6 right-1 z-50 sm:hidden">
       {/* Actions */}
       <div
         className={`mb-4 flex flex-col items-center gap-3 transition-all duration-300 ${
