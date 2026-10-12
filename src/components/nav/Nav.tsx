@@ -113,7 +113,7 @@ export default function Navbar() {
             <Link
               href="/"
               className="font-extrabold tracking-tight"
-              aria-label="MFA — Frontend Developer"
+              aria-label="MFA — Front-end Developer"
             >
               <motion.span
                 ref={logoRef}
@@ -142,7 +142,7 @@ export default function Navbar() {
                   group-hover:translate-y-0 group-hover:opacity-100
                 "
                 >
-                  Full Stack Developer
+                  Front-end Developer
                 </span>
               </motion.span>
             </Link>
