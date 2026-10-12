@@ -9,11 +9,10 @@
   },
 
   "paragraphs": [
-    "I started learning web development because I wanted to understand how websites are built and how ideas can turn into real products. Since then, I've been building projects with React, Next.js, and TypeScript.",
-    "Over time, I started working with Node.js, Express.js, and MongoDB as well, which helped me understand the full journey from a user interface to the backend behind it.",
-    "I enjoy building clean interfaces, solving problems, and learning by building real projects."
+    "I'm a Frontend & Full Stack Developer focused on building responsive, performant, and maintainable web applications. My work spans modern frontend architecture, reusable UI components, API integration, and backend development.",
+    "I work with React, Next.js, and TypeScript to build structured user interfaces, and use Node.js, Express.js, and MongoDB to develop backend services and data-driven features. My projects include admin dashboards, e-commerce functionality, authentication flows, and interactive web experiences.",
+    "I prioritize clean architecture, usability, performance, and maintainability—making technical decisions that support both the user experience and the long-term reliability of an application."
   ],
-
   "cta": {
     "label": "Let's Connect",
     "href": "mailto:md.faizan.ahmad.web@gmail.com"
