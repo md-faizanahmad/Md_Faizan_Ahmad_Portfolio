@@ -3,7 +3,7 @@
 export const footerConfig = {
   brand: {
     name: "Md Faizan Ahmad",
-    title: "Full-Stack Web Developer",
+    title: "Front-end  Developer",
     description:
       "I build modern web applications with a focus on performance, usability, scalable architecture, and maintainable code.",
   },
