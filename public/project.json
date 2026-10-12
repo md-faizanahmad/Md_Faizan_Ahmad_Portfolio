@@ -45,12 +45,12 @@
     ]
   },
   {
-    "slug": "find-movie",
-    "title": "Find Movie",
+    "slug": "trip-pulse",
+    "title": "TripPulse",
     "image": "https://res.cloudinary.com/dyefyrszz/image/upload/v1790771199/find-movie_id7rzd.png",
-    "description": "A modern movie discovery platform featuring trending movies, TV shows, search functionality, detailed media information, favorites management, and a responsive user experience with optimized performance and SEO.",
-    "liveUrl": "https://find-movie-liart.vercel.app",
-    "codeUrl": "https://github.com/md-faizanahmad/find-movie",
+    "description": "A modern travel discovery platform featuring destination search, real-time weather information, country-specific themes, travel safety insights, and a responsive user experience with optimized performance and SEO.",
+    "liveUrl": "https://trip-pulse-gamma.vercel.app",
+    "codeUrl": "https://github.com/md-faizanahmad/trip_pulses",
     "techStack": [
       "Next.js",
       "TypeScript",
@@ -61,7 +61,8 @@
       "TanStack Query",
       "Zod",
       "Framer Motion",
-      "TMDB API"
+      "OpenStreetMap API",
+      "Weather API"
     ]
   },
   {
