@@ -304,205 +304,113 @@
       "Dark mode customization"
     ]
   },
+
   {
-    "slug": "find-movie",
-    "title": "Find Movie",
-    "category": "Full Stack Movie Discovery Platform",
+    "slug": "trip-pulse",
+    "title": "TripPulse",
+    "category": "Full Stack Travel Discovery Platform",
     "featured": true,
-    "image": "https://res.cloudinary.com/dyefyrszz/image/upload/v1782661489/findmovie_byv5hq.png",
+    "image": "https://res.cloudinary.com/dyefyrszz/image/upload/v1791825566/Gemini_Generated_Image_kgplgbkgplgbkgpl_pwdgap.png",
     "gallery": [
-      "https://res.cloudinary.com/dyefyrszz/image/upload/v1782661489/findmovie_byv5hq.png"
+      "YOUR_TRIPPULSE_HOME_SCREEN_URL",
+      "YOUR_TRIPPULSE_DESTINATION_DETAILS_URL",
+      "YOUR_TRIPPULSE_WEATHER_SECTION_URL",
+      "YOUR_TRIPPULSE_SAFETY_SECTION_URL"
     ],
-
-    "description": "A modern movie discovery platform featuring trending movies, TV shows, search functionality, detailed media information, favorites management, and a responsive user experience with optimized performance and SEO.",
-
-    "lgdescription": "FindMovie is a modern full-stack movie and TV discovery platform built with Next.js, TypeScript, Tailwind CSS, MongoDB, Mongoose, NextAuth, TanStack Query, Zod, Framer Motion, and the TMDb API. The platform allows users to discover trending and popular movies and TV shows, search for specific titles, explore detailed media information, and save content to their personal favorites. The application uses Next.js server-side architecture for secure API communication with TMDb while MongoDB and Mongoose provide persistent storage for user-related data such as favorites. Authentication is handled through NextAuth, while TanStack Query manages asynchronous data fetching and caching. Zod provides schema-based validation, and Framer Motion adds smooth interface animations. The application was designed with a responsive, mobile-first interface, reusable components, optimized media loading, and SEO in mind.",
-    "overview": "FindMovie is a modern movie and TV discovery platform built to provide a fast, responsive, and engaging experience for discovering movies and television shows. The application integrates the TMDb API for media data while using Next.js server-side architecture to handle API communication securely. Users can explore trending and popular content, search for movies and TV shows, view detailed media information, and manage their favorite content. The platform was designed with a strong focus on reusable component architecture, type safety, responsive UX, performance, and SEO.",
-
-    "liveUrl": "https://find-movie-liart.vercel.app",
-    "codeUrl": "https://github.com/md-faizanahmad/find-movie",
+    "description": "A modern travel discovery platform featuring destination search, weather information, country-specific themes, travel safety insights, and a responsive user experience with optimized performance and SEO.",
+    "lgdescription": "I built TripPulse to make discovering travel destinations more convenient by combining destination exploration, weather information, and travel safety insights in one platform. I focused on reusable components, responsive design, external API integration, asynchronous data fetching, and performance optimization while building a maintainable application.",
+    "overview": "TripPulse is a travel discovery platform that helps users explore destinations worldwide and access useful travel information through destination search, weather information, country-specific themes, and travel safety insights.",
+    "liveUrl": "https://trip-pulse-gamma.vercel.app",
+    "codeUrl": "https://github.com/md-faizanahmad/trip_pulses",
     "status": "Completed",
     "role": "Full Stack Developer",
-    "duration": "2 Months",
-
+    "duration": "YOUR_ACTUAL_PROJECT_DURATION",
     "techStack": [
       "Next.js",
       "TypeScript",
       "Tailwind CSS",
-      "MongoDB",
-      "Mongoose",
-      "NextAuth",
       "TanStack Query",
       "Zod",
-      "Framer Motion",
-      "TMDB API"
+      "Lucide React",
+      "OpenStreetMap",
+      "Weather API",
+      "Vercel"
     ],
-
     "features": {
-      "discovery": [
-        "Trending Movies and TV Shows",
-        "Popular Movies and TV Shows",
-        "Top Rated Content",
-        "Upcoming Movies",
-        "Latest Media",
-        "Genre-Based Discovery",
-        "Movie and TV Search",
-        "Media Category Filtering"
+      "destinationDiscovery": [
+        "Destination Search",
+        "Explore Destinations Worldwide",
+        "Destination Information",
+        "Country-Specific Visual Themes"
       ],
-
-      "media": [
-        "Movie Details Pages",
-        "TV Show Details Pages",
-        "Detailed Media Information",
-        "Genres and Categories",
-        "Release Information",
-        "Ratings and Popularity Data",
-        "Poster and Backdrop Images",
-        "Related Media Discovery"
+      "weather": [
+        "Destination Weather Information",
+        "External Weather API Integration",
+        "Loading and Error States",
+        "Retry Handling"
       ],
-
-      "user": [
-        "User Authentication",
-        "Favorites Management",
-        "Add Movies to Favorites",
-        "Remove Movies from Favorites",
-        "Personalized Favorite Collection"
+      "travelSafety": [
+        "Travel Safety Information",
+        "Destination-Specific Safety Insights"
       ],
-
       "userExperience": [
-        "Responsive Mobile-First Design",
-        "Skeleton Loading States",
-        "Reusable Media Cards",
-        "Horizontal Media Rows",
-        "Responsive Movie Hero Sections",
-        "Smooth Page Transitions",
-        "Framer Motion Animations",
-        "Optimized Image Rendering",
-        "Error and Empty States"
-      ],
-
-      "performance": [
-        "TanStack Query Data Management",
-        "Client-Side Data Caching",
-        "Server-Side API Requests",
-        "Reusable API Service Layer",
-        "Optimized Data Fetching",
-        "Responsive Image Handling",
-        "SEO Optimization",
-        "Production Deployment with Vercel"
+        "Mobile-First Responsive Design",
+        "Reusable UI Components",
+        "Optimized Image Loading",
+        "Skeleton and Error UI States",
+        "Performance and SEO Optimization"
       ]
     },
-
     "backend": {
-      "overview": "A Next.js-based backend architecture supporting authentication, favorites management, data validation, MongoDB persistence, and secure communication with the TMDb API.",
-
+      "overview": "Next.js application with external API integrations and server-side functionality where implemented.",
       "techStack": {
-        "runtime": ["Next.js Server Runtime", "TypeScript"],
-        "framework": ["Next.js App Router"],
-        "database": ["MongoDB", "Mongoose"],
-        "authentication": ["NextAuth"],
-        "api": ["TMDB API", "Next.js API Routes"],
-        "validation": ["Zod"],
+        "runtime": ["Node.js"],
+        "framework": ["Next.js"],
+        "language": ["TypeScript"],
         "dataFetching": ["TanStack Query"],
-        "deployment": ["Vercel", "Serverless Functions"]
+        "validation": ["Zod"],
+        "externalServices": ["OpenStreetMap", "Weather API"],
+        "deployment": ["Vercel"]
       }
     },
-
-    "security": [
-      "NextAuth Authentication",
-      "Server-Side TMDb API Requests",
-      "Environment Variable API Key Management",
-      "API Key Protection",
-      "Protected User Operations",
-      "Zod Input Validation",
-      "Secure Database Operations",
-      "Controlled API Access"
-    ],
-
-    "engineeringHighlights": [
-      "Built a full-stack movie discovery platform using Next.js App Router and TypeScript",
-      "Integrated TMDb API for movie and TV content discovery",
-      "Implemented user authentication using NextAuth",
-      "Built favorites management with MongoDB and Mongoose",
-      "Created reusable TypeScript media models supporting both movies and TV shows",
-      "Integrated TanStack Query for data fetching, caching, and asynchronous state management",
-      "Implemented schema-based request validation using Zod",
-      "Created reusable components for media cards, media rows, search, filters, metadata, and hero sections",
-      "Used Framer Motion to create smooth and responsive interface animations",
-      "Implemented server-side API communication to protect external API credentials",
-      "Designed the application with a mobile-first responsive architecture",
-      "Implemented SEO-focused metadata and page structure",
-      "Deployed the application using Vercel serverless infrastructure"
-    ],
-
-    "problem": "Movie discovery platforms often contain large amounts of content but can provide a cluttered or inefficient browsing experience. Users also need a convenient way to discover movies and TV shows, search for specific content, view detailed information, and save interesting titles for later. Additionally, directly exposing external API credentials from the browser creates security concerns. I wanted to build a modern movie platform that solved these problems while maintaining strong performance, responsive design, and SEO.",
-
-    "solution": "Built a full-stack movie and TV discovery platform using Next.js, TypeScript, Tailwind CSS, MongoDB, and the TMDb API. Implemented secure authentication with NextAuth, persistent favorites using MongoDB and Mongoose, server-side API communication, TanStack Query for efficient data management, Zod validation, and reusable responsive components for discovery and detailed media experiences.",
-
+    "problem": "Travel research often requires switching between multiple platforms to explore destinations, check weather conditions, and find useful safety information.",
+    "solution": "Built TripPulse as a centralized travel discovery platform combining destination exploration, weather information, and travel safety insights in a responsive interface.",
     "challenges": [
       {
-        "problem": "Direct requests to the TMDb API were unreliable in the local development environment due to regional network restrictions.",
-        "solution": "Implemented server-side API communication through the Next.js application so the frontend could communicate through the application's own API layer instead of directly requesting TMDb from the browser."
+        "problem": "Handling unreliable external API responses and asynchronous requests.",
+        "solution": "Implemented structured data fetching with loading, error, and retry states."
       },
       {
-        "problem": "The application needed to support both movies and TV shows while maintaining a consistent UI architecture.",
-        "solution": "Created normalized TypeScript media models and reusable components so movies and TV shows could share common rendering, filtering, and interaction patterns."
+        "problem": "Preventing unnecessary API requests when destination and weather components render.",
+        "solution": "Used controlled data-fetching behavior and request management to reduce redundant requests."
       },
       {
-        "problem": "Users needed a persistent way to save movies and TV shows they wanted to watch later.",
-        "solution": "Implemented authentication with NextAuth and built a MongoDB/Mongoose persistence layer for managing user favorites."
+        "problem": "Maintaining consistent UI across destinations with different country themes.",
+        "solution": "Organized country-specific styling into reusable configuration and theme patterns."
       },
       {
-        "problem": "Managing asynchronous data across trending sections, search results, filters, and detail pages could lead to duplicated fetching logic.",
-        "solution": "Created reusable API service functions and integrated TanStack Query for caching, request management, loading states, and data synchronization."
-      },
-      {
-        "problem": "Movie and TV API responses contain different structures and optional fields.",
-        "solution": "Created dedicated TypeScript interfaces and normalized media types to provide consistent data structures across the application while maintaining strict type safety."
-      },
-      {
-        "problem": "Detail pages required different metadata while maintaining a consistent responsive interface.",
-        "solution": "Separated the detail-page UI into reusable components for hero sections, metadata, genres, ratings, and additional media information."
-      },
-      {
-        "problem": "Large movie posters and backdrop images could negatively affect loading performance.",
-        "solution": "Implemented responsive image rendering and optimized media layouts to reduce unnecessary image overhead while maintaining visual quality."
-      },
-      {
-        "problem": "The application needed to remain usable while API requests were loading or failed.",
-        "solution": "Implemented skeleton loading states, error handling, empty states, and controlled asynchronous UI states across the application."
+        "problem": "Maintaining a responsive interface while displaying asynchronous data.",
+        "solution": "Used mobile-first layouts, reusable components, optimized images, and dedicated loading and error states."
       }
     ],
-
     "learning": [
-      "Building production-style applications with Next.js App Router",
-      "Designing full-stack applications using Next.js",
-      "Integrating and consuming third-party REST APIs",
-      "Working with the TMDb API and complex media data",
-      "Implementing authentication using NextAuth",
-      "Persisting user data using MongoDB and Mongoose",
-      "Building favorites and personalized user features",
-      "Using TanStack Query for asynchronous data management and caching",
-      "Implementing schema validation using Zod",
-      "Designing reusable TypeScript architectures for multiple media types",
-      "Building responsive media-heavy interfaces",
-      "Using Framer Motion for UI animations",
-      "Optimizing applications for performance and SEO",
-      "Deploying full-stack Next.js applications using Vercel"
+      "Building responsive applications with Next.js and TypeScript.",
+      "Integrating external APIs and managing asynchronous data.",
+      "Handling loading, error, and retry states.",
+      "Creating reusable components and configuration-driven country themes.",
+      "Reducing unnecessary network requests.",
+      "Using TanStack Query for server-state management.",
+      "Improving accessibility, maintainability, and SEO.",
+      "Deploying applications with Vercel."
     ],
-
     "futureImprovements": [
-      "Personalized movie recommendations",
-      "Advanced search and filtering",
-      "Infinite scrolling and pagination",
-      "Movie trailers and video integration",
-      "Actor and director profile pages",
-      "Watch history",
-      "User ratings and reviews",
-      "Social sharing features",
-      "Advanced user profiles",
-      "AI-powered movie recommendations",
-      "Personalized recommendation engine"
+      "Personalized Destination Recommendations",
+      "Saved Destinations and Travel Wishlists",
+      "Multi-Day Weather Forecasts",
+      "Interactive Maps and Nearby Attractions",
+      "Travel Itinerary Planning",
+      "Currency Conversion and Local Time",
+      "User Accounts and Travel Preferences"
     ]
   },
   {
