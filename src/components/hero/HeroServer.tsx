@@ -22,11 +22,11 @@ const HeroSectionServer = () => {
       <div className="flex flex-wrap justify-center gap-4">
         <Button
           asChild
-          className="bg-sky-800 hover:bg-sky-700 text-white font-semibold px-6 py-3 rounded-full transition-all duration-300 hover:scale-105"
+          className="group rounded-full bg-black px-6 py-3 font-semibold text-white transition-all duration-300 hover:bg-neutral-800 dark:bg-white dark:text-black dark:hover:bg-neutral-200"
         >
           <Link href={heroConfig.primaryCta.href}>
             {heroConfig.primaryCta.label}
-            <ArrowRight className="ml-2 h-5 w-5" />
+            <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
           </Link>
         </Button>
 
