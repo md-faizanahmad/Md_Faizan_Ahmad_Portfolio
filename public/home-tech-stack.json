@@ -6,12 +6,12 @@
       "icon": "devicon-react-original"
     },
     {
-      "name": "Tailwind CSS",
-      "icon": "devicon-tailwindcss-original"
-    },
-    {
       "name": "Next.js",
       "icon": "devicon-nextjs-original-wordmark"
+    },
+    {
+      "name": "Tailwind CSS",
+      "icon": "devicon-tailwindcss-original"
     },
     {
       "name": "TypeScript",
