@@ -1,12 +1,13 @@
 <div align="center">
- <h1>I'm Md Faizan Ahmad <h1/>
 
-### Clean • Responsive • Fast Load • Full Stack Portfolio
+<h1>I'm Md Faizan Ahmad</h1>
+
+### Clean • Responsive • Fast Load • Full-Stack Portfolio
 
 <p>
-A clean and expensive developer portfolio crafted to showcase projects,
-technical expertise, and professional experience through
-clean design and exceptional user experience.
+A clean and polished developer portfolio built to showcase projects,
+technical expertise, and professional experience through thoughtful design
+and a focused user experience.
 </p>
 
 <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white" />
@@ -19,77 +20,72 @@ clean design and exceptional user experience.
 
 ## 🚀 Overview
 
-This portfolio website is designed to present my projects, skills, and development journey through a modern, responsive, and performance-focused user experience.
+This portfolio website presents my projects, technical skills, and
+development experience through a modern, responsive, and
+performance-focused interface.
 
-The application emphasizes clean architecture, accessibility, smooth interactions, and professional visual presentation.
+The application emphasizes clean architecture, accessibility, optimized
+performance, smooth interactions, and a consistent user experience across
+devices.
 
 ---
 
 ## ✨ Features
 
-✔ Responsive Design
-✔ Dynamic Project Showcase
-✔ Interactive UI Components
-✔ Smooth Animations
-✔ SEO Optimization
-✔ Performance Optimization
-✔ Mobile-First Experience
-✔ Modern Component Architecture
-✔ Clean User Experience
+- Responsive design
+- Dynamic project showcase
+- Project detail pages
+- Interactive UI components
+- Smooth animations
+- SEO optimization
+- Performance optimization
+- Mobile-first experience
+- Modern component architecture
+- Accessible user interface
 
 ---
 
 ## 🛠 Tech Stack
 
-<table>
-<tr>
-<td><strong>Frontend</strong></td>
-<td>Next.js,TypeScript</td>
-</tr>
+**Frontend**
 
-<tr>
-<td><strong>Styling</strong></td>
-<td>Tailwind CSS, Framer Motion</td>
-</tr>
+Next.js · TypeScript
 
-<tr>
-<td><strong>UI</strong></td>
-<td>Lucide React, Custom Components</td>
-</tr>
+**Styling**
 
-<tr>
-<td><strong>Media</strong></td>
-<td>Cloudinary</td>
-</tr>
+Tailwind CSS · Framer Motion
 
-<tr>
-<td><strong>Deployment</strong></td>
-<td>Vercel</td>
-</tr>
-</table>
+**UI**
+
+Lucide React · Custom Components
+
+**Media**
+
+Cloudinary
+
+**Deployment**
+
+Vercel
 
 ---
 
 ## 🎯 Sections
 
-* Home
-* About
-* Skills
-* Projects
-* Projects Details 
-* Experience
-* Contact
+- Home
+- About
+- Skills
+- Projects
+- Project Details
+- Experience
+- Contact
 
 ---
 
 ## ⚡ Performance
 
-* Optimized Assets
-* Image Optimization
-* SEO Friendly
-* Accessibility Focused
-* Fast Loading Experience
-* Responsive Across Devices
-
----
-
+- Optimized assets
+- Next.js image optimization
+- SEO-friendly metadata
+- Accessibility-focused UI
+- Fast loading experience
+- Responsive across devices
