@@ -3,9 +3,10 @@
 import Image from "next/image";
 import AboutAnimations from "./AboutAnimations";
 import { aboutConfig } from "./about.config";
+import { Smartphone } from "lucide-react";
 
 const About = () => {
-  const { hero, paragraphs, section } = aboutConfig;
+  const { hero, paragraphs, section, appPage } = aboutConfig;
 
   return (
     <section
@@ -49,6 +50,15 @@ const About = () => {
         </div>
 
         {/* Skills */}
+        <a
+          href={appPage}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-10 inline-flex items-center gap-2 rounded-lg bg-green-700 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-green-800 dark:bg-green-600 dark:hover:bg-green-700"
+        >
+          <Smartphone size={17} />
+          Explore My First App
+        </a>
       </div>
     </section>
   );

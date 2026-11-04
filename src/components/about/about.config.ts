@@ -20,4 +20,6 @@ export const aboutConfig = {
     github: "https://github.com/md-faizanahmad",
     linkedin: "https://linkedin.com/in/mdfaizandahmad",
   },
+
+  appPage: "/digital-dost/about",
 };
