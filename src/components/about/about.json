@@ -9,9 +9,10 @@
   },
 
   "paragraphs": [
-    "I'm a Frontend & Full Stack Developer focused on building responsive, performant, and maintainable web applications. My work spans modern frontend architecture, reusable UI components, API integration, and backend development.",
-    "I work with React, Next.js, and TypeScript to build structured user interfaces, and use Node.js, Express.js, and MongoDB to develop backend services and data-driven features. My projects include admin dashboards, e-commerce functionality, authentication flows, and interactive web experiences.",
-    "I prioritize clean architecture, usability, performance, and maintainability—making technical decisions that support both the user experience and the long-term reliability of an application."
+    "I'm a Frontend Developer focused on building responsive, intuitive, and performant web applications. I enjoy turning ideas and designs into well-structured interfaces, with an emphasis on usability, clean code, and thoughtful UI architecture.",
+    "My primary expertise is in React, Next.js, and TypeScript. I've also built full-stack projects using Node.js, Express.js, and MongoDB, handling the complete development process—from planning features and designing system architecture to developing APIs, managing data, and integrating the frontend and backend.",
+    "I've deployed multiple projects to Vercel through GitHub-based CI/CD workflows and worked on UI testing. I've also developed Digital Dost, a React Native mobile learning application, which is being prepared for its Google Play Store release.",
+    "I approach development by understanding how a product should work as a whole. I value problem-solving, maintainable architecture, performance, and building reliable solutions that are easy to extend."
   ],
   "cta": {
     "label": "Let's Connect",
