@@ -63,6 +63,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             transition-transform duration-500
             group-hover:scale-[1.03]
           "
+          loading="eager"
         />
 
         {/* Image overlay */}

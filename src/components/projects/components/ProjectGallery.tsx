@@ -40,6 +40,7 @@ export default function ProjectGallery({
               priority
               sizes="(max-width: 1024px) 100vw, 1024px"
               className="object-contain"
+              loading="eager"
             />
           </div>
         </div>

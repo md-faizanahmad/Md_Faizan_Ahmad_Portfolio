@@ -7,6 +7,7 @@ import type { Metadata } from "next";
 import About from "@/components/about/About";
 import HomeTechStack from "@/components/skills/HomeTechStack";
 import Highlights from "@/components/Ehighlights/Highlights";
+import GitHubContributions from "@/components/github/GitHubContributions";
 
 export const metadata: Metadata = {
   title: "Md Faizan Ahmad – Frontend & Full Stack Web Developer",
@@ -126,8 +127,8 @@ export default function Home() {
           <section className="mx-auto w-full max-w-4xl">
             <HomeTechStack />
             <Highlights />
+            <GitHubContributions />
           </section>
-
           <section className="mx-auto w-full max-w-7xl px-4">
             <div className="mb-10 flex flex-col items-center gap-4 md:flex-row md:items-center md:justify-between">
               <div className="text-center">

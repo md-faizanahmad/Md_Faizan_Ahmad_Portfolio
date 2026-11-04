@@ -46,6 +46,7 @@ const CTA = () => {
                 fill
                 unoptimized
                 className="object-contain rounded-2xl p-3"
+                loading="eager"
               />
             </div>
           ))}
