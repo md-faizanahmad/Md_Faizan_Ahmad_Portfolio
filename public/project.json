@@ -25,7 +25,8 @@
       "Recharts",
       "Cloudinary",
       "Vercel"
-    ]
+    ],
+    "backend": true
   },
 
   {
@@ -42,7 +43,8 @@
       "Zustand",
       "tanstack/react-query",
       "zod"
-    ]
+    ],
+    "backend": true
   },
   {
     "slug": "trip-pulse",
@@ -63,7 +65,8 @@
       "Framer Motion",
       "OpenStreetMap API",
       "Weather API"
-    ]
+    ],
+    "backend": true
   },
   {
     "slug": "sweets-shop",
@@ -85,7 +88,8 @@
       "Cloudinary",
       "Razorpay",
       "Framer Motion"
-    ]
+    ],
+    "backend": false
   },
   {
     "slug": "luman-studio",
@@ -102,7 +106,8 @@
       "Framer Motion",
       "Next.js Image Optimization",
       "Vercel"
-    ]
+    ],
+    "backend": false
   },
   {
     "slug": "luman-hotel",
@@ -118,7 +123,8 @@
       "Framer Motion",
       "Responsive Design",
       "Vercel"
-    ]
+    ],
+    "backend": false
   },
   {
     "slug": "clinic-website",
@@ -127,7 +133,8 @@
     "description": "Built a clinic website with an appointment request flow using email integration instead of a backend system. Focused on performance, SEO, and conversion-driven UI, enabling patients to easily connect with the clinic without complex infrastructure.",
     "liveUrl": "https://clinic-web-app-six.vercel.app/",
     "codeUrl": "https://github.com/md-faizanahmad",
-    "techStack": ["Next.js", "TypeScript", "Tailwind CSS", "EmailJS"]
+    "techStack": ["Next.js", "TypeScript", "Tailwind CSS", "EmailJS"],
+    "backend": false
   },
 
   {
@@ -137,7 +144,8 @@
     "description": "Responsive school website with navigation, admission form, PDF generation, email notifications, and downloadable forms.",
     "liveUrl": "https://school-demo-sable-eta.vercel.app/",
     "codeUrl": "https://github.com/md-faizanahmad",
-    "techStack": ["Next.js", "TypeScript", "Tailwind", "Framer Motion"]
+    "techStack": ["Next.js", "TypeScript", "Tailwind", "Framer Motion"],
+    "backend": false
   },
   {
     "slug": "cyber-cafe",
@@ -159,7 +167,8 @@
       "Cloudinary",
       "Razorpay",
       "Framer Motion"
-    ]
+    ],
+    "backend": false
   },
   {
     "slug": "nerd-nest",
@@ -168,7 +177,8 @@
     "description": "Tech blog displaying latest news with API integration, responsive UI, and dynamic content fetching.",
     "liveUrl": "https://nerdnestt.web.app/",
     "codeUrl": "https://github.com/md-faizanahmad/nerdnest",
-    "techStack": ["React", "Bootstrap", "API", "JavaScript"]
+    "techStack": ["React", "Bootstrap", "API", "JavaScript"],
+    "backend": false
   },
 
   {
@@ -178,6 +188,7 @@
     "description": "Responsive car rental platform with dynamic bookings, user authentication, and mobile-friendly design.",
     "liveUrl": "https://rent-ride-app.vercel.app/",
     "codeUrl": "https://github.com/md-faizanahmad",
-    "techStack": ["Next.js", "TypeScript", "Tailwind"]
+    "techStack": ["Next.js", "TypeScript", "Tailwind"],
+    "backend": false
   }
 ]
