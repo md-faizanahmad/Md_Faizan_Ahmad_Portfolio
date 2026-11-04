@@ -52,7 +52,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/nav/Nav";
+import Navbar from "@/components/nav/Navbar";
 import SocialLink from "@/shared/SocialLinks";
 import { Analytics } from "@vercel/analytics/next";
 import ThemeProvider from "./providers";

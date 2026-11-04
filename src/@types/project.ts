@@ -6,6 +6,7 @@ export interface Project {
   codeUrl: string;
   techStack: string[];
   description: string;
+  backend: boolean;
 }
 
 export interface ProjectsProps {

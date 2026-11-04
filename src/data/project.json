@@ -310,21 +310,21 @@
     "title": "TripPulse",
     "category": "Full Stack Travel Discovery Platform",
     "featured": true,
-    "image": "https://res.cloudinary.com/dyefyrszz/image/upload/v1791825566/Gemini_Generated_Image_kgplgbkgplgbkgpl_pwdgap.png",
+    "image": "https://res.cloudinary.com/dyefyrszz/image/upload/v1793800681/Header_tp_n2mywm.png",
     "gallery": [
-      "YOUR_TRIPPULSE_HOME_SCREEN_URL",
-      "YOUR_TRIPPULSE_DESTINATION_DETAILS_URL",
-      "YOUR_TRIPPULSE_WEATHER_SECTION_URL",
-      "YOUR_TRIPPULSE_SAFETY_SECTION_URL"
+      "https://res.cloudinary.com/dyefyrszz/image/upload/v1793800643/trip_x7l99p.png",
+      "https://res.cloudinary.com/dyefyrszz/image/upload/v1793800832/about_tp_thqret.png",
+      "https://res.cloudinary.com/dyefyrszz/image/upload/v1793800641/searchresult_tp_pzcnqo.png",
+      "https://res.cloudinary.com/dyefyrszz/image/upload/v1793800652/tp_ftewsz.png"
     ],
     "description": "A modern travel discovery platform featuring destination search, weather information, country-specific themes, travel safety insights, and a responsive user experience with optimized performance and SEO.",
     "lgdescription": "I built TripPulse to make discovering travel destinations more convenient by combining destination exploration, weather information, and travel safety insights in one platform. I focused on reusable components, responsive design, external API integration, asynchronous data fetching, and performance optimization while building a maintainable application.",
     "overview": "TripPulse is a travel discovery platform that helps users explore destinations worldwide and access useful travel information through destination search, weather information, country-specific themes, and travel safety insights.",
     "liveUrl": "https://trip-pulse-gamma.vercel.app",
     "codeUrl": "https://github.com/md-faizanahmad/trip_pulses",
-    "status": "Completed",
+    "status": "Production",
     "role": "Full Stack Developer",
-    "duration": "YOUR_ACTUAL_PROJECT_DURATION",
+    "duration": "1-2 Months",
     "techStack": [
       "Next.js",
       "TypeScript",

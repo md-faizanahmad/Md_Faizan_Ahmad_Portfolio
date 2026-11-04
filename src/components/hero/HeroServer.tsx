@@ -15,9 +15,9 @@ const HeroSectionServer = () => {
         {heroConfig.title}
       </h2>
 
-      <p className="mb-8 text-lg sm:text-xl md:text-1xl text-[color:var(--muted-foreground)] max-w-3xl mx-auto">
+      {/* <p className="mb-8 text-lg sm:text-xl md:text-1xl text-[color:var(--muted-foreground)] max-w-3xl mx-auto">
         {heroConfig.description}
-      </p>
+      </p> */}
 
       <div className="flex flex-wrap justify-center gap-4">
         <Button

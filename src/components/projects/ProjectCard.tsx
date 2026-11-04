@@ -13,6 +13,7 @@ interface ProjectCardProps {
   codeUrl: string;
   techStack: string[];
   description: string;
+  backend: boolean;
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({
@@ -22,6 +23,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   liveUrl,
   techStack,
   description,
+  backend,
 }) => {
   return (
     <article
@@ -97,21 +99,24 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 
           <div className="flex shrink-0 items-center gap-2">
             {/* Details */}
-            <Link
-              href={`/projects/${slug}`}
-              aria-label={`View ${title} details`}
-              onClick={(e) => e.stopPropagation()}
-              className="
-        text-red-500
-        transition-all duration-200
-        hover:scale-105
-        hover:text-red-700
-        dark:text-red-400
-        dark:hover:text-red-300
-      "
-            >
-              <Info size={17} />
-            </Link>
+            {/* Project Details */}
+            {backend && (
+              <Link
+                href={`/projects/${slug}`}
+                aria-label={`View ${title} details`}
+                onClick={(e) => e.stopPropagation()}
+                className="
+      text-red-500
+      transition-all duration-200
+      hover:scale-105
+      hover:text-red-700
+      dark:text-red-400
+      dark:hover:text-red-300
+    "
+              >
+                <Info size={17} />
+              </Link>
+            )}
 
             {/* Live Website */}
             <Link
