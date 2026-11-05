@@ -27,7 +27,7 @@ export default function DigitalDostAbout() {
           <div className="pointer-events-none absolute -bottom-24 -left-20 h-64 w-64 rounded-full bg-green-200/30 blur-3xl dark:bg-green-500/10" />
 
           {/* Top-left Logo */}
-          <div className="absolute left-5 top-5 z-20 sm:left-8 sm:top-8 lg:left-0 lg:top-2">
+          <div className="absolute -left-4 top-0 z-20 sm:left-8 sm:top-8 lg:left-0 lg:top-2">
             <div className="flex h-14 w-45 items-center justify-center p-2  dark:border-gray-700 dark:bg-gray-900">
               <Image
                 src={DigitalDost}
@@ -66,17 +66,6 @@ export default function DigitalDostAbout() {
               <p className="mt-3 text-lg text-gray-600 dark:text-gray-400">
                 {projectMeta.tagline}
               </p>
-
-              <div className="mt-6 flex flex-wrap gap-2">
-                {projectMeta.technologies.map((item) => (
-                  <span
-                    key={item}
-                    className="rounded-full border border-green-200 bg-white/70 px-3 py-1.5 text-xs font-medium dark:border-green-900 dark:bg-gray-900/70"
-                  >
-                    {item}
-                  </span>
-                ))}
-              </div>
             </header>
           </div>
         </section>
