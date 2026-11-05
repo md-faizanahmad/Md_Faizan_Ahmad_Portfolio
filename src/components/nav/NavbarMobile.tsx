@@ -4,7 +4,6 @@ import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, ArrowUpRight } from "lucide-react";
 import ThemeToggle from "@/components/ThemeToggle";
-import SocialLinksNav from "@/shared/SocialLinksNav";
 import { NAV_LINKS } from "./navbar.config";
 
 interface NavbarMobileProps {
@@ -136,23 +135,6 @@ export default function NavbarMobile({
                   })}
                 </div>
               </nav>
-
-              {/* Footer */}
-              <div className="mt-auto pt-12">
-                <div className="mb-6">
-                  <SocialLinksNav />
-                </div>
-
-                <div className="flex items-center justify-between border-t border-[color:var(--border)] pt-5">
-                  <span className="text-[10px] font-medium uppercase tracking-[0.15em] text-[color:var(--muted-foreground)]">
-                    Md Faizan Ahmad
-                  </span>
-
-                  <span className="text-[10px] uppercase tracking-wider text-[color:var(--muted-foreground)]">
-                    Portfolio © {new Date().getFullYear()}
-                  </span>
-                </div>
-              </div>
             </div>
           </motion.div>
         )}
