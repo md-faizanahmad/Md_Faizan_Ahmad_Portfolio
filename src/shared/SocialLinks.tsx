@@ -1,6 +1,6 @@
 "use client";
 
-import { Mail, Github, Linkedin, MessageCircle, Share2 } from "lucide-react";
+import { Mail, Github, Linkedin } from "lucide-react";
 import { useState } from "react";
 
 const actions = [
@@ -10,12 +10,7 @@ const actions = [
     icon: Mail,
     bg: "bg-gradient-to-r from-red-600 to-yellow-500",
   },
-  {
-    label: "WhatsApp",
-    href: "https://wa.me/917563092029",
-    icon: MessageCircle,
-    bg: "bg-gradient-to-r from-green-500 to-emerald-700",
-  },
+
   {
     label: "LinkedIn",
     href: "https://www.linkedin.com/in/mdfaizandahmad",
@@ -34,7 +29,7 @@ export default function SocialLink() {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="fixed bottom-6 lg:right-3 right-1 z-50 lg:hidden">
+    <div className="fixed bottom-6 lg:right-3 right-1 z-50 ">
       {/* Actions */}
       <div
         className={`flex flex-col items-center-safe gap-3 mb-4 transition-all duration-300 ${
@@ -72,7 +67,7 @@ export default function SocialLink() {
   "
         aria-label="Open social links"
       >
-        <Share2
+        <Github
           size={22}
           className={`transition-transform duration-200 ${
             open ? "rotate-45" : ""
