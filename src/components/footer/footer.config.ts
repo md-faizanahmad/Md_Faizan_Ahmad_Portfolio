@@ -37,6 +37,10 @@ export const footerConfig = {
       name: "Contact",
       href: "/contact",
     },
+    {
+      name: "My First App",
+      href: "/digital-dost/about",
+    },
   ],
 
   socials: [
