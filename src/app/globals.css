@@ -95,6 +95,10 @@ body {
   color: var(--foreground);
 }
 
+button {
+  cursor: pointer;
+}
+
 /* Selection */
 ::selection {
   background: color-mix(in oklab, var(--ring), transparent 15%);
