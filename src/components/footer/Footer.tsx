@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import FooterAnimation from "./FooterAnimation";
 import { footerConfig } from "./footer.config";
-import { Email, GitHub, LinkedIn } from "@mui/icons-material";
+import { Github, Linkedin, Mail } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -130,8 +130,6 @@ const Footer = () => {
                   title="Email"
                   className="
                     flex h-9 w-9 items-center justify-center
-                    rounded-full
-                    border border-[color:var(--border)]
                     text-[color:var(--muted-foreground)]
                     transition-all duration-200
                     hover:-translate-y-0.5
@@ -140,7 +138,7 @@ const Footer = () => {
                     dark:hover:text-red-400
                   "
                 >
-                  <Email fontSize="small" />
+                  <Mail fontSize="small" />
                 </a>
 
                 {/* GitHub */}
@@ -153,8 +151,6 @@ const Footer = () => {
                     title="GitHub"
                     className="
                       flex h-9 w-9 items-center justify-center
-                      rounded-full
-                      border border-[color:var(--border)]
                       text-[color:var(--muted-foreground)]
                       transition-all duration-200
                       hover:-translate-y-0.5
@@ -164,7 +160,7 @@ const Footer = () => {
                       dark:hover:text-white
                     "
                   >
-                    <GitHub fontSize="small" />
+                    <Github fontSize="small" />
                   </a>
                 )}
 
@@ -178,8 +174,6 @@ const Footer = () => {
                     title="LinkedIn"
                     className="
                       flex h-9 w-9 items-center justify-center
-                      rounded-full
-                      border border-[color:var(--border)]
                       text-[color:var(--muted-foreground)]
                       transition-all duration-200
                       hover:-translate-y-0.5
@@ -187,7 +181,7 @@ const Footer = () => {
                       hover:text-[#0A66C2]
                     "
                   >
-                    <LinkedIn fontSize="small" />
+                    <Linkedin fontSize="small" />
                   </a>
                 )}
               </div>
@@ -239,8 +233,6 @@ const Footer = () => {
                 />
               </div>
             </div>
-
-            {footerConfig.bottomText && <p>{footerConfig.bottomText}</p>}
           </div>
         </div>
       </FooterAnimation>
