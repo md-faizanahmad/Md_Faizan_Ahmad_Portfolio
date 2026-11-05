@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import FooterAnimation from "./FooterAnimation";
 import { footerConfig } from "./footer.config";
-import { Email, WhatsApp, GitHub, LinkedIn } from "@mui/icons-material";
+import { Email, GitHub, LinkedIn } from "@mui/icons-material";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -141,27 +141,6 @@ const Footer = () => {
                   "
                 >
                   <Email fontSize="small" />
-                </a>
-
-                {/* WhatsApp */}
-                <a
-                  href={footerConfig.contact.whatsapp}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Contact on WhatsApp"
-                  title="WhatsApp"
-                  className="
-                    flex h-9 w-9 items-center justify-center
-                    rounded-full
-                    border border-[color:var(--border)]
-                    text-[color:var(--muted-foreground)]
-                    transition-all duration-200
-                    hover:-translate-y-0.5
-                    hover:border-[#25D366]
-                    hover:text-[#25D366]
-                  "
-                >
-                  <WhatsApp fontSize="small" />
                 </a>
 
                 {/* GitHub */}

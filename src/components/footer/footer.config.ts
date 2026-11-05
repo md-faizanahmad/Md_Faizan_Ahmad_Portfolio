@@ -52,7 +52,6 @@ export const footerConfig = {
 
   contact: {
     email: "md.faizan.ahmad.web@gmail.com",
-    whatsapp: "https://wa.me/917563092029",
     location: "India",
   },
 
