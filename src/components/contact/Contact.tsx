@@ -31,7 +31,7 @@ export default function Contact() {
         transition={{ duration: 0.6 }}
         className="mx-auto max-w-5xl"
       >
-        <div className="border-y border-[color:var(--border)] py-16 sm:py-20">
+        <div className=" py-16 sm:py-20">
           <div className="max-w-3xl">
             <p className="mb-3 text-sm font-medium text-[color:var(--muted-foreground)]">
               Have a project or opportunity?
