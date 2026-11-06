@@ -8,7 +8,7 @@ const HeroSectionServer = () => {
   const { visual } = heroConfig;
 
   return (
-    <div className="mx-auto grid w-full max-w-7xl items-center gap-10 px-5 pt-20 pb-10 sm:px-8 sm:pt-20 md:grid-cols-[1fr_1.5fr] md:gap-6 md:py-0">
+    <div className="mx-auto grid w-full max-w-7xl items-center gap-10 px-5 pt-20 pb-10 sm:px-8 sm:pt-20 lg:pt-20  md:grid-cols-[1fr_1.5fr] md:gap-6 md:py-0">
       {/* Introduction */}
       <div className="order-2 md:order-1">
         <GreetingRoll />
