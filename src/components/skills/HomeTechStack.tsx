@@ -18,7 +18,7 @@ export default function HomeTechStack() {
         </h2>
 
         <Link
-          href="/skills"
+          href="/about"
           className="
       mb-1 inline-flex w-fit shrink-0 items-center
       text-sm font-medium

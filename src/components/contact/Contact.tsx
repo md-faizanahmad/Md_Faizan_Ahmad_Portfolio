@@ -1,6 +1,6 @@
 "use client";
 
-import { GitHub, LinkedIn, WhatsApp } from "@mui/icons-material";
+import { GitHub, LinkedIn } from "@mui/icons-material";
 import { motion } from "framer-motion";
 
 const contactLinks = [
@@ -13,11 +13,6 @@ const contactLinks = [
     label: "LinkedIn",
     href: "https://www.linkedin.com/in/mdfaizandahmad",
     icon: LinkedIn,
-  },
-  {
-    label: "WhatsApp",
-    href: "https://wa.me/+917563092029",
-    icon: WhatsApp,
   },
 ];
 

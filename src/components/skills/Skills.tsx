@@ -32,7 +32,11 @@ const initialSkills: Skill[] = [
   { name: "Axios", labelOnly: true },
   { name: "REST API", icon: "devicon-fastapi-plain", type: "devicon" },
 
-  { name: "Firebase", icon: "devicon-firebase-plain", type: "devicon" },
+  {
+    name: "React Native",
+    icon: "devicon-reactnative-original-wordmark",
+    type: "devicon",
+  },
   { name: "Vercel", icon: "devicon-vercel-original", type: "devicon" },
   { name: "VS Code", icon: "devicon-vscode-plain", type: "devicon" },
 ];
