@@ -18,17 +18,17 @@ export default function DigitalDostAbout() {
   } = projectSections;
 
   return (
-    <main className="min-h-screen bg-white px-5 py-20 text-gray-900 dark:bg-gray-950 dark:text-gray-100">
+    <main className="min-h-screen bg-white px-5 py-20 text-gray-900 dark:bg-black dark:text-gray-100">
       <div className="mx-auto w-full max-w-5xl">
         {/* Hero */}
-        <section className="relative overflow-hidden rounded-2xl border border-green-100 bg-gradient-to-br from-green-50 via-white to-green-100 dark:border-green-900/30 dark:from-gray-900 dark:via-gray-950 dark:to-green-950/30">
+        <section className="relative overflow-hidden rounded-2xl border border-green-100 bg-gradient-to-br from-green-50 via-white to-green-100 dark:border-green-900/30 dark:from-black dark:via-black dark:to-green-950/30">
           {/* Decorative Background */}
           <div className="pointer-events-none absolute -right-20 -top-20 h-72 w-72 rounded-full bg-green-300/20 blur-3xl dark:bg-green-500/10" />
           <div className="pointer-events-none absolute -bottom-24 -left-20 h-64 w-64 rounded-full bg-green-200/30 blur-3xl dark:bg-green-500/10" />
 
           {/* Top-left Logo */}
           <div className="absolute -left-4 top-0 z-20 sm:left-8 sm:top-8 lg:left-0 lg:top-2">
-            <div className="flex h-14 w-45 items-center justify-center p-2  dark:border-gray-700 dark:bg-gray-900">
+            <div className="flex h-14 w-45 items-center justify-center p-2 dark:border-gray-700 dark:bg-black">
               <Image
                 src={DigitalDost}
                 alt="Digital Dost logo"
@@ -42,7 +42,7 @@ export default function DigitalDostAbout() {
 
           {/* Hero Content */}
           <div className="relative grid items-center gap-6 px-5 pb-6 pt-24 sm:px-8 sm:pb-8 sm:pt-28 lg:grid-cols-2 lg:gap-10 lg:px-10 lg:pb-10 lg:pt-10">
-            {/* App Image - First on Mobile, Right on Desktop */}
+            {/* App Image */}
             <div className="relative order-1 flex min-h-[220px] items-center justify-center sm:min-h-[300px] lg:order-2 lg:min-h-[380px]">
               <Image
                 src={DDBlogHero}
