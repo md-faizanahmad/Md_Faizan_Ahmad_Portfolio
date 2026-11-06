@@ -51,7 +51,10 @@ export default function Navbar() {
                     text-2xl sm:text-3xl
                   "
                 >
-                  MFA<span className="opacity-70">.</span>
+                  MFA
+                  <span className="opacity-70 text-emerald-600 dark:text-emerald-400">
+                    .
+                  </span>
                 </span>
 
                 <span
