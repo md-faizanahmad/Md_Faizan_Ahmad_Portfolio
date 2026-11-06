@@ -62,8 +62,17 @@ export default function TechnicalSkills() {
       />
 
       <div className="mx-auto max-w-4xl">
-        <h2 className="mb-10  text-3xl font-bold sm:text-3xl">
-          Technical Skills
+        <h2
+          className="
+    mb-10
+    text-[clamp(3.5rem,9vw,7rem)]
+    font-semibold
+    leading-[0.9]
+    tracking-[-0.099em]
+    text-[color:var(--foreground)]
+  "
+        >
+          Technical Skills<span className="text-green-600">.</span>
         </h2>
 
         <Reorder.Group

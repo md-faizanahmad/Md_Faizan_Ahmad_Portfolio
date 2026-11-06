@@ -10,7 +10,7 @@ const Highlights = () => {
     <section id={section.id} className="px-4 py-20 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-6xl">
         <motion.div
-          className="mb-4 max-w-2xl"
+          className="mb-7 max-w-2xl"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.2 }}
@@ -24,19 +24,24 @@ const Highlights = () => {
             {section.title}
           </h2>
 
-          <p className="mt-3 text-[color:var(--muted-foreground)]">
+          <p className="mt- text-[color:var(--muted-foreground)]">
             {section.description}
           </p>
         </motion.div>
 
-        <div>
+        <div className="hide-scrollbar max-h-[420px] overflow-y-auto overscroll-contain scroll-smooth pr-2 md:max-h-none md:overflow-visible">
           {highlights.map((highlight, index) => {
             const Icon = highlight.icon;
 
             return (
               <motion.article
                 key={highlight.title}
-                className="grid gap-4 py-3 md:grid-cols-[40px_220px_1fr] md:items-center md:gap-6"
+                className="
+          grid grid-cols-[20px_1fr] gap-x-3 gap-y-1
+          border-b border-[color:var(--border)]
+          py-3
+          md:grid-cols-[40px_220px_1fr] md:items-center md:gap-6 md:py-4
+        "
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.2 }}
@@ -46,15 +51,17 @@ const Highlights = () => {
                 }}
               >
                 <Icon
-                  size={20}
+                  size={19}
                   strokeWidth={1.8}
-                  className="text-[color:var(--foreground)] hover:text-secondary"
+                  className="text-[color:var(--foreground)]"
                   aria-hidden="true"
                 />
 
-                <h3 className="text-lg font-semibold">{highlight.title}</h3>
+                <h3 className="text-base font-semibold leading-5 md:text-lg">
+                  {highlight.title}
+                </h3>
 
-                <p className="text-sm leading-5 text-[color:var(--muted-foreground)]">
+                <p className="col-start-2 text-xs leading-5 text-[color:var(--muted-foreground)] md:col-start-auto md:text-sm">
                   {highlight.description}
                 </p>
               </motion.article>

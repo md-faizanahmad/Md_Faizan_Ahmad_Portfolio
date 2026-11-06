@@ -5,52 +5,59 @@ import {
   ShieldCheck,
   Gauge,
   Component,
+  Smartphone,
 } from "lucide-react";
 
 export const highlightsConfig = {
   section: {
     id: "highlights",
-    eyebrow: "What I Build",
+    eyebrow: "What I Work On",
     title: "Building for the web",
-    description: "Things I focus on when building web applications.",
+    description: "Areas I focus on in web and app development.",
   },
 
   highlights: [
     {
-      title: "Responsive Interfaces",
+      title: "Responsive Web Design",
       description:
-        "Clean interfaces that work across mobile, tablet, and desktop.",
+        "Building interfaces that work well across mobile, tablet, and desktop.",
       icon: Layout,
     },
     {
-      title: "Full-Stack Applications",
+      title: "Full-Stack Development",
       description:
-        "Web applications built with React, Next.js, Node.js, and MongoDB.",
+        "Developing web applications using React, Next.js, Node.js, and MongoDB.",
       icon: Layers,
     },
     {
       title: "API Integration",
       description:
-        "Connecting frontend applications with REST APIs and external services.",
+        "Connecting applications with REST APIs and third-party services.",
       icon: Plug,
     },
     {
       title: "Authentication",
       description:
-        "Login, protected routes, JWT authentication, and user access.",
+        "Implementing login, JWT authentication, and protected routes.",
       icon: ShieldCheck,
     },
     {
       title: "Performance & SEO",
       description:
-        "Faster pages, optimized images, metadata, and search-friendly websites.",
+        "Improving page speed, optimizing assets, and handling SEO fundamentals.",
       icon: Gauge,
     },
     {
       title: "Reusable Components",
       description:
-        "Reusable UI components that keep projects consistent and easier to maintain.",
+        "Building reusable UI components for consistent and maintainable code.",
       icon: Component,
+    },
+    {
+      title: "React Native Development",
+      description:
+        "Developing a mobile app with React Native, currently preparing for its first Play Store release.",
+      icon: Smartphone,
     },
   ],
 };

@@ -99,6 +99,17 @@ button {
   cursor: pointer;
 }
 
+/* Scroll */
+/* Hide scrollbar but keep scrolling enabled */
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
 /* Selection */
 ::selection {
   background: color-mix(in oklab, var(--ring), transparent 15%);

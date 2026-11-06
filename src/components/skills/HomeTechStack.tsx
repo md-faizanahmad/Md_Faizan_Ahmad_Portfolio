@@ -3,7 +3,7 @@ import homeTechStack from "@/public/home-tech-stack.json";
 
 export default function HomeTechStack() {
   return (
-    <section className="mx-auto w-full max-w-6xl px-4">
+    <section className="mx-auto max-h-screen w-full max-w-6xl px-4">
       <div className="mb-10 flex flex-row items-end justify-between gap-4 sm:mb-14">
         <h2
           className="
@@ -32,7 +32,7 @@ export default function HomeTechStack() {
         </Link>
       </div>
 
-      <div className="flex flex-wrap gap-3">
+      <div className="flex flex-wrap lg:gap-10 gap-5">
         {homeTechStack.skills.map((skill) => (
           <div
             key={skill.name}
