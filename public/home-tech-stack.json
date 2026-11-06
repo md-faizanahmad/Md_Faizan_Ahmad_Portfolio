@@ -3,31 +3,38 @@
   "skills": [
     {
       "name": "React",
-      "icon": "devicon-react-original"
+      "icon": "devicon-react-original",
+      "class": "text-[#61DAFB]"
     },
     {
       "name": "Next.js",
-      "icon": "devicon-nextjs-original-wordmark"
+      "icon": "devicon-nextjs-original-wordmark",
+      "class": "text-[color:var(--foreground)]"
     },
     {
       "name": "Tailwind CSS",
-      "icon": "devicon-tailwindcss-original"
+      "icon": "devicon-tailwindcss-original",
+      "class": "text-[#06B6D4]"
     },
     {
       "name": "TypeScript",
-      "icon": "devicon-typescript-plain"
+      "icon": "devicon-typescript-plain",
+      "class": "text-[#3178C6]"
     },
     {
       "name": "JavaScript",
-      "icon": "devicon-javascript-plain"
+      "icon": "devicon-javascript-plain",
+      "class": "text-[#F7DF1E]"
     },
     {
       "name": "Node.js",
-      "icon": "devicon-nodejs-plain"
+      "icon": "devicon-nodejs-plain",
+      "class": "text-[#339933]"
     },
     {
       "name": "MongoDB",
-      "icon": "devicon-mongodb-plain"
+      "icon": "devicon-mongodb-plain",
+      "class": "text-[#47A248]"
     }
   ]
 }

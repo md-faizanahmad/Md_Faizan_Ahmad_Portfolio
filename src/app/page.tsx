@@ -121,7 +121,6 @@ export default function Home() {
       <main className="relative min-h-screen font-sans selection:bg-indigo-500/30">
         <div className="relative z-10 flex flex-col gap-12 pb-12 md:gap-20 md:pb-20">
           <HeroSection />
-
           <About />
 
           <section className="mx-auto w-full max-w-4xl">
