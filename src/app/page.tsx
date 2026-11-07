@@ -128,39 +128,46 @@ export default function Home() {
             <GitHubContributions />
           </section>
           <section className="mx-auto w-full max-w-7xl px-4">
-            <div className="mb-10 flex flex-col items-center gap-4 md:flex-row md:items-center md:justify-between">
-              <div className="text-center">
-                <h2 className="text-3xl font-bold tracking-tight">
-                  Featured Work
-                </h2>
-              </div>
+            <div className="mb-5 flex flex-col items-start gap-5 sm:mb-0 sm:flex-row sm:items-end sm:justify-between">
+              <h2
+                className="
+      text-[clamp(2.5rem,5vw,4rem)]
+      font-semibold
+      leading-[0.9]
+      tracking-[-0.099em]
+      text-[color:var(--foreground)]
+    "
+              >
+                WorkS<span className="text-green-600">.</span>
+              </h2>
 
               <Link
                 href="/projects"
                 className="
-      hidden md:flex
-      items-center gap-2
-      font-semibold text-sky-600
-      underline
-      transition-all hover:gap-3
+                hidden
+      lg:inline-flex w-fit items-center gap-2
+      text-sm font-medium
+      text-[color:var(--foreground)]
+      underline underline-offset-4
+      transition-all duration-300
+      hover:gap-3 hover:text-green-600
     "
               >
                 View all projects
                 <ArrowRight size={18} />
               </Link>
             </div>
-
             <Projects limit={3} showFilter={false} />
 
-            <div className="mt-12 flex justify-center md:hidden">
+            <div className="mt-5 flex justify-center md:hidden">
               <Link
                 href="/projects"
                 className="
                   group inline-flex items-center gap-2 rounded-full
                   bg-black text-white hover:bg-neutral-800 dark:bg-white dark:text-black dark:hover:bg-neutral-200
                   px-8 py-4 font-bold 
-                  shadow-lg shadow-indigo-500/25
-                  transition-all hover:shadow-indigo-500/40
+                  shadow-lg shadow-green-900/25
+                  transition-all hover:shadow-green-500/40
                   active:scale-95
                 "
               >

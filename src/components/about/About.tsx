@@ -31,9 +31,9 @@ const About = () => {
             className="
             cursor-pointer
     group
-    text-[clamp(5rem,11vw,9rem)]
     font-semibold
     leading-[0.9]
+    text-[clamp(5rem,11vw,9rem)]
     tracking-[-0.099em]
     text-[color:var(--foreground)]
   "
