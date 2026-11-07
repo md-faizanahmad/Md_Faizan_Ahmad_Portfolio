@@ -7,7 +7,7 @@
     "image": "https://res.cloudinary.com/dyefyrszz/image/upload/v1790771205/myazstore-admin_h81dcc.png",
     "description": "A production-ready admin dashboard for managing products, orders, inventory, payments, customers, analytics, and business operations for a full-stack e-commerce platform.",
     "overview": "MyStore Admin Dashboard is a centralized administration platform built for managing products, inventory, orders, customers, payments, and business analytics within the MyAZStore ecosystem. The project was designed to handle real-world e-commerce workflows with a focus on secure authentication, operational efficiency, scalability, and long-term maintainability.",
-    "liveUrl": "https://admin.myazstore.shop",
+    "liveUrl": "https://admin.azstore.mdfaizanahmad.in",
     "codeUrl": "https://github.com/md-faizanahmad/Shop_Admin",
     "status": "Completed",
     "role": "Full Stack Developer",
@@ -34,7 +34,7 @@
     "title": "MyStore Shop",
     "image": "https://res.cloudinary.com/dyefyrszz/image/upload/v1790771429/azstore-shop_ljgniu.png",
     "description": "Responsive public-facing EMI and salary calculator with fast loading, SEO optimization, and user-friendly design.",
-    "liveUrl": "https://myazstore.shop",
+    "liveUrl": "https://azstore.mdfaizanahmad.in",
     "codeUrl": "https://github.com/md-faizanahmad/MyShop",
     "techStack": [
       "React.js",
