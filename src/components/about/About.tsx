@@ -128,7 +128,7 @@ const About = () => {
   relative order-1 ml-auto
   aspect-square w-full max-w-[220px]
   overflow-hidden rounded-xl
-  bg-[color:var(--muted)]
+  
 
   sm:max-w-[280px] sm:aspect-[4/5]
   md:sticky md:top-28 md:order-2

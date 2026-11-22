@@ -57,9 +57,9 @@ export default function Contact() {
                 Start a Conversation →
               </motion.a>
 
-              <span className="text-sm text-[color:var(--muted-foreground)]">
+              {/* <span className="text-sm text-[color:var(--muted-foreground)]">
                 md.faizan.ahmad.web@gmail.com
-              </span>
+              </span> */}
             </div>
           </div>
 
